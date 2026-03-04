@@ -1,0 +1,32 @@
+% !TeX root = ../main.tex
+
+\ustcsetup{
+  keywords  = {加密流量, 流量分类, 自监督学习, 特征融合},
+  keywords* = {Encrypted traffic, Traffic classification, Self-Supervised Learning, Feature fusion},
+}
+
+\begin{abstract}
+  识别流量类型是网络研究的一项基本且关键的能力，对服务质量控制、安全检测等应用至关重要。随着用户隐私意识增强，
+  SSL/TLS、VPN和Tor等加密工具普及（如美国加密流量占比从2017年55\%升至2024年94\%）
+  ，传统基于端口和深度包检测（DPI）的方法因无法解析加密的数据包载荷而失效。
+  机器学习方法虽利用流统计特征实现分类，但依赖人工特征工程，
+  泛化能力有限且实施成本高。深度学习技术通过端到端学习范式突破上述限制：
+  可直接处理原始流量数据，自动提取特征，支持早期分类，并减少对专家知识的依赖。
+  然而，现有深度学习方案多存在显著局限：仅根据流级别或包级别特征来分析和识别流量，
+  而忽略了另一维度所包含的流量特征，未能融合双维度信息；并且，在包级别的处理中，
+  还存在包头和有效载荷的混合使用的情况，既未区分功能差异，
+  又因使用有效载荷数据而损害用户的隐私权益。因此，
+  研究一种融合流级别与包级别特征、
+  不依赖有效载荷数据的基于深度学习的融合加密流量分类方法，
+  对提升网络安全和服务质量具有重要价值。
+  本工作针对上述问题，设计了一个兼顾流级别特征和包级别特征，
+  且仅使用IP数据包头，不涉及数据包有效载荷的加密流量分类方法。
+  通过构造不同的数据包长度序列变体，结合BYOL模型，提取了具有鲁棒性的流级别特征；
+  通过对n-gram技术的使用，有效学习包头字段的字节组合与顺序特征；
+  最后通过动态权重的特征融合机制，将两个模态的特征进行融合，实现特征间非线性关系的有效建模。
+
+\end{abstract}
+
+\begin{abstract*}
+  Identifying traffic types is a fundamental and crucial capability in network research, essential for applications such as quality of service control and security testing. With increasing user privacy awareness and the widespread adoption of encryption tools like SSL/TLS, VPNs, and Tor (for example, the percentage of encrypted traffic in the US is projected to rise from 55\% in 2017 to 94\% in 2024), traditional port-based and deep packet inspection (DPI) methods have become ineffective due to their inability to parse encrypted packet payloads. While machine learning methods utilize flow statistics for classification, they rely on manual feature engineering, resulting in limited generalization capabilities and high implementation costs. Deep learning technology overcomes these limitations through an end-to-end learning paradigm: it can directly process raw traffic data, automatically extract features, support early classification, and reduce reliance on expert knowledge. However, existing deep learning solutions often have significant limitations: they analyze and identify traffic based solely on flow-level or packet-level features, neglecting traffic features contained in another dimension, failing to integrate dual-dimensional information; furthermore, in packet-level processing, there are instances of mixed use of packet headers and payloads, failing to distinguish functional differences and infringing on user privacy by using payload data. Therefore, researching a deep learning-based fusion encrypted traffic classification method that integrates flow-level and packet-level features without relying on payload data is of great value for improving network security and service quality. This work addresses the above problem by designing an encrypted traffic classification method that considers both flow-level and packet-level features, uses only IP packet headers, and does not involve packet payloads. By constructing different packet length sequence variants and combining them with the BYOL model, robust flow-level features are extracted. Through the use of n-gram technology, the byte combination and order features of the packet header fields are effectively learned. Finally, a dynamic weighted feature fusion mechanism is used to fuse the features of the two modalities, achieving effective modeling of the nonlinear relationships between features.
+\end{abstract*}
