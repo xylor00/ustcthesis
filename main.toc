@@ -10,63 +10,89 @@
 \contentsline {subsubsection}{\numberline {1.4.1.1}三级节标题}{5}{subsubsection.1.4.1.1}%
 \contentsline {section}{\numberline {1.5}脚注}{6}{section.1.5}%
 \contentsline {chapter}{\numberline {第2章}相关理论概述}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}BYOL模型概述}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}一维卷积神经网络概述}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}多层感知机概述}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}预处理}{8}{section.2.4}%
-\contentsline {section}{\numberline {2.5}论文章节安排}{10}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}二级节标题}{10}{subsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.1.1}三级节标题}{10}{subsubsection.2.5.1.1}%
-\contentsline {chapter}{\numberline {第3章}流级别特征提取}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}流级别特征提取整体框架}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}BYOL模型编码器}{11}{section.3.2}%
-\contentsline {section}{\numberline {3.3}BYOL模型增强函数}{11}{section.3.3}%
-\contentsline {section}{\numberline {3.4}参数设置}{11}{section.3.4}%
-\contentsline {section}{\numberline {3.5}论文章节安排}{11}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}二级节标题}{11}{subsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.1.1}三级节标题}{11}{subsubsection.3.5.1.1}%
-\contentsline {chapter}{\numberline {第4章}包级别特征提取}{12}{chapter.4}%
-\contentsline {section}{\numberline {4.1}包级别特征提取整体框架}{12}{section.4.1}%
-\contentsline {section}{\numberline {4.2}IP数据包结构}{12}{section.4.2}%
-\contentsline {section}{\numberline {4.3}原始数据提取与预处理}{12}{section.4.3}%
-\contentsline {section}{\numberline {4.4}n-gram嵌入处理}{12}{section.4.4}%
-\contentsline {section}{\numberline {4.5}论文章节安排}{12}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}二级节标题}{12}{subsection.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.1.1}三级节标题}{12}{subsubsection.4.5.1.1}%
-\contentsline {chapter}{\numberline {第5章}特征融合}{13}{chapter.5}%
-\contentsline {section}{\numberline {5.1}融合网络整体框架}{13}{section.5.1}%
-\contentsline {section}{\numberline {5.2}参数设置}{13}{section.5.2}%
-\contentsline {section}{\numberline {5.3}论文章节安排}{13}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}二级节标题}{13}{subsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.1.1}三级节标题}{13}{subsubsection.5.3.1.1}%
-\contentsline {chapter}{\numberline {第6章}实验设置}{14}{chapter.6}%
-\contentsline {section}{\numberline {6.1}数据集与评估指标}{14}{section.6.1}%
-\contentsline {section}{\numberline {6.2}对比试验设计}{14}{section.6.2}%
-\contentsline {section}{\numberline {6.3}消融实验设计}{14}{section.6.3}%
-\contentsline {section}{\numberline {6.4}论文章节安排}{14}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}二级节标题}{14}{subsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.1.1}三级节标题}{14}{subsubsection.6.4.1.1}%
-\contentsline {chapter}{\numberline {第7章}总结与展望}{15}{chapter.7}%
-\contentsline {section}{\numberline {7.1}论文章节安排}{15}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}二级节标题}{15}{subsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.1.1}三级节标题}{15}{subsubsection.7.1.1.1}%
-\contentsline {chapter}{\numberline {第8章}插图和表格}{16}{chapter.8}%
-\contentsline {section}{\numberline {8.1}三线表}{16}{section.8.1}%
-\contentsline {section}{\numberline {8.2}插图}{16}{section.8.2}%
-\contentsline {section}{\numberline {8.3}算法环境}{17}{section.8.3}%
-\contentsline {chapter}{\numberline {第9章}数学}{18}{chapter.9}%
-\contentsline {section}{\numberline {9.1}数学符号}{18}{section.9.1}%
-\contentsline {section}{\numberline {9.2}数学公式}{19}{section.9.2}%
-\contentsline {section}{\numberline {9.3}量和单位}{19}{section.9.3}%
-\contentsline {section}{\numberline {9.4}定理和证明}{19}{section.9.4}%
-\contentsline {chapter}{\numberline {第10章}引用文献的标注}{21}{chapter.10}%
-\contentsline {section}{\numberline {10.1}顺序编码制}{21}{section.10.1}%
-\contentsline {subsection}{\numberline {10.1.1}角标数字标注法}{21}{subsection.10.1.1}%
-\contentsline {subsection}{\numberline {10.1.2}数字标注法}{21}{subsection.10.1.2}%
-\contentsline {section}{\numberline {10.2}著者-出版年制标注法}{21}{section.10.2}%
-\contentsline {chapter}{参考文献}{22}{chapter*.17}%
-\contentsline {chapter}{\numberline {附录 A}补充材料}{24}{appendix.A}%
-\contentsline {section}{\numberline {A.1}补充章节}{24}{section.A.1}%
-\contentsline {chapter}{致谢}{25}{appendix*.18}%
-\contentsline {chapter}{在读期间取得的科研成果}{26}{appendix*.19}%
+\contentsline {section}{\numberline {2.1}卷积神经网络概述}{7}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}卷积层}{7}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}激活函数}{7}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}池化层}{7}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}全连接层}{7}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}BYOL模型概述}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}注意力机制概述}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}本章小结}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}论文章节安排}{8}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}二级节标题}{8}{subsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.1.1}三级节标题}{8}{subsubsection.2.5.1.1}%
+\contentsline {chapter}{\numberline {第3章}基于BYOL模型的流级特征分类方法}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}BYOL 自监督学习框架总体设计}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}双网协同架构}{9}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}预测任务的本质}{9}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}基于 1D-CNN 的编码器（Encoder）细节}{9}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}网络层级深度解析}{9}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}投影器与预测器设计}{10}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}流量数据增强函数（Augmentation）}{10}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}增强函数 A：高斯噪声注入}{10}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}增强函数 B：尺度缩放与特征遮蔽}{10}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}损失函数与参数演进机制}{11}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}余弦相似度损失模型}{11}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}动量更新（EMA）机制}{11}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}训练优化策略与鲁棒性设计}{11}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}学习率调度与 AdamW 优化}{11}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}针对抖动的回溯策略}{11}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}训练过程监控}{11}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}系统模型}{12}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}BYOL模型编码器}{12}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}BYOL模型增强函数}{12}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}参数设置}{12}{section.3.7}%
+\contentsline {section}{\numberline {3.8}实验结果与分析}{12}{section.3.8}%
+\contentsline {section}{\numberline {3.9}本章小结}{13}{section.3.9}%
+\contentsline {section}{\numberline {3.10}论文章节安排}{13}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}二级节标题}{13}{subsection.3.10.1}%
+\contentsline {subsubsection}{\numberline {3.10.1.1}三级节标题}{13}{subsubsection.3.10.1.1}%
+\contentsline {chapter}{\numberline {第4章}基于融合特征的分类方法}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}模型总体架构描述}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}细粒度包级别特征提取 (Packet-level Feature Engineering)}{14}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}报文首部截取与预处理}{14}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}增强型 N-gram 序列建模}{15}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}零填充策略 (Zero-Padding)}{15}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}交叉注意力特征融合机制 (Cross-Attention Fusion)}{15}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}线性投影与空间对齐}{15}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}交叉注意力流}{15}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}深度残差分类器设计 (Residual MLP)}{16}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}残差块 (Residual Block) 内部构造}{16}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}输出层逻辑}{16}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}训练策略与参数寻优}{16}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}学习率调度：OneCycleLR}{16}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}验证驱动的回溯降温策略}{16}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}评估指标设置}{16}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}包级别特征提取整体框架}{17}{section.4.6}%
+\contentsline {section}{\numberline {4.7}原始数据提取与处理n-gram嵌入处理}{17}{section.4.7}%
+\contentsline {section}{\numberline {4.8}特征融合}{17}{section.4.8}%
+\contentsline {section}{\numberline {4.9}分类模型}{17}{section.4.9}%
+\contentsline {section}{\numberline {4.10}参数设置}{18}{section.4.10}%
+\contentsline {section}{\numberline {4.11}实验结果与分析}{18}{section.4.11}%
+\contentsline {section}{\numberline {4.12}本章小结}{18}{section.4.12}%
+\contentsline {section}{\numberline {4.13}论文章节安排}{18}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}二级节标题}{18}{subsection.4.13.1}%
+\contentsline {subsubsection}{\numberline {4.13.1.1}三级节标题}{18}{subsubsection.4.13.1.1}%
+\contentsline {chapter}{\numberline {第5章}总结与展望}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}论文章节安排}{19}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}二级节标题}{19}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}三级节标题}{19}{subsubsection.5.1.1.1}%
+\contentsline {chapter}{\numberline {第6章}插图和表格}{20}{chapter.6}%
+\contentsline {section}{\numberline {6.1}三线表}{20}{section.6.1}%
+\contentsline {section}{\numberline {6.2}插图}{20}{section.6.2}%
+\contentsline {section}{\numberline {6.3}算法环境}{21}{section.6.3}%
+\contentsline {chapter}{\numberline {第7章}数学}{22}{chapter.7}%
+\contentsline {section}{\numberline {7.1}数学符号}{22}{section.7.1}%
+\contentsline {section}{\numberline {7.2}数学公式}{23}{section.7.2}%
+\contentsline {section}{\numberline {7.3}量和单位}{23}{section.7.3}%
+\contentsline {section}{\numberline {7.4}定理和证明}{23}{section.7.4}%
+\contentsline {chapter}{\numberline {第8章}引用文献的标注}{25}{chapter.8}%
+\contentsline {section}{\numberline {8.1}顺序编码制}{25}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}角标数字标注法}{25}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}数字标注法}{25}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}著者-出版年制标注法}{25}{section.8.2}%
+\contentsline {chapter}{\numberline {附录 A}补充材料}{26}{appendix.A}%
+\contentsline {section}{\numberline {A.1}补充章节}{26}{section.A.1}%
+\contentsline {chapter}{致谢}{27}{appendix*.17}%
+\contentsline {chapter}{在读期间取得的科研成果}{28}{appendix*.18}%
 \contentsfinish 
