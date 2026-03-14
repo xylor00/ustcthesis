@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  11 MAR 2026 19:59
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  15 MAR 2026 05:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1248,36 +1248,9 @@ LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
 
 [3]
 
-[4]
+[4])
 
 [5]
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 8.97887pt on input line 72.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 5.96356pt on input line 72.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 4.96964pt on input line 72.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 8.97969pt on input line 72.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.96411pt on input line 72.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 4.9701pt on input line 72.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 8.9779pt on input line 72.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.96292pt on input line 72.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 4.9691pt on input line 72.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 8.54218pt on input line 72.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 5.67352pt on input line 72.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 4.72794pt on input line 72.
-)
-
-[6]
 \openout2 = `chapters/relevant_theories.aux'.
 
  (./chapters/relevant_theories.tex
@@ -1289,63 +1262,153 @@ Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=la
 Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+)
 
-
-[7
-
-
-
-
-])
-
-[8]
-\openout2 = `chapters/flevel_feature.aux'.
-
- (./chapters/flevel_feature.tex
-第3章
-
-
-[9
+[6
 
 
 
 
 ]
 
+[7]
+\openout2 = `chapters/flevel_feature.aux'.
+
+ (./chapters/flevel_feature.tex
+第3章
+File: figures/BYOL.png Graphic file (type bmp)
+<figures/BYOL.png>
+
+
+[8
+
+
+
+
+]
+File: figures/dataaug.png Graphic file (type bmp)
+<figures/dataaug.png>
+
+
+[9]
+
 [10]
 
 [11]
 
-[12])
+[12]
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
+(Font)              scaled to size 10.97418pt on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
+(Font)              scaled to size 7.68188pt on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
+(Font)              scaled to size 5.48708pt on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
+(Font)              scaled to size 10.97519pt on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
+(Font)              scaled to size 7.6826pt on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
+(Font)              scaled to size 5.48758pt on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
+(Font)              scaled to size 10.973pt on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
+(Font)              scaled to size 7.68106pt on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
+(Font)              scaled to size 5.4865pt on input line 111.
+LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
+(Font)              scaled to size 10.44044pt on input line 111.
+LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
+(Font)              scaled to size 7.30827pt on input line 111.
+LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
+(Font)              scaled to size 5.22021pt on input line 111.
+
 
 [13]
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+[]|\TU/TimesNewRoman(0)/m/n/11.04124 Bittorrent, Facetime,
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 153--154
+\TU/TimesNewRoman(0)/m/n/11.04124 FTP, Gmail, MySQL,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+\TU/TimesNewRoman(0)/m/n/11.04124 Weibo, WorldOfWar-
+ []
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 154--155
+[]|\TU/TimesNewRoman(0)/m/n/11.04124 Cridex, Geodo, Htbot,
+ []
+
+
+Overfull \hbox (26.97398pt too wide) in paragraph at lines 156--156
+[]|[]| 
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 158--159
+[]|\TU/TimesNewRoman(0)/m/n/11.04124 Vimeo, Youtube, Net-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+[]|\TU/TimesNewRoman(0)/m/n/11.04124 Facebook, Hangouts,
+ []
+
+
+Overfull \hbox (13.14008pt too wide) in paragraph at lines 163--163
+[]|[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+[]|\TU/TimesNewRoman(0)/m/n/11.04124 Thunderbird, IMAP,
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 165--166
+[]|\TU/TimesNewRoman(0)/m/n/11.04124 Vimeo, Youtube, Spo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+[]|\TU/TimesNewRoman(0)/m/n/11.04124 Facebook, Hangouts,
+ []
+
+)
+
+[14]
+
+[15]
 \openout2 = `chapters/plevel_feature.aux'.
 
  (./chapters/plevel_feature.tex
 第4章
 
 
-[14
+[16
 
 
 
 
 ]
 
-[15]
+[17]
 
-[16]
+[18])
 
-[17])
-
-[18]
+[19]
 \openout2 = `chapters/conclusion.aux'.
 
  (./chapters/conclusion.tex
 第5章
 )
 
-[19
+[20
 
 
 
@@ -1355,136 +1418,135 @@ Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=la
 
  (./chapters/floats.tex
 第6章
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 13.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 10.97418pt on input line 13.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 7.68188pt on input line 13.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 5.48708pt on input line 13.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 10.97519pt on input line 13.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.6826pt on input line 13.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.48758pt on input line 13.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 10.973pt on input line 13.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 7.68106pt on input line 13.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.4865pt on input line 13.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 10.44044pt on input line 13.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 7.30827pt on input line 13.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 5.22021pt on input line 13.
 File: figures/ustc-badge.pdf Graphic file (type pdf)
 <use figures/ustc-badge.pdf>
 
 
-[20
+[21
 
 
 
 
 ])
 
-[21]
+[22]
 \openout2 = `chapters/math.aux'.
 
  (./chapters/math.tex
 第7章
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
+(Font)              scaled to size 8.97887pt on input line 8.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
+(Font)              scaled to size 5.96356pt on input line 8.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
+(Font)              scaled to size 4.96964pt on input line 8.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
+(Font)              scaled to size 8.97969pt on input line 8.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
+(Font)              scaled to size 5.96411pt on input line 8.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
+(Font)              scaled to size 4.9701pt on input line 8.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
+(Font)              scaled to size 8.9779pt on input line 8.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
+(Font)              scaled to size 5.96292pt on input line 8.
+LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
+(Font)              scaled to size 4.9691pt on input line 8.
+LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
+(Font)              scaled to size 8.54218pt on input line 8.
+LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
+(Font)              scaled to size 5.67352pt on input line 8.
+LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
+(Font)              scaled to size 4.72794pt on input line 8.
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 (Font)              scaled to size 12.74046pt on input line 17.
 
 
-[22
+[23
 
 
 
 
 ]
 
-[23]
+[24]
 \c@observation=\count376
 )
 
-[24]
+[25]
 \openout2 = `chapters/citations.aux'.
 
  (./chapters/citations.tex
 第8章
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 19.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 19.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 20.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 20.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 21.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 21.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 22.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 22.
 
 
-Package natbib Warning: Citation `tlc2' on page 25 undefined on input line 22.
+Package natbib Warning: Citation `tlc2' on page 26 undefined on input line 22.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 23.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 23.
 
 
-Package natbib Warning: Citation `knuth84' on page 25 undefined on input line 23.
+Package natbib Warning: Citation `knuth84' on page 26 undefined on input line 23.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 34.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 34.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 35.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 35.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 36.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 36.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 37.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 37.
 
 
-Package natbib Warning: Citation `tlc2' on page 25 undefined on input line 37.
+Package natbib Warning: Citation `tlc2' on page 26 undefined on input line 37.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 38.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 38.
 
 
-Package natbib Warning: Citation `knuth84' on page 25 undefined on input line 38.
+Package natbib Warning: Citation `knuth84' on page 26 undefined on input line 38.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 50.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 50.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 51.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 51.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 52.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 52.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 53.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 53.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 54.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 54.
 
 
-Package natbib Warning: Citation `tlc2' on page 25 undefined on input line 54.
+Package natbib Warning: Citation `tlc2' on page 26 undefined on input line 54.
 
 
-Package natbib Warning: Citation `knuth86a' on page 25 undefined on input line 55.
+Package natbib Warning: Citation `knuth86a' on page 26 undefined on input line 55.
 
 
-Package natbib Warning: Citation `knuth84' on page 25 undefined on input line 55.
+Package natbib Warning: Citation `knuth84' on page 26 undefined on input line 55.
 
 )
 
-[25
+[26
 
 
 
@@ -1497,7 +1559,7 @@ No file main.bbl.
 附录 A
 )
 
-[26
+[27
 
 
 
@@ -1507,7 +1569,7 @@ No file main.bbl.
 
  (./chapters/acknowledgements.tex)
 
-[27
+[28
 
 
 
@@ -1518,7 +1580,7 @@ No file main.bbl.
 
  (./chapters/achievements.tex)
 
-[28
+[29
 
 
 
@@ -1532,23 +1594,16 @@ Package natbib Warning: There were undefined citations.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 93F8227D150A4D469CA2E5E97A06B86F;14775
-(rerunfilecheck)             After:  D27E93A3CE32BE6E69424E43A25B7AC7;14297.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 0D8D3AEA7AA26299AFFDBC4B5C7823A8;11711.
  ) 
 Here is how much of TeX's memory you used:
- 30489 strings out of 475796
- 673701 string characters out of 5774034
- 1159626 words of memory out of 5000000
- 52886 multiletter control sequences out of 15000+600000
- 566704 words of font info for 184 fonts, out of 8000000 for 9000
+ 30482 strings out of 475796
+ 671969 string characters out of 5774034
+ 1156594 words of memory out of 5000000
+ 52870 multiletter control sequences out of 15000+600000
+ 566752 words of font info for 190 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  106i,15n,127p,1847b,2768s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (42 pages).
+Output written on main.pdf (43 pages).

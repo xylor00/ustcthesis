@@ -11,6 +11,11 @@
 \subsection{池化层}
 \subsection{全连接层}
 
+\section{深度学习概述}
+\subsection{残差网络模块}
+\subsection{多层感知机}
+\subsection{注意力机制}
+
 \section{BYOL模型概述}
 
 原版的BYOL模型处理对象为二维图像，目标是学习一个表示yθ，该表示随后可用于下游任务。BYOL使用两个神经网络进行学习：在线网络和目标网络。在线网络由一组权重 θ 定义，包含三个阶段：编码器（encoder）fθ，投影器（projector）gθ，预测器（predictor）qθ。目标网络具有与在线网络相同的架构，但使用另一组权重ξ。目标网络为训练在线网络提供回归目标（regression targets），其参数ξ是在线参数θ的指数移动平均值。更精确地说，给定一个目标衰减率（target decay rate）τ∈[0, 1]，在每次训练步骤后执行以下更新：ξ←τξ+(1-τ)θ。
@@ -25,28 +30,4 @@ BYOL 的动态更新过程总结如下：
  
 训练结束时，仅保留编码器 fθ
 
-\section{注意力机制概述}
-
 \section{本章小结}
-
-\section{论文章节安排}
-
-\subsection{二级节标题}
-
-\subsubsection{三级节标题}
-
-本模板 \pkg{ustcthesis} 是中国科学技术大学本科生和研究生学位论文的 \LaTeX{}
-模板, 按照《中国科学技术大学研究生学位论文撰写手册》（最近在修订中,以下简称《撰写手册》）和
-《\href{https://www.teach.ustc.edu.cn/?attachment_id=13867}
-{中国科学技术大学本科毕业论文（设计）格式}》的要求编写。
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-deserunt mollit anim id est laborum.
-
-

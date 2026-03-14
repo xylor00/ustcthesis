@@ -2,44 +2,93 @@
 
 \chapter{基于BYOL模型的流级特征分类方法}
 
-在本章中，我们将深入探讨本文所提出的基于 BYOL (Bootstrap Your Own Latent) 框架的流级特征提取模型。该模型旨在解决网络流量分析中标记数据匮乏的痛点，通过自监督学习机制，从原始流特征序列中挖掘深层次的语义表征。
+在本章中，我们将详细介绍本文所采用的基于自监督学习架构的流级特征分类模型。该模型核心基于非对称对比学习架构 BYOL，通过在无标签的流量数据上进行自编码学习，提取具有强鲁棒性的流级特征表示。原版的BYOL模型处理对象为二维图像，我们对其编码器，增强函数进行了调整，使其能够满足网络流量类型数据的特征提取需求。模型通过使用差异化的增强，构造两种不同的数据包长度序列流量变体，并将同一流量的两个变体输入双网并行架构，进行适当的映射，使二者在高维空间中距离拉近，从而提取出经过增强变化后，两个变体之间共有的，具有鲁棒性的流级别特征。
 
-\section{BYOL 自监督学习框架总体设计}
-BYOL 是一种革新性的自监督学习框架，其核心优势在于无需负样本对（Negative Pairs）即可有效避免对比学习中的表征崩溃（Representation Collapse）问题。
+\section{系统模型}
+BYOL（Bootstrap Your Own Latent）是一种基于自监督学习的图像表示学习方法，其核心思想是通过两个神经网络的协同训练实现特征学习，从而为下游任务学习一种高质量的表示方法。该方法的总体架构由两个具有对称结构但更新机制与参数相互独立的神经网络组成：在线网络（Online Network）与目标网络（Target Network）。
 
-\subsection{双网协同架构}
-模型的总体架构由两个具有对称结构但更新机制迥异的神经网络组成：在线网络（Online Network）与目标网络（Target Network）。在线网络 ($\theta$)：是在线学习的主体，由编码器（Encoder）、投影器（Projector）和预测器（Predictor）三部分级联而成。它通过直接计算梯度并利用优化器进行参数更新。目标网络 ($\xi$)：充当在线网络的“导师”，仅包含编码器和投影器。目标网络的参数不参与梯度下降，而是通过在线网络参数的指数移动平均（EMA）进行平滑演进。
+在线网络是在线学习的主体，由一组权重$\theta $定义，包含三个组成部分：编码器（$f_\theta $）、投影器（$g_\theta $）和预测器（$q_\theta $）。它通过梯度下降法来优化参数，学习图像的特征表示。
 
-\subsection{预测任务的本质}
-BYOL 的训练目标是：给定同一输入数据的两个增强视图 $v$ 和 $v'$，在线网络尝试根据视图 $v$ 的表征来预测目标网络对视图 $v'$ 生成的投影表征。这种“自预测”机制迫使模型提取那些在不同扰动下依然保持稳定的本质特征。
+目标网络在训练中充当在线网络的“导师”，其参数$\xi $由另一组权重定义，仅包含编码器（$f_\xi $）和投影器（$g_\xi $）两个组成部分。目标网络的参数$\xi $通过在线网络参数$\theta $的指数移动平均值（EMA）进行更新。目标网络为在线网络提供稳定的回归目标，同时通过梯度停止机制避免直接参与梯度更新，这种设计使得目标网络能够逐步逼近在线网络的状态。
 
-\section{基于 1D-CNN 的编码器（Encoder）细节}
-由于流级特征（如包间隔、包大小等）在物理意义上具有序列属性，传统的 ResNet 等图像骨干网并不适用。本文设计了名为 Simple1DEncoder 的一维卷积神经网络作为骨干架构。
+这种设计使得目标网络能够逐步逼近在线网络的状态，同时避免模型坍塌，从而提升表示学习的鲁棒性。如图~\ref{fig:BYOL}。
 
-\subsection{网络层级深度解析}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=1\textwidth]{BYOL.png}
+  \bicaption{BYOL模型框架}{}
+  \label{fig:BYOL}
+\end{figure}
+
+\section{增强函数}
+在 BYOL 模型中数据增强操作对于学习良好的数据表征起着至关重要的作用。首先，不同的数据增强操作引入不同的扰动，生成不同增强视角下的样本，模型从中捕捉数据的不变特征，使其在无需负样本的情况下实现高效的特征学习，从而为下游任务提供支持。因此，设计合理的增强函数对于提升模型的性能至关重要。
+
+真实网络环境的复杂性体现在其多变性和不可预测性，尤其是面对网络拥塞、延迟以及带宽波动等问题。如图~\ref{fig:dataaug}所示，这些网络环境问题可能会导致出现丢包、数据包乱序、数据包重复等问题，拥塞常常会导致数据包丢失，因为路由器或交换机会因为缓存容量不足而被迫丢弃无法及时转发的数据包。其次，为了应对丢包现象，许多传输层协议会启动重传机制，即发送方在一定时间内未收到确认响应时，重新发送已发出的数据包，以保证数据的完整性。另外，原本有序发送的数据包在传输过程中可能因为不同路径的传输延迟差异而到达接收端的顺序发生改变，导致数据包的乱序。Xie人[61] 的研究表明目前基于TCP可靠传输的数据包长度序列的三个主要变化，即数据包序列移位、数据包序列重复和数据包大小变化。而基于UDP的传输方式则还可能出现数据包丢失的情况。通过设计合适的数据增强方式，模拟真实网络环境和加密技术对于流量的影响，可以让模型学习到隐含的本质规则和语义。针对流级别特征提取任务，我们设计了两种增强函数，分别为噪声注入和尺度缩放与特征遮蔽。这两种增强函数能够模拟网络流量数据中的常见变异情况，增强模型的鲁棒性和泛化能力。
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=1\textwidth]{dataaug.png}
+  \bicaption{数据包序列变化}{}
+  \label{fig:dataaug}
+\end{figure}
+
+\subsection{增强函数 1：噪声注入}
+第一个增强函数为噪声注入。真实的物理网络中，由于MTU限制、中继设备重新分片、协议栈填充或TCP粘包拆包等原因，数据包长度并非一成不变，个别数据包可能因为网络条件的变化而出现长度波动。噪声能模拟这种不确定性。通过向特征向量添加均值为 0、标准差为 0.05 的随机噪声，模型就能够模拟网络测量过程中产生的个别数据包长度变化现象，从而提升模型对网络环境扰动的鲁棒性，本文定义了基于高斯分布的加性噪声变换 $\mathcal{T}_{noise}$。对于输入的流级特征序列 $\mathbf{x} \in \mathbb{R}^{L}$，变换后的输出为：
+$$
+\mathcal{T}_{noise}(\mathbf{x}) = \mathbf{x} + \eta, \quad \eta \sim \mathcal{N}(0, \sigma^2)
+$$
+其中，$\sigma = 0.05$，$\mathbf{x} \in \mathbb{R}^{L}$ 为原始输入序列，$\eta$ 为随机生成的噪声，服从均值为 0、标准差为 0.05的正态分布。
+
+\subsection{增强函数 2：尺度缩放与随机遮蔽}
+第二个增强函数为尺度缩放与随机遮蔽。不同层级的隧道协议（如 VPN, TLS, IPv6 额外头部）会对原始载荷添加不同大小的头部，从而使得整个流的数据包长度均发生变化。尺度缩放能让模型学会忽略绝对大小，转而关注包与包之间的相对比例关系。为了模拟这一现象，定义尺度缩放变换 $\mathcal{T}_{scale}$ 为：
+$$
+\mathcal{T}_{scale}(\mathbf{x}) = \alpha \cdot \mathbf{x}, \quad \alpha \sim \mathcal{U}(1-\epsilon, 1+\epsilon)
+$$
+其中$\alpha$ 是为每个样本独立生成的缩放因子，服从区间为 $[0.8, 1.2]$ 的均匀分布（即 $\epsilon=0.2$）。
+
+拥塞的网络环境可能会导致非可靠传输协议传输的数据流发生数据包丢失现象。随机遮蔽则可以模拟数据包在传输过程中丢失或被截断的场景，确保模型在信息不全的情况下依然能做出准确判断。定义掩码变换 $\mathcal{T}_{mask}$。首先构造一个二值掩码张量 $\mathbf{M} \in \{0, 1\}^{L}$：
+$$
+M_{i,j} =\begin{cases}0, & \text{with probability } P_{mask} \\1, & \text{with probability } 1 - P_{mask}\end{cases}
+$$
+随机遮蔽变换为：
+$$
+\mathcal{T}_{mask}(\mathbf{x}) = \mathbf{x} \odot \mathbf{M}
+$$
+其中，$P_{mask}$ 是遮蔽概率，设定为 0.1。通过强制移除 $10\%$ 的特征信息，迫使在线网络学习利用剩余维度的关联性来重构整体表征，从而提高模型在数据包丢失环境下的判别能力。
+
+通过级联尺度缩放与随机遮蔽，第二个增强函数构建了一个信息更加匮乏的目标视图，强迫模型深入挖掘特征间的内在关联，从而避免表征崩溃。
+
+\section{模型架构}
+\subsection{编码器}
+由于流级特征（如包间隔、包大小等）在物理意义上具有序列属性，传统的 ResNet 等图像骨干网并不适用。本文使用一维卷积神经网络作为骨干架构。
+
+输入的原始数据为数据包长度序列，编码器使用1D-CNN进行特征提取。编码器由多个卷积层和池化层组成，能够捕捉数据包长度序列中的局部和全局特征。卷积层通过滑动窗口操作提取局部特征，而池化层则通过下采样操作减少特征图的尺寸，保留重要信息并提高模型的鲁棒性。
+
 编码器的设计遵循了“特征升维、空间压缩”的原则，具体结构如下：输入层：接收经过标准化的 1D 向量，形状为 $(B, 1, 16)$，其中 $B$ 为批处理大小，1 为通道数，16 为选定的流级特征维度。多级卷积特征提取：第一阶段：使用 128 个大小为 3 的卷积核，配合填充（Padding）保持序列长度，通过 BatchNorm1d 稳定分布并经过 ReLU 激活。此阶段初步捕捉特征间的局部组合关系。第二阶段：将通道数提升至 512，进一步挖掘高阶的非线性空间相关性。第三阶段：将特征图维度扩展至 1024。这种极宽的网络设计有助于在自监督环境下记录更丰富的特征组合，为下游分类任务留出充足的特征冗余。全局特征聚合：采用 AdaptiveAvgPool1d(1) 将 16 维的长度压缩为 1，实现平移不变性，最后通过 Flatten 层展平为 1024 维的向量。特征映射输出：通过一个线性层将向量降维至 256 维，作为最终的表征向量 $h$。
 
 \subsection{投影器与预测器设计}
-投影器（Projector）：采用 MLP 结构，包含 4096 个隐藏层神经元，将编码器的输出映射到更高维的度量空间。预测器（Predictor）：仅存在于在线网络中，用于打破对称性，防止模型输出常数解。
+投影器（Projector）：采用 MLP 结构，包含 4096 个隐藏层神经元，将编码器的输出映射到更高维的度量空间。预测器（Predictor）：仅存在于在线网络中，用于打破对称性，防止模型输出常数解，其结构为一个隐藏层包含 512 个神经元的 MLP，输出维度与投影器相同。
 
-\section{流量数据增强函数（Augmentation）}
-数据增强是自监督学习构建正样本对的基石。针对网络流量数据的高敏感性，我们设计了两种互补的增强策略。
+\section{训练方法}
 
-\subsection{增强函数 A：高斯噪声注入}
-该策略通过 RandomGaussianNoise 向特征向量添加均值为 0、标准差为 0.05 的随机噪声。设计动机：模拟网络测量过程中的随机误差（如时戳抖动、包长度偏差）。数学形式：$x_{aug1} = x + z, \quad z \sim \mathcal{N}(0, 0.05^2)$。
+\subsection{损失函数}
+在 BYOL 方法中，损失函数是模型优化的核心部分，它通过归一化处理和均方误差衡量在线网络的预测与目标网络的投影之间的差异，从而确保模型稳定收敛。为了增强鲁棒性并避免模型坍塌，BYOL 引入了对称损失，即将两个增强视图进行交换，然后分别计算两次的损失函数并相加，从而得到最终总的对称损失。通过最小化对称损失函数，模型能够在不依赖负样本的情况下学习到高质量的图像表示。
 
-\subsection{增强函数 B：尺度缩放与特征遮蔽}
-该策略组合了 RandomScale 和 RandomMasking 两种变换：随机缩放 (Scaling)：在 $[0.8, 1.2]$ 的区间内随机选取缩放因子 $s$，对整个序列进行线性缩放。动机：模拟不同吞吐量或采集频率下的特征值偏移，增强模型对特征绝对值的鲁棒性。随机遮蔽 (Masking)：以 10\% 的比例随机选择特征位并强制置零。动机：这是一种类似于掩码语言模型（MLM）的思想，迫使模型利用特征间的关联性（例如，利用“包数量”和“持续时间”推断缺失的“速率”信息）来补全表征。
+在特征投影处理后，两个流量序列增强变体分别通过在线网络和目标网络生成投影向量 $z_{\theta}$ 和 $z'_{\xi}$。此时，在线网络的预测器将 $z_{\theta}$ 将通过在线网络处理的流量，经过公式（1）映射处理，得到预测向量 $q_{\theta}(z_{\theta})$。而经过目标网络处理的流量则无需做更多处理。
+$$q_{\theta}\left(z_{\theta}\right)=W_{\theta} \sigma\left(B N\left(W_{\theta} z_{\theta}+b_{\theta}\right)\right)+b_{\theta}$$
 
-\section{损失函数与参数演进机制}
+其中，$W_{\theta}$ 和 $b_{\theta}$ 分别是预测器的权重矩阵和偏置向量，$BN$ 表示批归一化层，$\sigma$ 是非线性激活函数ReLU。预测向量 $q_{\theta}(z_{\theta})$ 的维度与目标投影向量 $z'_{\xi}$ 相同，确保两者在同一特征空间中进行比较。接着，模型通过最小化预测向量 $q_{\theta}(z_{\theta})$ 与目标投影向量 $z'_{\xi}$ 之间的均方误差来训练。如公式（2，3）所示，先对预测向量$q_{\theta}(z_{\theta})$和目标投影向量$z'_{\xi}$进行$L2$正则化，得到$\bar{q}_{\theta}(z_{\theta})$和$\bar{z}'_{\xi}$，最小化均方误差，确保在线网络的预测向量能够尽可能接近目标网络的投影向量。最终的损失函数采用对称化处理，即交换两个增强视图的角色，分别计算两次损失并相加，以增强模型的鲁棒性和稳定性。
+$$
+\mathcal{L}_{\theta,\xi} \triangleq \| \bar{q}_\theta(z_\theta) - \bar{z}'_\xi \|_2^2 = 2 - 2 \cdot \frac{\langle q_\theta(z_\theta), z'_\xi \rangle}{\| q_\theta(z_\theta) \|_2 \cdot \| z'_\xi \|_2}$$
+$$
+\mathcal{L}_{\theta,\xi}^{BYOL} = \mathcal{L}_{\theta,\xi} + \tilde{\mathcal{L}}_{\theta,\xi}
+$$
 
-\subsection{余弦相似度损失模型}
-通过最小化预测向量 $q_{\theta}(z_1)$ 与目标投影向量 $z'_2$ 之间的均方误差来训练。在进行 $L_2$ 归一化后，该损失函数等价于余弦相似度损失：$$L = 2 - 2 \cdot \frac{\langle q_{\theta}(z_1), z'_2 \rangle}{\|q_{\theta}(z_1)\|_2 \cdot \|z'_2\|_2}$$最终损失函数采用对称化处理，即交换 $z_1$ 和 $z_2$ 后再次计算并求均值，确保模型能从两个方向学习一致性表征。
+\subsection{指数移动平均值（EMA）更新机制}
+为了保证学习目标的稳定性，目标网络的参数 $\xi$ 遵循以下更新规则，在每个训练步骤中，给定一个预设的衰减率m，目标网络的参数会根据衰减率，通过在线网络的参数进行加权更新：
+$$\xi_t = m \cdot \xi_{t-1} + (1 - m) \cdot \theta_t$$
 
-\subsection{动量更新（EMA）机制}
-为了保证学习目标的稳定性，目标网络的参数 $\xi$ 遵循以下更新规则：$$\xi_t = m \cdot \xi_{t-1} + (1 - m) \cdot \theta_t$$动量系数 $m$ 初始设定为 0.996。这种设计使得目标网络像是一个带有长时记忆的滤波器，能够过滤在线网络在训练初期的随机震荡。
-
-\section{训练优化策略与鲁棒性设计}
+其中，$\xi $是目标网络的参数，$\theta$是在线网络的参数，$m$为衰减率，用以控制目标网络参数的更新速度。在本研究中，我们将衰减率 $m$ 设置为 0.996，这意味着目标网络的参数更新较为缓慢，能够提供一个稳定的学习目标，从而促进在线网络的有效学习。
 
 \subsection{学习率调度与 AdamW 优化}
 我们采用 AdamW 优化器，设置学习率为 $2 \times 10^{-5}$。为了精细调节训练后期参数，引入了 ReduceLROnPlateau 调度器，当验证集损失连续 15 个 Epoch 不再下降时，将学习率乘以 0.5。
@@ -47,48 +96,92 @@ BYOL 的训练目标是：给定同一输入数据的两个增强视图 $v$ 和 
 \subsection{针对抖动的回溯策略}
 在自监督学习中，模型容易陷入局部最优或出现梯度抖动。本文代码实现了一种创新的**“回溯重置”机制**：当连续 20 个 Epoch 验证集损失未创新低时，系统自动判定为训练陷入僵局。此时强制加载此前保存的最佳模型参数，并对学习率进行衰减，同时重置优化器状态。这种策略有效地解决了深度模型在小样本流数据集上的过拟合及不稳定性问题。
 
-\subsection{训练过程监控}
-模型设置了高达 500 个 Epoch 的训练上限，并配备了耐心值为 100 的早停机制（Early Stopping），以平衡充分收敛与训练效率。
-
-
-\section{系统模型}
-
-在本章中，我们将详细介绍本文所采用的基于自监督学习架构的流级特征分类模型。该模型核心基于非对称对比学习架构 BYOL，通过在无标签的流量数据上进行自编码学习，提取具有强鲁棒性的流级特征表示。原版的BYOL模型处理对象为二维图像，我们对其编码器，增强函数和参数设置进行了改进，以适应网络流量数据的特征提取需求。通过使用差异化的增强，构造两种不同的数据包长度序列流量变体，并将同一流量的原型和变体进行适当的映射，使二者在高维空间中距离拉近，从而提取出原型和变体之间具有鲁棒性的流级别特征。
-
-\subsection{BYOL模型编码器}
-
-输入的原始数据为数据包长度序列，编码器使用1D-CNN进行特征提取。编码器由多个卷积层和池化层组成，能够捕捉数据包长度序列中的局部和全局特征。卷积层通过滑动窗口操作提取局部特征，而池化层则通过下采样操作减少特征图的尺寸，保留重要信息并提高模型的鲁棒性。
-
-\subsection{BYOL模型增强函数}
-
-第一个增强函数为噪声，第二个增强函数为缩放与遮罩。真实的物理网络中，由于MTU限制、中继设备重新分片或协议栈填充，数据包长度并非一成不变。噪声能模拟这种不确定性。增强模型的鲁棒性。不同层级的隧道协议（如 VPN, TLS, IPv6 额外头部）会对原始载荷添加不同大小的头部。缩放能让模型学会忽略“绝对大小”，转而关注包与包之间的相对比例关系。遮罩可以模拟数据包在传输过程中丢失或被截断的场景，确保模型在信息不全的情况下依然能做出准确判断。
-
-\section{参数设置}
-
 \section{实验结果与分析}
 
 本工作在4个公开数据集上对改进后的BYOL模型进行了评估，通过与FS-NET模型进行对比，验证了改进后的BYOL模型在流级别特征提取方面的有效性和鲁棒性。实验结果表明，改进后的BYOL模型在多个数据集上均取得了优异的性能，显著提升了流级别特征的表达能力。
 
+\subsection{参数设置}
+
+在本研究中，模型的参数配置旨在平衡自监督学习的表征能力与网络流量数据的计算效率。首先，在骨干网络方面，我们设计了一个深层 1D-CNN 结构，特征通道从输入的 16 维逐步扩张至 1024 维，这种宽通道设计能够有效捕捉流量序列中微小的统计波动。编码器最终将高维特征压缩为 256 维的向量，作为下游任务的通用表征。在 BYOL 框架配置上，投影器（Projector）和预测器（Predictor）均采用了多层感知机（MLP）结构，其中隐藏层维度设定为 4096，这种“漏斗形”结构有助于在投影空间中进行更复杂的非线性变换，防止表征崩溃。为了维持训练过程中的目标稳定性，目标网络的指数移动平均（EMA）动量系数设定为 0.996，这确保了导师网络参数能够平滑地演进，从而为在线网络提供一致的优化目标。数据增强策略是模型捕捉不变性的核心。通过加入标准差为 0.05 的高斯噪声、0.8 至 1.2 倍的随机缩放以及 10\% 的特征掩码，模型被迫在数据不完整或存在测量误差的情况下提取核心语义特征。最后，在优化策略上，模型采用了 AdamW 优化器，并配合 $2 \times 10^{-5}$ 的低学习率以确保微调过程的稳定性。同时，引入了独特的回溯重置机制：当验证集损失连续 20 个 Epoch 无改善时，系统会回滚至历史最佳权重并降低学习率，这种策略结合 100 个 Epoch 的早停机制，极大地提升了模型在复杂流量数据集上的收敛质量。
+
+\begin{table}[htbp]
+\centering
+\caption{自监督学习模型及训练参数配置表}
+\label{tab:parameters}
+\begin{tabular}{llc}
+\hline
+\textbf{类别} & \textbf{参数名称} & \textbf{配置数值} \\ \hline
+\multirow{4}{*}{训练基础参数} & 批大小 (Batch Size) & 256 \\
+ & 最大迭代轮数 (Epochs) & 500 \\
+ & 初始学习率 (Learning Rate) & $2 \times 10^{-5}$ \\
+ & 优化器 (Optimizer) & AdamW \\ \hline
+\multirow{3}{*}{BYOL 核心参数} & 投影维度 (Projection Size) & 256 \\
+ & 隐藏层维度 (Hidden Size) & 4096 \\
+ & 动量系数 (EMA Decay) & 0.996 \\ \hline
+\multirow{4}{*}{编码器结构} & 输入特征维度 & 16 \\
+ & 卷积通道数 & 128 $\rightarrow$ 512 $\rightarrow$ 1024 \\
+ & 卷积核大小 (Kernel Size) & 3 \\
+ & 池化方式 & AdaptiveAvgPool1d \\ \hline
+\multirow{3}{*}{数据增强} & 高斯噪声标准差 & 0.05 \\
+ & 随机缩放范围 & [0.8, 1.2] \\
+ & 掩码比例 (Masking Ratio) & 0.1 \\ \hline
+\multirow{2}{*}{早停与调度} & 早停耐心值 (Patience) & 100 \\
+ & 抖动回溯阈值 (Decay Patience) & 20 \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{数据集设置}
+
+ISCX-VPNnonVPN 数据集包含从 VPN 和常规非 VPN 加密会话中捕获的网络流量，涵盖多种流量类型和应用程序。
+
+ISCX-TornonTor 数据集是另一个公开可用的资源。SCX-Tor 部分包含通过洋葱路由器 (Tor) 路由的流量，Tor 提供更高的匿名性，但也给可追溯性带来了更大的挑战。这两个 ISCX 数据集均根据网络流量行为分为六类。
+
+USTC-TFC 数据集是一个用于流量分类的公共资源，包含 20 种不同的网络流量类型。根据原始标签方案，我们将这些流量分为两大类：良性流量和恶意软件流量。
+
+VNAT 数据集提供由十个应用程序生成的已标记加密 VPN 流量，这些应用程序涵盖五大类（包括命令与控制，即 C2）。所有数据集的更多详细信息
+
+数据集被随机划分如下：60\% 用于训练，20\% 用于验证，20\% 用于测试。
+
+\begin{table}[htbp]
+\renewcommand{\arraystretch}{1.5}
+\caption{Dataset Traffic Types and Content}
+\begin{center}
+\begin{tabular}{|p{2.2cm}|c|p{3.8cm}|}
+\hline
+Dataset& Traffic type& Content \\
+\hline
+\multirow{5}{*}{USTC-TFC}& Benign & Bittorrent, Facetime, FTP, Gmail, MySQL, Outlook, Skype, SMB, Weibo, WorldOfWarcraft \\
+& Malware & Cridex, Geodo, Htbot, Miuref, Neris, Nsis-ay, Shifu, Tinba, Virut, Zeus \\
+\hline
+\multirow{6}{*}{ISCX-VPNnonVPN}& Email & Email, Gmail \\
+& Chat & ICQ, AIM \\
+& Streaming & Vimeo, Youtube, Netflix, Spotify \\
+& File transfer & FTPS, SFTP, scp, bittorrent \\
+& VoIP & Voipbuster \\
+& Socialapp & Facebook, Hangouts, Skype \\
+\hline
+\multirow{7}{*}{ISCX-TornonTor} & Email & Thunderbird, IMAP, POP \\
+& Chat & IAM, ICQ \\
+& Streaming & Vimeo, Youtube, Spotify \\
+& File transfer & P2P, FTP, SFTP, SSL \\
+& Web & Browsing, Google \\
+& Socialapp & Facebook, Hangouts, Skype, Twitter \\
+\hline
+\multirow{5}{*}{VNAT} & Streaming & Vimeo, Netflix, Youtube \\
+& File transfer & SFTP, RSYNC, SCP \\
+& Chat & Skype \\
+& VoIP & VoIP \\
+& C2 & SSH, RDP \\
+\hline
+\end{tabular}
+\label{tab:dataset}
+\end{center}
+\end{table}
+
+\subsection{对比算法}
+
+\subsection{算法结果分析}
+
+
 \section{本章小结}
-
-\section{论文章节安排}
-
-\subsection{二级节标题}
-
-\subsubsection{三级节标题}
-
-本模板 \pkg{ustcthesis} 是中国科学技术大学本科生和研究生学位论文的 \LaTeX{}
-模板, 按照《中国科学技术大学研究生学位论文撰写手册》（最近在修订中,以下简称《撰写手册》）和
-《\href{https://www.teach.ustc.edu.cn/?attachment_id=13867}
-{中国科学技术大学本科毕业论文（设计）格式}》的要求编写。
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-deserunt mollit anim id est laborum.
-
 
