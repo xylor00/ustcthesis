@@ -37,45 +37,44 @@
 \contentsline {subsection}{\numberline {3.5.4}算法结果分析}{16}{subsection.3.5.4}%
 \contentsline {section}{\numberline {3.6}本章小结}{16}{section.3.6}%
 \contentsline {chapter}{\numberline {第4章}基于融合特征的分类方法}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1}系统模型}{18}{section.4.1}%
-\contentsline {section}{\numberline {4.2}包级别特征提取}{18}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}报文首部截取与预处理}{18}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}增强型 N-gram 序列建模}{19}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}零填充策略 (Zero-Padding)}{19}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}交叉注意力特征融合机制}{19}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}线性投影与空间对齐}{20}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}交叉注意力流}{20}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}深度残差分类器设计 (Residual MLP)}{20}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}残差块 (Residual Block) 内部构造}{20}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}输出层逻辑}{20}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}训练方法}{20}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}学习率调度：OneCycleLR}{20}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}验证驱动的回溯降温策略}{21}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}评估指标设置}{21}{subsection.4.5.3}%
-\contentsline {section}{\numberline {4.6}实验结果与分析}{21}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}参数设置}{21}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}对比算法}{21}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}算法结果分析}{21}{subsection.4.6.3}%
-\contentsline {section}{\numberline {4.7}本章小结}{21}{section.4.7}%
-\contentsline {chapter}{\numberline {第5章}总结与展望}{22}{chapter.5}%
-\contentsline {section}{\numberline {5.1}本文工作总结}{22}{section.5.1}%
-\contentsline {section}{\numberline {5.2}未来展望}{22}{section.5.2}%
-\contentsline {chapter}{\numberline {第6章}插图和表格}{23}{chapter.6}%
-\contentsline {section}{\numberline {6.1}三线表}{23}{section.6.1}%
-\contentsline {section}{\numberline {6.2}插图}{23}{section.6.2}%
-\contentsline {section}{\numberline {6.3}算法环境}{24}{section.6.3}%
-\contentsline {chapter}{\numberline {第7章}数学}{25}{chapter.7}%
-\contentsline {section}{\numberline {7.1}数学符号}{25}{section.7.1}%
-\contentsline {section}{\numberline {7.2}数学公式}{26}{section.7.2}%
-\contentsline {section}{\numberline {7.3}量和单位}{26}{section.7.3}%
-\contentsline {section}{\numberline {7.4}定理和证明}{26}{section.7.4}%
-\contentsline {chapter}{\numberline {第8章}引用文献的标注}{28}{chapter.8}%
-\contentsline {section}{\numberline {8.1}顺序编码制}{28}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}角标数字标注法}{28}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}数字标注法}{28}{subsection.8.1.2}%
-\contentsline {section}{\numberline {8.2}著者-出版年制标注法}{28}{section.8.2}%
-\contentsline {chapter}{\numberline {附录 A}补充材料}{29}{appendix.A}%
-\contentsline {section}{\numberline {A.1}补充章节}{29}{section.A.1}%
-\contentsline {chapter}{致谢}{30}{appendix*.22}%
-\contentsline {chapter}{在读期间取得的科研成果}{31}{appendix*.23}%
+\contentsline {section}{\numberline {4.1}系统模型}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}包级别特征提取}{19}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}报文首部截取与预处理}{19}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}N-gram嵌入处理}{20}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}交叉注意力特征融合机制}{22}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}线性投影与空间对齐}{22}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}交叉注意力流}{22}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}深度残差分类器设计 (Residual MLP)}{23}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}残差块 (Residual Block) 内部构造}{23}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}输出层逻辑}{23}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}训练方法}{23}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}学习率调度：OneCycleLR}{23}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}验证驱动的回溯降温策略}{23}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}评估指标设置}{23}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}实验结果与分析}{24}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}参数设置}{24}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}对比算法}{24}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}算法结果分析}{24}{subsection.4.6.3}%
+\contentsline {section}{\numberline {4.7}本章小结}{24}{section.4.7}%
+\contentsline {chapter}{\numberline {第5章}总结与展望}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}本文工作总结}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}未来展望}{25}{section.5.2}%
+\contentsline {chapter}{\numberline {第6章}插图和表格}{26}{chapter.6}%
+\contentsline {section}{\numberline {6.1}三线表}{26}{section.6.1}%
+\contentsline {section}{\numberline {6.2}插图}{26}{section.6.2}%
+\contentsline {section}{\numberline {6.3}算法环境}{27}{section.6.3}%
+\contentsline {chapter}{\numberline {第7章}数学}{28}{chapter.7}%
+\contentsline {section}{\numberline {7.1}数学符号}{28}{section.7.1}%
+\contentsline {section}{\numberline {7.2}数学公式}{29}{section.7.2}%
+\contentsline {section}{\numberline {7.3}量和单位}{29}{section.7.3}%
+\contentsline {section}{\numberline {7.4}定理和证明}{29}{section.7.4}%
+\contentsline {chapter}{\numberline {第8章}引用文献的标注}{31}{chapter.8}%
+\contentsline {section}{\numberline {8.1}顺序编码制}{31}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}角标数字标注法}{31}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}数字标注法}{31}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}著者-出版年制标注法}{31}{section.8.2}%
+\contentsline {chapter}{\numberline {附录 A}补充材料}{32}{appendix.A}%
+\contentsline {section}{\numberline {A.1}补充章节}{32}{section.A.1}%
+\contentsline {chapter}{致谢}{33}{appendix*.25}%
+\contentsline {chapter}{在读期间取得的科研成果}{34}{appendix*.26}%
 \contentsfinish 
