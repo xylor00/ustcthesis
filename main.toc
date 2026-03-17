@@ -15,6 +15,7 @@
 \contentsline {subsection}{\numberline {2.2.1}残差网络模块}{6}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}多层感知机}{6}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}注意力机制}{6}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}交叉注意力机制}{6}{subsection.2.2.4}%
 \contentsline {section}{\numberline {2.3}BYOL模型概述}{6}{section.2.3}%
 \contentsline {section}{\numberline {2.4}本章小结}{7}{section.2.4}%
 \contentsline {chapter}{\numberline {第3章}基于BYOL模型的流级特征分类方法}{8}{chapter.3}%
@@ -44,37 +45,36 @@
 \contentsline {section}{\numberline {4.3}交叉注意力特征融合机制}{22}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}线性投影与空间对齐}{22}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}交叉注意力流}{22}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}深度残差分类器设计 (Residual MLP)}{23}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}残差块 (Residual Block) 内部构造}{23}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}输出层逻辑}{23}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}训练方法}{23}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}学习率调度：OneCycleLR}{23}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}验证驱动的回溯降温策略}{23}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}评估指标设置}{23}{subsection.4.5.3}%
-\contentsline {section}{\numberline {4.6}实验结果与分析}{24}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}参数设置}{24}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}对比算法}{24}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}算法结果分析}{24}{subsection.4.6.3}%
-\contentsline {section}{\numberline {4.7}本章小结}{24}{section.4.7}%
-\contentsline {chapter}{\numberline {第5章}总结与展望}{25}{chapter.5}%
-\contentsline {section}{\numberline {5.1}本文工作总结}{25}{section.5.1}%
-\contentsline {section}{\numberline {5.2}未来展望}{25}{section.5.2}%
-\contentsline {chapter}{\numberline {第6章}插图和表格}{26}{chapter.6}%
-\contentsline {section}{\numberline {6.1}三线表}{26}{section.6.1}%
-\contentsline {section}{\numberline {6.2}插图}{26}{section.6.2}%
-\contentsline {section}{\numberline {6.3}算法环境}{27}{section.6.3}%
-\contentsline {chapter}{\numberline {第7章}数学}{28}{chapter.7}%
-\contentsline {section}{\numberline {7.1}数学符号}{28}{section.7.1}%
-\contentsline {section}{\numberline {7.2}数学公式}{29}{section.7.2}%
-\contentsline {section}{\numberline {7.3}量和单位}{29}{section.7.3}%
-\contentsline {section}{\numberline {7.4}定理和证明}{29}{section.7.4}%
-\contentsline {chapter}{\numberline {第8章}引用文献的标注}{31}{chapter.8}%
-\contentsline {section}{\numberline {8.1}顺序编码制}{31}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}角标数字标注法}{31}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}数字标注法}{31}{subsection.8.1.2}%
-\contentsline {section}{\numberline {8.2}著者-出版年制标注法}{31}{section.8.2}%
-\contentsline {chapter}{\numberline {附录 A}补充材料}{32}{appendix.A}%
-\contentsline {section}{\numberline {A.1}补充章节}{32}{section.A.1}%
-\contentsline {chapter}{致谢}{33}{appendix*.25}%
-\contentsline {chapter}{在读期间取得的科研成果}{34}{appendix*.26}%
+\contentsline {section}{\numberline {4.4}深度残差分类器}{24}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}输入层}{24}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}深层残差主干网络}{24}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}输出层逻辑}{26}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}训练优化}{26}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}学习率调度}{26}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}实验结果与分析}{26}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}参数设置}{27}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}对比算法}{27}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}算法结果分析}{27}{subsection.4.6.3}%
+\contentsline {section}{\numberline {4.7}本章小结}{27}{section.4.7}%
+\contentsline {chapter}{\numberline {第5章}总结与展望}{28}{chapter.5}%
+\contentsline {section}{\numberline {5.1}本文工作总结}{28}{section.5.1}%
+\contentsline {section}{\numberline {5.2}未来展望}{28}{section.5.2}%
+\contentsline {chapter}{\numberline {第6章}插图和表格}{29}{chapter.6}%
+\contentsline {section}{\numberline {6.1}三线表}{29}{section.6.1}%
+\contentsline {section}{\numberline {6.2}插图}{29}{section.6.2}%
+\contentsline {section}{\numberline {6.3}算法环境}{30}{section.6.3}%
+\contentsline {chapter}{\numberline {第7章}数学}{31}{chapter.7}%
+\contentsline {section}{\numberline {7.1}数学符号}{31}{section.7.1}%
+\contentsline {section}{\numberline {7.2}数学公式}{32}{section.7.2}%
+\contentsline {section}{\numberline {7.3}量和单位}{32}{section.7.3}%
+\contentsline {section}{\numberline {7.4}定理和证明}{32}{section.7.4}%
+\contentsline {chapter}{\numberline {第8章}引用文献的标注}{34}{chapter.8}%
+\contentsline {section}{\numberline {8.1}顺序编码制}{34}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}角标数字标注法}{34}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}数字标注法}{34}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}著者-出版年制标注法}{34}{section.8.2}%
+\contentsline {chapter}{\numberline {附录 A}补充材料}{35}{appendix.A}%
+\contentsline {section}{\numberline {A.1}补充章节}{35}{section.A.1}%
+\contentsline {chapter}{致谢}{36}{appendix*.28}%
+\contentsline {chapter}{在读期间取得的科研成果}{37}{appendix*.29}%
 \contentsfinish 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  17 MAR 2026 02:52
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  18 MAR 2026 04:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1262,14 +1262,14 @@ Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=la
 Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-)
+
 
 [6
 
 
 
 
-]
+])
 
 [7]
 \openout2 = `chapters/flevel_feature.aux'.
@@ -1330,6 +1330,8 @@ LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
 (Font)              scaled to size 5.22021pt on input line 169.
 
+
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 211--212
 []|\TU/TimesNewRoman(0)/m/n/11.04124 Bittorrent, Facetime,
  []
@@ -1384,9 +1386,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--227
 []|\TU/TimesNewRoman(0)/m/n/11.04124 Facebook, Hangouts,
  []
 
-
-
-[15])
+)
 
 [16]
 
@@ -1418,19 +1418,36 @@ File: figures/ngram.png Graphic file (type bmp)
 [20]
 
 [21]
+File: figures/cross.png Graphic file (type bmp)
+<figures/cross.png>
+
 
 [22]
 
-[23])
+[23]
+File: figures/sort.png Graphic file (type bmp)
+<figures/sort.png>
+
 
 [24]
+
+[25]
+Overfull \hbox (4.30179pt too wide) in paragraph at lines 160--175
+ [][] 
+ []
+
+
+
+[26])
+
+[27]
 \openout2 = `chapters/conclusion.aux'.
 
  (./chapters/conclusion.tex
 第5章
 )
 
-[25
+[28
 
 
 
@@ -1444,14 +1461,14 @@ File: figures/ustc-badge.pdf Graphic file (type pdf)
 <use figures/ustc-badge.pdf>
 
 
-[26
+[29
 
 
 
 
 ])
 
-[27]
+[30]
 \openout2 = `chapters/math.aux'.
 
  (./chapters/math.tex
@@ -1484,91 +1501,91 @@ LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 (Font)              scaled to size 12.74046pt on input line 17.
 
 
-[28
+[31
 
 
 
 
 ]
 
-[29]
+[32]
 \c@observation=\count376
 )
 
-[30]
+[33]
 \openout2 = `chapters/citations.aux'.
 
  (./chapters/citations.tex
 第8章
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 19.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 19.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 20.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 20.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 21.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 21.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 22.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 22.
 
 
-Package natbib Warning: Citation `tlc2' on page 31 undefined on input line 22.
+Package natbib Warning: Citation `tlc2' on page 34 undefined on input line 22.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 23.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 23.
 
 
-Package natbib Warning: Citation `knuth84' on page 31 undefined on input line 23.
+Package natbib Warning: Citation `knuth84' on page 34 undefined on input line 23.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 34.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 34.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 35.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 35.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 36.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 36.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 37.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 37.
 
 
-Package natbib Warning: Citation `tlc2' on page 31 undefined on input line 37.
+Package natbib Warning: Citation `tlc2' on page 34 undefined on input line 37.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 38.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 38.
 
 
-Package natbib Warning: Citation `knuth84' on page 31 undefined on input line 38.
+Package natbib Warning: Citation `knuth84' on page 34 undefined on input line 38.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 50.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 50.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 51.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 51.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 52.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 52.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 53.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 53.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 54.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 54.
 
 
-Package natbib Warning: Citation `tlc2' on page 31 undefined on input line 54.
+Package natbib Warning: Citation `tlc2' on page 34 undefined on input line 54.
 
 
-Package natbib Warning: Citation `knuth86a' on page 31 undefined on input line 55.
+Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 55.
 
 
-Package natbib Warning: Citation `knuth84' on page 31 undefined on input line 55.
+Package natbib Warning: Citation `knuth84' on page 34 undefined on input line 55.
 
 )
 
-[31
+[34
 
 
 
@@ -1581,7 +1598,7 @@ No file main.bbl.
 附录 A
 )
 
-[32
+[35
 
 
 
@@ -1591,7 +1608,7 @@ No file main.bbl.
 
  (./chapters/acknowledgements.tex)
 
-[33
+[36
 
 
 
@@ -1602,7 +1619,7 @@ No file main.bbl.
 
  (./chapters/achievements.tex)
 
-[34
+[37
 
 
 
@@ -1617,15 +1634,15 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 886BD9DE7F75731552AED99E36CE54EA;11436.
+(rerunfilecheck)             Checksum: 20ECDD666C096F6AB3895D610D2F09C1;11122.
  ) 
 Here is how much of TeX's memory you used:
- 30519 strings out of 475796
- 672685 string characters out of 5774034
- 1156472 words of memory out of 5000000
- 52904 multiletter control sequences out of 15000+600000
+ 30535 strings out of 475796
+ 672563 string characters out of 5774034
+ 1156279 words of memory out of 5000000
+ 52918 multiletter control sequences out of 15000+600000
  566752 words of font info for 190 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  106i,15n,127p,1847b,2768s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (48 pages).
+Output written on main.pdf (51 pages).
