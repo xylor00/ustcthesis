@@ -189,7 +189,6 @@ $$\xi_t = \tau \cdot \xi_{t-1} + (1 - \tau) \cdot \theta_t$$
 \end{table}
 
 \subsection{数据集设置}
-
 ISCX-VPNnonVPN 数据集包含从 VPN 和常规非 VPN 加密会话中捕获的网络流量，涵盖多种流量类型和应用程序。
 
 ISCX-TornonTor 数据集是另一个公开可用的资源。SCX-Tor 部分包含通过洋葱路由器 (Tor) 路由的流量，Tor 提供更高的匿名性，但也给可追溯性带来了更大的挑战。这两个 ISCX 数据集均根据网络流量行为分为六类。
@@ -199,6 +198,8 @@ USTC-TFC 数据集是一个用于流量分类的公共资源，包含 20 种不�
 VNAT 数据集提供由十个应用程序生成的已标记加密 VPN 流量，这些应用程序涵盖五大类（包括命令与控制，即 C2）。所有数据集的更多详细信息
 
 数据集被随机划分如下：60\% 用于训练，20\% 用于验证，20\% 用于测试。
+
+采样方法TODO
 
 \begin{table}[htbp]
 \renewcommand{\arraystretch}{1.5}

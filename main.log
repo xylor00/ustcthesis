@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  18 MAR 2026 04:10
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  18 MAR 2026 22:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1255,13 +1255,6 @@ LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
 
  (./chapters/relevant_theories.tex
 第2章
-Missing character: There is no ∈ (U+2208) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 
 
 [6
@@ -1269,9 +1262,70 @@ Missing character: There is no ≜ (U+225C) in font Times New Roman/OT:script=la
 
 
 
-])
+]
 
 [7]
+Missing character: There is no 𝑊 (U+1D44A) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑊 (U+1D44A) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝐻 (U+1D43B) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝐻 (U+1D43B) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝐶 (U+1D436) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝐶 (U+1D436) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑊 (U+1D44A) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑊 (U+1D44A) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝐻 (U+1D43B) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝐻 (U+1D43B) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝐶 (U+1D436) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝐶 (U+1D436) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑖 (U+1D456) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑖 (U+1D456) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑠 (U+1D460) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑠 (U+1D460) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑘 (U+1D458) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑘 (U+1D458) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑛 (U+1D45B) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑛 (U+1D45B) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑝 (U+1D45D) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑝 (U+1D45D) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑛 (U+1D45B) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑛 (U+1D45B) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑖 (U+1D456) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑖 (U+1D456) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑘 (U+1D458) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑘 (U+1D458) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑝 (U+1D45D) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑝 (U+1D45D) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑠 (U+1D460) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑠 (U+1D460) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+
+
+[8]
+
+[9]
+Missing character: There is no 𝛼 (U+1D6FC) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 (U+1D6FC) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 (U+1D6FC) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 (U+1D6FC) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 (U+1D6FC) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 (U+1D6FC) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+
+
+[10]
+Missing character: There is no 𝑦 (U+1D466) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑦 (U+1D466) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑖 (U+1D456) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑖 (U+1D456) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑝 (U+1D45D) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑝 (U+1D45D) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑖 (U+1D456) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑖 (U+1D456) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑁 (U+1D441) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no 𝑁 (U+1D441) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+
+
+[11])
+
+[12]
 \openout2 = `chapters/flevel_feature.aux'.
 
  (./chapters/flevel_feature.tex
@@ -1280,7 +1334,7 @@ File: figures/BYOL.png Graphic file (type bmp)
 <figures/BYOL.png>
 
 
-[8
+[13
 
 
 
@@ -1290,20 +1344,20 @@ File: figures/dataaug.png Graphic file (type bmp)
 <figures/dataaug.png>
 
 
-[9]
+[14]
 
-[10]
+[15]
 File: figures/encoder.png Graphic file (type bmp)
 <figures/encoder.png>
 
 
-[11]
+[16]
 
-[12]
+[17]
 
-[13]
+[18]
 
-[14]
+[19]
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 169.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
 (Font)              scaled to size 10.97418pt on input line 169.
@@ -1331,66 +1385,66 @@ LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
 (Font)              scaled to size 5.22021pt on input line 169.
 
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 []|\TU/TimesNewRoman(0)/m/n/11.04124 Bittorrent, Facetime,
  []
 
 
-Underfull \hbox (badness 6859) in paragraph at lines 211--212
+Underfull \hbox (badness 6859) in paragraph at lines 212--213
 \TU/TimesNewRoman(0)/m/n/11.04124 FTP, Gmail, MySQL,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 \TU/TimesNewRoman(0)/m/n/11.04124 Weibo, WorldOfWar-
  []
 
 
-Underfull \hbox (badness 2205) in paragraph at lines 212--213
+Underfull \hbox (badness 2205) in paragraph at lines 213--214
 []|\TU/TimesNewRoman(0)/m/n/11.04124 Cridex, Geodo, Htbot,
  []
 
 
-Overfull \hbox (26.97398pt too wide) in paragraph at lines 214--214
+Overfull \hbox (26.97398pt too wide) in paragraph at lines 215--215
 []|[]| 
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 216--217
+Underfull \hbox (badness 3375) in paragraph at lines 217--218
 []|\TU/TimesNewRoman(0)/m/n/11.04124 Vimeo, Youtube, Net-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 []|\TU/TimesNewRoman(0)/m/n/11.04124 Facebook, Hangouts,
  []
 
 
-Overfull \hbox (13.14008pt too wide) in paragraph at lines 221--221
+Overfull \hbox (13.14008pt too wide) in paragraph at lines 222--222
 []|[]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 []|\TU/TimesNewRoman(0)/m/n/11.04124 Thunderbird, IMAP,
  []
 
 
-Underfull \hbox (badness 2368) in paragraph at lines 223--224
+Underfull \hbox (badness 2368) in paragraph at lines 224--225
 []|\TU/TimesNewRoman(0)/m/n/11.04124 Vimeo, Youtube, Spo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
 []|\TU/TimesNewRoman(0)/m/n/11.04124 Facebook, Hangouts,
  []
 
 )
 
-[16]
+[21]
 
-[17]
+[22]
 \openout2 = `chapters/plevel_feature.aux'.
 
  (./chapters/plevel_feature.tex
@@ -1399,14 +1453,14 @@ File: figures/90f.png Graphic file (type bmp)
 <figures/90f.png>
 
 
-[18
+[23
 
 
 
 
 ]
 
-[19]
+[24]
 Overfull \hbox (36.21162pt too wide) in paragraph at lines 29--39
  [][] 
  []
@@ -1415,39 +1469,39 @@ File: figures/ngram.png Graphic file (type bmp)
 <figures/ngram.png>
 
 
-[20]
+[25]
 
-[21]
+[26]
 File: figures/cross.png Graphic file (type bmp)
 <figures/cross.png>
 
 
-[22]
+[27]
 
-[23]
+[28]
 File: figures/sort.png Graphic file (type bmp)
 <figures/sort.png>
 
 
-[24]
+[29]
 
-[25]
+[30]
 Overfull \hbox (4.30179pt too wide) in paragraph at lines 160--175
  [][] 
  []
 
 
 
-[26])
+[31])
 
-[27]
+[32]
 \openout2 = `chapters/conclusion.aux'.
 
  (./chapters/conclusion.tex
 第5章
 )
 
-[28
+[33
 
 
 
@@ -1461,14 +1515,14 @@ File: figures/ustc-badge.pdf Graphic file (type pdf)
 <use figures/ustc-badge.pdf>
 
 
-[29
+[34
 
 
 
 
 ])
 
-[30]
+[35]
 \openout2 = `chapters/math.aux'.
 
  (./chapters/math.tex
@@ -1501,91 +1555,91 @@ LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 (Font)              scaled to size 12.74046pt on input line 17.
 
 
-[31
+[36
 
 
 
 
 ]
 
-[32]
+[37]
 \c@observation=\count376
 )
 
-[33]
+[38]
 \openout2 = `chapters/citations.aux'.
 
  (./chapters/citations.tex
 第8章
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 19.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 19.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 20.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 20.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 21.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 21.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 22.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 22.
 
 
-Package natbib Warning: Citation `tlc2' on page 34 undefined on input line 22.
+Package natbib Warning: Citation `tlc2' on page 39 undefined on input line 22.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 23.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 23.
 
 
-Package natbib Warning: Citation `knuth84' on page 34 undefined on input line 23.
+Package natbib Warning: Citation `knuth84' on page 39 undefined on input line 23.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 34.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 34.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 35.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 35.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 36.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 36.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 37.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 37.
 
 
-Package natbib Warning: Citation `tlc2' on page 34 undefined on input line 37.
+Package natbib Warning: Citation `tlc2' on page 39 undefined on input line 37.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 38.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 38.
 
 
-Package natbib Warning: Citation `knuth84' on page 34 undefined on input line 38.
+Package natbib Warning: Citation `knuth84' on page 39 undefined on input line 38.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 50.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 50.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 51.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 51.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 52.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 52.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 53.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 53.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 54.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 54.
 
 
-Package natbib Warning: Citation `tlc2' on page 34 undefined on input line 54.
+Package natbib Warning: Citation `tlc2' on page 39 undefined on input line 54.
 
 
-Package natbib Warning: Citation `knuth86a' on page 34 undefined on input line 55.
+Package natbib Warning: Citation `knuth86a' on page 39 undefined on input line 55.
 
 
-Package natbib Warning: Citation `knuth84' on page 34 undefined on input line 55.
+Package natbib Warning: Citation `knuth84' on page 39 undefined on input line 55.
 
 )
 
-[34
+[39
 
 
 
@@ -1598,7 +1652,7 @@ No file main.bbl.
 附录 A
 )
 
-[35
+[40
 
 
 
@@ -1608,7 +1662,7 @@ No file main.bbl.
 
  (./chapters/acknowledgements.tex)
 
-[36
+[41
 
 
 
@@ -1619,7 +1673,7 @@ No file main.bbl.
 
  (./chapters/achievements.tex)
 
-[37
+[42
 
 
 
@@ -1634,15 +1688,15 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 20ECDD666C096F6AB3895D610D2F09C1;11122.
+(rerunfilecheck)             Checksum: E32284619FE0C5DF1A3B58E9BBAFABF5;11252.
  ) 
 Here is how much of TeX's memory you used:
- 30535 strings out of 475796
- 672563 string characters out of 5774034
- 1156279 words of memory out of 5000000
- 52918 multiletter control sequences out of 15000+600000
+ 30544 strings out of 475796
+ 673162 string characters out of 5774034
+ 1156424 words of memory out of 5000000
+ 52927 multiletter control sequences out of 15000+600000
  566752 words of font info for 190 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  106i,15n,127p,1847b,2768s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (51 pages).
+Output written on main.pdf (56 pages).

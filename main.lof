@@ -1,17 +1,17 @@
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces BYOL模型框架}}{9}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 数据包序列变化}}{9}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 编码器结构}}{11}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces BYOL模型框架}}{14}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 数据包序列变化}}{14}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 编码器结构}}{16}{figure.caption.14}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 混淆情况}}{18}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces n-gram嵌入处理}}{21}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces 交叉注意力机制}}{23}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 分类器结构}}{25}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 混淆情况}}{23}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces n-gram嵌入处理}}{26}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces 交叉注意力机制}}{28}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 分类器结构}}{30}{figure.caption.21}%
 \addvspace {10.0pt}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces 图号、图题置于图的下方}}{30}{figure.caption.26}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces 图号、图题置于图的下方}}{35}{figure.caption.26}%
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
