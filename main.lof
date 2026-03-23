@@ -1,17 +1,24 @@
 \addvspace {10.0pt}
 \addvspace {10.0pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 卷积神经网络结构}}{9}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 卷积运算过程}}{10}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 两种池化方式}}{11}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces 常见的激活函数图像}}{12}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces 注意力机制处理过程}}{16}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces 对比学习过程}}{17}{figure.caption.19}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces BYOL模型框架}}{14}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 数据包序列变化}}{14}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 编码器结构}}{16}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces BYOL模型框架}}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 数据包序列变化}}{20}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 编码器结构}}{22}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 数据预处理流程}}{29}{figure.caption.25}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 混淆情况}}{23}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces n-gram嵌入处理}}{26}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces 交叉注意力机制}}{28}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 分类器结构}}{30}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 混淆情况}}{31}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces n-gram嵌入处理}}{34}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces 交叉注意力机制}}{36}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 分类器结构}}{38}{figure.caption.31}%
 \addvspace {10.0pt}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces 图号、图题置于图的下方}}{35}{figure.caption.26}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces 图号、图题置于图的下方}}{43}{figure.caption.36}%
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

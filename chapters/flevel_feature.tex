@@ -150,17 +150,90 @@ $$\xi_t = \tau \cdot \xi_{t-1} + (1 - \tau) \cdot \theta_t$$
 \section{训练优化}
 \subsection{学习率调度与 AdamW 优化}
 
-在本研究的模型优化阶段，我们采用了 AdamW 优化器。相比于传统的 Adam 算法，AdamW 通过将权重衰减与梯度更新解耦，能够更有效地提升模型的泛化能力。初始学习率设定为 $2 \times 10^{-5}$。为了实现训练全过程的精细化调控，引入了 ReduceLROnPlateau 学习率调度策略：当验证集损失在连续 15 个 Epoch 内未取得显著下降时，系统将触发学习率衰减机制，以 0.5 的衰减因子对当前学习率进行调整，旨在通过更小的步长探测损失函数空间的全局极小值点
+在本工作的模型优化阶段，我们采用了 AdamW 优化器。相比于传统的 Adam 算法，AdamW 通过将权重衰减与梯度更新解耦，能够更有效地提升模型的泛化能力。初始学习率设定为 $2 \times 10^{-5}$。为了实现训练全过程的精细化调控，引入了 ReduceLROnPlateau 学习率调度策略：当验证集损失在连续 15 个 Epoch 内未取得显著下降时，系统将触发学习率衰减机制，以 0.5 的衰减因子对当前学习率进行调整，旨在通过更小的步长探测损失函数空间的全局极小值点
 
 \subsection{针对抖动的回溯策略}
 针对自监督学习任务中常见的梯度抖动及局部最优陷阱问题，本文进一步提出并实现了一套基于参数回溯的重置机制。在实验观察中，深度模型在处理小样本流式数据集时，往往因其高度非凸的优化目标而陷入训练僵局。为此，若验证集损失在连续多个 Epoch 内未能刷新最优记录，系统将自动判定模型进入收敛瓶颈或过拟合状态。此时，算法将进行回溯处理。首先，强制回溯并加载历史保存的最优参数模型，接着，对学习率执行阶梯式衰减，最后，重置优化器的内部状态，以消除先前错误梯度的惯性影响。这一策略能够增强模型在复杂训练环境下的鲁棒性，并有效遏制过拟合现象。
-\section{实验结果与分析}
 
-本工作在4个公开数据集上对本工作提出的基于BYOL的流级别特征分类模型进行了评估，通过与FS-NET模型进行对比，验证了基于BYOL的流级别特征分类模型在流级别特征提取方面的有效性和鲁棒性。实验结果表明，的基于BYOL的流级别特征分类模型在多个数据集上均取得了优异的性能，显著提升了流级别特征的表达能力。
+\section{实验设计与结果分析}
+本节将对所提出的基于BYOL的流级别特征分类模型进行全面的实验评估。首先，我们将介绍实验环境的配置，包括硬件和软件环境。接着，详细介绍所使用的数据集及其预处理方法。随后，定义用于评估模型性能的评价指标，并说明模型训练过程中参数设置的细节。最后，与现有的流级别特征分类模型进行对比分析，展示本模型在多个数据集上的表现，并对实验结果进行深入分析。
+\subsection{实验环境}
+
+本工作使用的实验硬件设备为13th Gen Intel(R) Core(TM) i7-13700H (2.40 GHz)，16GB RAM，NVIDIA GeForce RTX 4060 GPU。软件环境方面，操作系统为Windows 11，使用Python 3.11作为主要编程语言。所需要的Python库主要包括 scapy，Pytorch，NumPy，Pandas，Scikit-learn 等。实验环境如表~\ref{table:device}所示：
+\begin{table}[h]
+  \centering
+  \begin{tabular}{cc}
+    \hline
+    \textbf{名称} & \textbf{类型} \\ \hline
+    处理器 & 13th Gen Intel(R) Core(TM) i7-13700H (2.40 GHz) \\
+    GPU & NVIDIA RTX 4060 \\
+    运行内存 & 16.0GB \\
+    操作系统 & Windows 11 \\
+    软件平台 & Python 3.11 \\ \hline
+  \end{tabular}
+  \bicaption{实验环境设置}{}
+  \label{table:device}
+\end{table}
+\subsection{数据集介绍与预处理}
+1）数据集介绍
+
+为了验证本章所提出的分类方法在加密流量分类任务中的有效性，本工作选取了四个在网络流量识别领域常用的公开数据集作为训练与测试样例。
+
+\textbf{ISCX-VPNnonVPN} 数据集：该数据集源自实际网络运行环境，具有较高的真实性和可靠性；包含规模完整的多种协议和环境；包含源 IP、目的 IP、端口、协议、流量大小和时间戳等元数据，方便进行预处理和特征提取；涵盖了通过 VPN 传输的流量和未通过 VPN 传输的流量，且具有多种应用类型，能够满足本文对加密流量特征和行为模式的研究。
+\textbf{ISCX-TorNonTor} 数据集：该数据集侧重于捕获经过洋葱路由器（Tor）多层加密且具备高度混淆特性的匿名流量。涵盖了 Tor 封装与非 Tor 环境下的应用行为，能够检验模型在极端隐私保护及特征强混淆环境下的鲁棒性。
+\textbf{USTC-TFC} 数据集：该数据集根据其原始标签方案将 20 种真实网络流量整合为良性流量与恶意软件流量两大类别，旨在评估模型对非法攻击及僵尸网络通信的识别精度。
+\textbf{VNAT} 数据集：提供了针对 Skype、Facebook 等十种特定应用程序的细粒度 VPN 流量，并涵盖了关键的命令与控制（command \& control，C2）流量场景，为隐蔽通信信道的检测研究提供了数据基础。
+
+在 ISCX VPN-nonVPN 以及 ISCX-TorNonTor 数据集中，原始数据存在标签标注不明确的问题。仅提供了流量文件的描述性信息，而未对其进行精确分类，这导致部分流量文件的类别归属存在歧义，以“Facebook video.pcap” 文件为例，该流量文件可能同时符合“浏览器”和“流媒体”两类特征，难以准确归类。为确保实验数据的准确性和模型训练的有效性，本文将容易存在分歧的各类社交媒体流量单独划分为一个新的类别，以区分原有的流量类别，从而形成更为清晰的分类体系。各数据集的具体内容如表~\ref{table:datasets}所示。
+
+\begin{table}[h]
+  \centering
+  \begin{tabularx}{\textwidth}{l l X}
+    \hline
+    \textbf{数据集} & \textbf{类型} & \textbf{内容}\\ \hline
+    \multirow{6}{*}{ISCX-VPNnonVPN} 
+    & Email & Email, Gmail \\
+    & Chat & ICQ, AIM \\
+    & Streaming & Vimeo, Youtube, Netflix, Spotify \\
+    & File transfer & FTPS, SFTP, scp, bittorrent \\
+    & VoIP & Voipbuster \\
+    & Socialapp & Facebook, Hangouts, Skype \\ \hline
+    \multirow{6}{*}{ISCX-TornonTor} 
+    & Email & Thunderbird, IMAP, POP \\
+    & Chat & IAM, ICQ \\
+    & Streaming & Vimeo, Youtube, Spotify \\
+    & File transfer & P2P, FTP, SFTP, SSL \\
+    & Web & Browsing, Google \\
+    & Socialapp & Facebook, Hangouts, Skype, Twitter \\ \hline
+    \multirow{5}{*}{VNAT} 
+    & Streaming & Vimeo, Netflix, Youtube \\
+    & File transfer & SFTP, RSYNC, SCP \\
+    & Chat & Skype \\
+    & VoIP & VoIP \\
+    & C2 & SSH, RDP \\ \hline
+    \multirow{3}{*}{USTC-TFC}
+    & Benign & Bittorrent, Facetime, FTP, Gmail, MySQL, Outlook, Skype, SMB, Weibo, WorldOfWarcraft \\
+    & Malware & Cridex, Geodo, Htbot, Miuref, Neris, Nsis-ay, Shifu, Tinba, Virut, Zeus \\ \hline
+  \end{tabularx}
+  \bicaption{数据集内容}{}
+  \label{table:datasets}
+\end{table}
+
+2）数据预处理
+在实验执行过程中，为了确保评价结果的客观性与泛化性，本工作对上述所有原始数据进行了统一的预处理与随机划分：其中 60\% 的数据用于模型参数的迭代训练，20\% 作为验证集用于超参数调优及防止过拟合，剩余 20\% 的数据则作为完全独立的测试集，用于最终衡量模型在未知样本上的分类效能。
+
+在数据预处理阶段，本工作首先利用由源IP、目的IP、源端口、目的端口及协议类型构成的五元组作为关联标识，将零散的数据包聚合为具有逻辑意义的网络流。为确保统计特性的鲁棒性并剔除网络扫描或无效连接产生的噪声干扰，本工作对数据包数量少于5个的短流进行了过滤剔除。接着，预处理过程从行为模式与内容结构两个维度同步进行多维特征的联合表征：在流级别维度，提取各流前16个数据包的应用层负载长度，并对长度不足者实施零填充以规整化为定长向量，旨在有效捕捉加密流量原始的行为序列特征；在包级别维度，则截取每个流的前5个数据包并提取其IP数据报头，同时剔除源/目的IP地址字段，以引导模型学习更具泛化意义的协议结构特征，包级别特征的相关原始数据将为后续章节提出的深度学习方法提供输入支持。最后，针对网络流量数据集中普遍存在的类别不平衡问题，本工作引入了合成少数类过采样技术（SMOTE）与随机欠采样相结合的混合采样策略，通过将各类别样本量统一均衡至各类别数量的中位数，有效缓解了模型对多数类样本的过拟合风险，确保了分类决策边界的公正性与准确性。预处理过程如图~\ref{fig:datapreprocessing}所示。
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=1\textwidth]{datapreprocessing.png}
+  \bicaption{数据预处理流程}{}
+  \label{fig:datapreprocessing}
+\end{figure}
+\subsection{评价指标}
 
 \subsection{参数设置}
 
-在本研究中，模型的参数配置旨在平衡自监督学习的表征能力与网络流量数据的计算效率。首先，在骨干网络方面，我们设计了一个深层 1D-CNN 结构，特征通道从输入的 16 维逐步扩张至 1024 维，这种宽通道设计能够有效捕捉流量序列中微小的统计波动。编码器最终将高维特征压缩为 256 维的向量，作为下游任务的通用表征。在 BYOL 框架配置上，投影器和预测器均采用了多层感知机结构，其中隐藏层维度设定为 4096，这种“漏斗形”结构有助于在投影空间中进行更复杂的非线性变换，防止表征崩溃。为了维持训练过程中的目标稳定性，目标网络的指数移动平均动量系数设定为 0.996，这确保了导师网络参数能够平滑地演进，从而为在线网络提供一致的优化目标。数据增强策略是模型捕捉不变性的核心。通过加入标准差为 0.05 的高斯噪声、0.8 至 1.2 倍的随机缩放以及 10\% 的特征掩码，模型被迫在数据不完整或存在测量误差的情况下提取核心语义特征。最后，在优化策略上，模型采用了 AdamW 优化器，并配合 $2 \times 10^{-5}$ 的低学习率以确保微调过程的稳定性。同时，引入了独特的回溯重置机制：当验证集损失连续 20 个 Epoch 无改善时，系统会回滚至历史最佳权重并降低学习率，这种策略结合 100 个 Epoch 的早停机制，极大地提升了模型在复杂流量数据集上的收敛质量。
+在本工作中，模型的参数配置旨在平衡自监督学习的表征能力与网络流量数据的计算效率。首先，在骨干网络方面，我们设计了一个深层 1D-CNN 结构，特征通道从输入的 16 维逐步扩张至 1024 维，这种宽通道设计能够有效捕捉流量序列中微小的统计波动。编码器最终将高维特征压缩为 256 维的向量，作为下游任务的通用表征。在 BYOL 框架配置上，投影器和预测器均采用了多层感知机结构，其中隐藏层维度设定为 4096，这种“漏斗形”结构有助于在投影空间中进行更复杂的非线性变换，防止表征崩溃。为了维持训练过程中的目标稳定性，目标网络的指数移动平均动量系数设定为 0.996，这确保了导师网络参数能够平滑地演进，从而为在线网络提供一致的优化目标。数据增强策略是模型捕捉不变性的核心。通过加入标准差为 0.05 的高斯噪声、0.8 至 1.2 倍的随机缩放以及 10\% 的特征掩码，模型被迫在数据不完整或存在测量误差的情况下提取核心语义特征。最后，在优化策略上，模型采用了 AdamW 优化器，并配合 $2 \times 10^{-5}$ 的低学习率以确保微调过程的稳定性。同时，引入了独特的回溯重置机制：当验证集损失连续 20 个 Epoch 无改善时，系统会回滚至历史最佳权重并降低学习率，这种策略结合 100 个 Epoch 的早停机制，极大地提升了模型在复杂流量数据集上的收敛质量。
 
 \begin{table}[htbp]
 \centering
@@ -186,55 +259,6 @@ $$\xi_t = \tau \cdot \xi_{t-1} + (1 - \tau) \cdot \theta_t$$
 \multirow{2}{*}{早停与调度} & 早停耐心值 (Patience) & 100 \\
  & 抖动回溯阈值 (Decay Patience) & 20 \\ \hline
 \end{tabular}
-\end{table}
-
-\subsection{数据集设置}
-ISCX-VPNnonVPN 数据集包含从 VPN 和常规非 VPN 加密会话中捕获的网络流量，涵盖多种流量类型和应用程序。
-
-ISCX-TornonTor 数据集是另一个公开可用的资源。SCX-Tor 部分包含通过洋葱路由器 (Tor) 路由的流量，Tor 提供更高的匿名性，但也给可追溯性带来了更大的挑战。这两个 ISCX 数据集均根据网络流量行为分为六类。
-
-USTC-TFC 数据集是一个用于流量分类的公共资源，包含 20 种不同的网络流量类型。根据原始标签方案，我们将这些流量分为两大类：良性流量和恶意软件流量。
-
-VNAT 数据集提供由十个应用程序生成的已标记加密 VPN 流量，这些应用程序涵盖五大类（包括命令与控制，即 C2）。所有数据集的更多详细信息
-
-数据集被随机划分如下：60\% 用于训练，20\% 用于验证，20\% 用于测试。
-
-采样方法TODO
-
-\begin{table}[htbp]
-\renewcommand{\arraystretch}{1.5}
-\caption{Dataset Traffic Types and Content}
-\begin{center}
-\begin{tabular}{|p{2.2cm}|c|p{3.8cm}|}
-\hline
-Dataset& Traffic type& Content \\
-\hline
-\multirow{5}{*}{USTC-TFC}& Benign & Bittorrent, Facetime, FTP, Gmail, MySQL, Outlook, Skype, SMB, Weibo, WorldOfWarcraft \\
-& Malware & Cridex, Geodo, Htbot, Miuref, Neris, Nsis-ay, Shifu, Tinba, Virut, Zeus \\
-\hline
-\multirow{6}{*}{ISCX-VPNnonVPN}& Email & Email, Gmail \\
-& Chat & ICQ, AIM \\
-& Streaming & Vimeo, Youtube, Netflix, Spotify \\
-& File transfer & FTPS, SFTP, scp, bittorrent \\
-& VoIP & Voipbuster \\
-& Socialapp & Facebook, Hangouts, Skype \\
-\hline
-\multirow{7}{*}{ISCX-TornonTor} & Email & Thunderbird, IMAP, POP \\
-& Chat & IAM, ICQ \\
-& Streaming & Vimeo, Youtube, Spotify \\
-& File transfer & P2P, FTP, SFTP, SSL \\
-& Web & Browsing, Google \\
-& Socialapp & Facebook, Hangouts, Skype, Twitter \\
-\hline
-\multirow{5}{*}{VNAT} & Streaming & Vimeo, Netflix, Youtube \\
-& File transfer & SFTP, RSYNC, SCP \\
-& Chat & Skype \\
-& VoIP & VoIP \\
-& C2 & SSH, RDP \\
-\hline
-\end{tabular}
-\label{tab:dataset}
-\end{center}
 \end{table}
 
 \subsection{对比算法}

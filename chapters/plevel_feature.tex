@@ -22,20 +22,22 @@ Hu 等人的研究发现，虽然加密协议屏蔽了应用层内容，但网�
 
 在特征空间构建过程中，需针对报文首部的结构特性进行处理。标准的IPV4首部包含20字节的固定长度字段，其结构如表~\ref{tab:IPheader}所示。IP分组报头涵盖了段版本、首部长度、优先级与服务类型、总长度、标识、标志、段偏移、生存时间、协议、校验和、源IP地址和目的IP地址这12个关键字段。然而，源/目的IP地址字段与特定的网络拓扑配置高度耦合，其数值分布更多反映了网络部署环境而非业务流本身的协议特征。从网络流量分类任务的角度来看，这两个字段属于冗余信息，会影响模型的泛化能力和分类结果。因此，本工作在预处理阶段将源/目的IP地址字段视为剔除，从而实现特征降维与关键语义的聚焦。
 
-\begin{table}[h]
+\newcolumntype{C}[1]{>{\centering\arraybackslash\hsize=#1\hsize}X}
+\begin{table}[htbp]
     \centering
-    \bicaption{IP数据报头结构}{}
-    \label{tab:IPheader}
-    \begin{tabular}{|c|c|c|c|c|}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabularx}{\textwidth}{|C{0.625}|C{0.625}|C{1.25}|C{0.46875}|C{2.03125}|}
         \hline
         \textbf{0-3 bit} & \textbf{4-7 bit} & \textbf{8-15 bit} & \textbf{16-18 bit} & \textbf{19-31 bit} \\ \hline
-        版本 (Version) & 首部长度 (IHL) & 服务类型 (ToS) & \multicolumn{2}{c|}{总长度 (Total Length)} \\ \hline
-        \multicolumn{3}{|c|}{标识 (Identification)} & 标志 (Flags) & 片偏移 (Fragment Offset) \\ \hline
-        生存时间 (TTL) & 协议 (Protocol) & \multicolumn{3}{c|}{首部校验和 (Header Checksum)} \\ \hline
-        \multicolumn{5}{|c|}{源 IP 地址 (Source IP Address)} \\ \hline
-        \multicolumn{5}{|c|}{目的 IP 地址 (Destination IP Address)} \\ \hline
-        \multicolumn{4}{|c|}{可选字段 (Options，若有)} & 填充 (Padding) \\ \hline
-    \end{tabular}
+        版本 & 首部长度 & 服务类型 & \multicolumn{2}{c|}{总长度} \\ \hline
+        \multicolumn{3}{|c|}{标识} & 标志 & 片偏移 \\ \hline
+        生存时间 & 协议 & \multicolumn{3}{c|}{首部校验和 } \\ \hline
+        \multicolumn{5}{|c|}{源 IP 地址} \\ \hline
+        \multicolumn{5}{|c|}{目的 IP 地址} \\ \hline
+        \multicolumn{4}{|c|}{可选字段} & 填充 \\ \hline
+    \end{tabularx}
+    \bicaption{IP数据报头结构}{Structure of IP Datagram Header}
+    \label{tab:IPheader}
 \end{table}
 
 \subsection{N-gram嵌入处理}
@@ -148,7 +150,7 @@ $$
 本模型的训练过程采用了基于验证集表现驱动的动态优化策略，旨在平衡收敛速度与全局搜索能力。核心优化器选用 AdamW 算法，利用其解耦权重衰减的特性来增强正则化效果，并配合 OneCycleLR 学习率调度策略，在训练初期快速爬升以越过局部最优陷阱，并在后期执行余弦退火降温以实现参数的精确收敛。这种策略有助于模型跳出局部最优解，在 训练中寻找全局最优点。
 为进一步防止过拟合并提升自动化训练水平，系统采用与上一章类似的回溯降温与早停机制：当验证集准确率在预设的多个耐心周期内未见提升时，训练程序将自动回溯至历史最优权重状态，并按固定比例下调学习率。损失函数方面则统一采用交叉熵损失，通过最小化预测概率分布与真实标签之间的 Kullback-Leibler 散度，引导模型在迭代中不断精炼决策边界。
 
-\section{实验结果与分析}
+\section{实验设计与结果分析}
 本工作在4个公开数据集上对本工作提出的融合特征分类模型进行了评估，通过与1D-CNN模型和DM-HNN模型进行对比，验证了融合特征分类模型在流级别特征提取方面的有效性和鲁棒性。实验结果表明，融合特征分类模型在多个数据集上均取得了优异的性能，显著提升了流级别特征的表达能力。
 
 \subsection{参数设置}
