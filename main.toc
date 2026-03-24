@@ -39,7 +39,7 @@
 \contentsline {subsection}{\numberline {3.5.1}实验环境}{26}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}数据集介绍与预处理}{26}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}评价指标}{29}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}参数设置}{30}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.4}参数设置}{29}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}对比算法}{31}{subsection.3.5.5}%
 \contentsline {subsection}{\numberline {3.5.6}实验结果分析}{31}{subsection.3.5.6}%
 \contentsline {section}{\numberline {3.6}本章小结}{33}{section.3.6}%
@@ -60,16 +60,16 @@
 \contentsline {section}{\numberline {4.6}实验设计与结果分析}{42}{section.4.6}%
 \contentsline {subsection}{\numberline {4.6.1}参数设置}{43}{subsection.4.6.1}%
 \contentsline {subsection}{\numberline {4.6.2}对比算法}{43}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}算法结果分析}{43}{subsection.4.6.3}%
-\contentsline {section}{\numberline {4.7}本章小结}{43}{section.4.7}%
-\contentsline {chapter}{\numberline {第5章}总结与展望}{44}{chapter.5}%
-\contentsline {section}{\numberline {5.1}本文工作总结}{44}{section.5.1}%
-\contentsline {section}{\numberline {5.2}未来展望}{44}{section.5.2}%
-\contentsline {chapter}{\numberline {第6章}引用文献的标注}{45}{chapter.6}%
-\contentsline {section}{\numberline {6.1}顺序编码制}{45}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}角标数字标注法}{45}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}数字标注法}{45}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}著者-出版年制标注法}{45}{section.6.2}%
-\contentsline {chapter}{致谢}{46}{appendix*.34}%
-\contentsline {chapter}{在读期间取得的科研成果}{47}{appendix*.35}%
+\contentsline {subsection}{\numberline {4.6.3}实验结果分析}{44}{subsection.4.6.3}%
+\contentsline {section}{\numberline {4.7}本章小结}{46}{section.4.7}%
+\contentsline {chapter}{\numberline {第5章}总结与展望}{47}{chapter.5}%
+\contentsline {section}{\numberline {5.1}本文工作总结}{47}{section.5.1}%
+\contentsline {section}{\numberline {5.2}未来展望}{47}{section.5.2}%
+\contentsline {chapter}{\numberline {第6章}引用文献的标注}{48}{chapter.6}%
+\contentsline {section}{\numberline {6.1}顺序编码制}{48}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}角标数字标注法}{48}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}数字标注法}{48}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}著者-出版年制标注法}{48}{section.6.2}%
+\contentsline {chapter}{致谢}{49}{appendix*.36}%
+\contentsline {chapter}{在读期间取得的科研成果}{50}{appendix*.37}%
 \contentsfinish 

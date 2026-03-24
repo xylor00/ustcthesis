@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  24 MAR 2026 22:36
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  25 MAR 2026 04:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1407,8 +1407,8 @@ File: figures/datapreprocessing.png Graphic file (type bmp)
 
  (./chapters/plevel_feature.tex
 第4章
-File: figures/90f.png Graphic file (type bmp)
-<figures/90f.png>
+File: figures/confusion.png Graphic file (type bmp)
+<figures/confusion.png>
 
 
 [34
@@ -1441,16 +1441,25 @@ File: figures/sort.png Graphic file (type bmp)
 
 [41]
 
-[42])
+[42]
 
 [43]
+
+[44]
+File: figures/confusionB.png Graphic file (type bmp)
+<figures/confusionB.png>
+
+
+[45])
+
+[46]
 \openout2 = `chapters/conclusion.aux'.
 
  (./chapters/conclusion.tex
 第5章
 )
 
-[44
+[47
 
 
 
@@ -1463,74 +1472,74 @@ File: figures/sort.png Graphic file (type bmp)
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 (Font)              scaled to size 12.74046pt on input line 19.
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 19.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 19.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 20.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 20.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 21.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 21.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 22.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 22.
 
 
-Package natbib Warning: Citation `tlc2' on page 45 undefined on input line 22.
+Package natbib Warning: Citation `tlc2' on page 48 undefined on input line 22.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 23.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 23.
 
 
-Package natbib Warning: Citation `knuth84' on page 45 undefined on input line 23.
+Package natbib Warning: Citation `knuth84' on page 48 undefined on input line 23.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 34.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 34.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 35.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 35.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 36.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 36.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 37.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 37.
 
 
-Package natbib Warning: Citation `tlc2' on page 45 undefined on input line 37.
+Package natbib Warning: Citation `tlc2' on page 48 undefined on input line 37.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 38.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 38.
 
 
-Package natbib Warning: Citation `knuth84' on page 45 undefined on input line 38.
+Package natbib Warning: Citation `knuth84' on page 48 undefined on input line 38.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 50.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 50.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 51.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 51.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 52.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 52.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 53.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 53.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 54.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 54.
 
 
-Package natbib Warning: Citation `tlc2' on page 45 undefined on input line 54.
+Package natbib Warning: Citation `tlc2' on page 48 undefined on input line 54.
 
 
-Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 55.
+Package natbib Warning: Citation `knuth86a' on page 48 undefined on input line 55.
 
 
-Package natbib Warning: Citation `knuth84' on page 45 undefined on input line 55.
+Package natbib Warning: Citation `knuth84' on page 48 undefined on input line 55.
 
 )
 
-[45
+[48
 
 
 
@@ -1541,7 +1550,7 @@ No file main.bbl.
 
 (./chapters/acknowledgements.tex)
 
-[46
+[49
 
 
 
@@ -1552,7 +1561,7 @@ No file main.bbl.
 
  (./chapters/achievements.tex)
 
-[47
+[50
 
 
 
@@ -1566,20 +1575,16 @@ Package natbib Warning: There were undefined citations.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 80A02B45ADE1E1852DDBD7198682EBB4;10780.
+(rerunfilecheck)             Checksum: D42ACB4F2D3B27AE45F025929AB8D621;10780.
  ) 
 Here is how much of TeX's memory you used:
- 30480 strings out of 475796
- 661242 string characters out of 5774034
- 1157999 words of memory out of 5000000
- 52897 multiletter control sequences out of 15000+600000
+ 30454 strings out of 475796
+ 659127 string characters out of 5774034
+ 1153090 words of memory out of 5000000
+ 52870 multiletter control sequences out of 15000+600000
  565139 words of font info for 161 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  106i,15n,127p,1847b,2768s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (61 pages).
+Output written on main.pdf (64 pages).
