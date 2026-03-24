@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  24 MAR 2026 05:40
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  24 MAR 2026 22:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -996,7 +996,7 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \TeXr@lab=\toks36
 )
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 18.
- (./main.aux (./chapters/innovations.aux) (./chapters/abstract.aux) (./chapters/intro.aux) (./chapters/relevant_theories.aux) (./chapters/flevel_feature.aux) (./chapters/plevel_feature.aux) (./chapters/conclusion.aux) (./chapters/floats.aux) (./chapters/math.aux) (./chapters/citations.aux) (./chapters/complementary.aux) (./chapters/acknowledgements.aux) (./chapters/achievements.aux))
+ (./main.aux (./chapters/innovations.aux) (./chapters/abstract.aux) (./chapters/intro.aux) (./chapters/relevant_theories.aux) (./chapters/flevel_feature.aux) (./chapters/plevel_feature.aux) (./chapters/conclusion.aux) (./chapters/citations.aux) (./chapters/acknowledgements.aux) (./chapters/achievements.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -1266,34 +1266,36 @@ LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
 [4])
 
 [5]
+
+[6]
 \openout2 = `chapters/relevant_theories.aux'.
 
  (./chapters/relevant_theories.tex
 第2章
 
 
-[6
+[7
 
 
 
 
 ]
 
-[7]
+[8]
 File: figures/cnn.png Graphic file (type bmp)
 <figures/cnn.png>
 
 
-[8]
+[9]
 File: figures/cnn2.png Graphic file (type bmp)
 <figures/cnn2.png>
 File: figures/pooling.png Graphic file (type bmp)
 <figures/pooling.png>
 
 
-[9]
-
 [10]
+
+[11]
 File: figures/activation.png Graphic file (type bmp)
 <figures/activation.png>
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 85.
@@ -1327,25 +1329,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[11]
-
 [12]
 
 [13]
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
 [14]
+
+[15]
 File: figures/attention.png Graphic file (type bmp)
 <figures/attention.png>
 
 
-[15]
+[16]
 File: figures/contrastive.png Graphic file (type bmp)
 <figures/contrastive.png>
 
 
-[16])
-
-[17]
+[17])
 
 [18]
 \openout2 = `chapters/flevel_feature.aux'.
@@ -1382,17 +1386,23 @@ File: figures/encoder.png Graphic file (type bmp)
 [25]
 
 [26]
-
-[27]
 File: figures/datapreprocessing.png Graphic file (type bmp)
 <figures/datapreprocessing.png>
 
 
-[28])
+[27]
+
+[28]
 
 [29]
 
 [30]
+
+[31]
+
+[32])
+
+[33]
 \openout2 = `chapters/plevel_feature.aux'.
 
  (./chapters/plevel_feature.tex
@@ -1401,103 +1411,44 @@ File: figures/90f.png Graphic file (type bmp)
 <figures/90f.png>
 
 
-[31
+[34
 
 
 
 
 ]
 
-[32]
+[35]
 File: figures/ngram.png Graphic file (type bmp)
 <figures/ngram.png>
 
 
-[33]
+[36]
 
-[34]
+[37]
 File: figures/cross.png Graphic file (type bmp)
 <figures/cross.png>
 
 
-[35]
+[38]
 
-[36]
+[39]
 File: figures/sort.png Graphic file (type bmp)
 <figures/sort.png>
 
 
-[37]
-
-[38]
-
-[39]
-Overfull \hbox (4.30179pt too wide) in paragraph at lines 162--177
- [][] 
- []
-
-)
-
 [40]
+
+[41]
+
+[42])
+
+[43]
 \openout2 = `chapters/conclusion.aux'.
 
  (./chapters/conclusion.tex
 第5章
 )
-
-[41
-
-
-
-
-]
-\openout2 = `chapters/floats.aux'.
-
- (./chapters/floats.tex
-第6章
-File: figures/ustc-badge.pdf Graphic file (type pdf)
-<use figures/ustc-badge.pdf>
-
-
-[42
-
-
-
-
-])
-
-[43]
-\openout2 = `chapters/math.aux'.
-
- (./chapters/math.tex
-第7章
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 8.97887pt on input line 8.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 5.96356pt on input line 8.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 4.96964pt on input line 8.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 8.97969pt on input line 8.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.96411pt on input line 8.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 4.9701pt on input line 8.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 8.9779pt on input line 8.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.96292pt on input line 8.
-LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 4.9691pt on input line 8.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 8.54218pt on input line 8.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 5.67352pt on input line 8.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 4.72794pt on input line 8.
-LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
-(Font)              scaled to size 12.74046pt on input line 17.
-
 
 [44
 
@@ -1505,108 +1456,92 @@ LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 
 
 ]
-
-[45]
-\c@observation=\count378
-)
-
-[46]
 \openout2 = `chapters/citations.aux'.
 
  (./chapters/citations.tex
-第8章
+第6章
+LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
+(Font)              scaled to size 12.74046pt on input line 19.
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 19.
-
-
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 20.
-
-
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 21.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 19.
 
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 22.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 20.
 
 
-Package natbib Warning: Citation `tlc2' on page 47 undefined on input line 22.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 21.
 
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 23.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 22.
 
 
-Package natbib Warning: Citation `knuth84' on page 47 undefined on input line 23.
+Package natbib Warning: Citation `tlc2' on page 45 undefined on input line 22.
 
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 34.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 23.
 
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 35.
+Package natbib Warning: Citation `knuth84' on page 45 undefined on input line 23.
 
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 36.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 34.
 
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 37.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 35.
 
 
-Package natbib Warning: Citation `tlc2' on page 47 undefined on input line 37.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 36.
 
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 38.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 37.
 
 
-Package natbib Warning: Citation `knuth84' on page 47 undefined on input line 38.
+Package natbib Warning: Citation `tlc2' on page 45 undefined on input line 37.
 
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 50.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 38.
 
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 51.
+Package natbib Warning: Citation `knuth84' on page 45 undefined on input line 38.
 
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 52.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 50.
 
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 53.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 51.
 
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 54.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 52.
 
 
-Package natbib Warning: Citation `tlc2' on page 47 undefined on input line 54.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 53.
 
 
-Package natbib Warning: Citation `knuth86a' on page 47 undefined on input line 55.
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 54.
 
 
-Package natbib Warning: Citation `knuth84' on page 47 undefined on input line 55.
+Package natbib Warning: Citation `tlc2' on page 45 undefined on input line 54.
+
+
+Package natbib Warning: Citation `knuth86a' on page 45 undefined on input line 55.
+
+
+Package natbib Warning: Citation `knuth84' on page 45 undefined on input line 55.
 
 )
 
-[47
+[45
 
 
 
 
 ]
 No file main.bbl.
-\openout2 = `chapters/complementary.aux'.
-
-(./chapters/complementary.tex
-附录 A
-)
-
-[48
-
-
-
-
-]
 \openout2 = `chapters/acknowledgements.aux'.
 
- (./chapters/acknowledgements.tex)
+(./chapters/acknowledgements.tex)
 
-[49
+[46
 
 
 
@@ -1617,7 +1552,7 @@ No file main.bbl.
 
  (./chapters/achievements.tex)
 
-[50
+[47
 
 
 
@@ -1626,21 +1561,25 @@ No file main.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-(./main.aux (./chapters/innovations.aux) (./chapters/abstract.aux) (./chapters/intro.aux) (./chapters/relevant_theories.aux) (./chapters/flevel_feature.aux) (./chapters/plevel_feature.aux) (./chapters/conclusion.aux) (./chapters/floats.aux) (./chapters/math.aux) (./chapters/citations.aux) (./chapters/complementary.aux) (./chapters/acknowledgements.aux) (./chapters/achievements.aux))
+(./main.aux (./chapters/innovations.aux) (./chapters/abstract.aux) (./chapters/intro.aux) (./chapters/relevant_theories.aux) (./chapters/flevel_feature.aux) (./chapters/plevel_feature.aux) (./chapters/conclusion.aux) (./chapters/citations.aux) (./chapters/acknowledgements.aux) (./chapters/achievements.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F810B651D41D4272692662F694F78AB4;11958.
+(rerunfilecheck)             Checksum: 80A02B45ADE1E1852DDBD7198682EBB4;10780.
  ) 
 Here is how much of TeX's memory you used:
- 30842 strings out of 475796
- 677386 string characters out of 5774034
- 1161753 words of memory out of 5000000
- 53211 multiletter control sequences out of 15000+600000
- 566752 words of font info for 190 fonts, out of 8000000 for 9000
+ 30480 strings out of 475796
+ 661242 string characters out of 5774034
+ 1157999 words of memory out of 5000000
+ 52897 multiletter control sequences out of 15000+600000
+ 565139 words of font info for 161 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  106i,15n,127p,1847b,2768s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (64 pages).
+Output written on main.pdf (61 pages).

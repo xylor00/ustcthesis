@@ -6,7 +6,7 @@
 \begin{figure}[ht]
   \centering
   \includegraphics[width=1\textwidth]{90f.png}
-  \bicaption{混淆情况}{}
+  \caption{混淆情况}
   \label{fig:90f}
 \end{figure}
 
@@ -36,7 +36,7 @@ Hu 等人的研究发现，虽然加密协议屏蔽了应用层内容，但网�
         \multicolumn{5}{|c|}{目的 IP 地址} \\ \hline
         \multicolumn{4}{|c|}{可选字段} & 填充 \\ \hline
     \end{tabularx}
-    \bicaption{IP数据报头结构}{Structure of IP Datagram Header}
+    \caption{IP数据报头结构}
     \label{tab:IPheader}
 \end{table}
 
@@ -48,7 +48,7 @@ Hu 等人的研究发现，虽然加密协议屏蔽了应用层内容，但网�
 \begin{figure}[ht]
   \centering
   \includegraphics[width=1\textwidth]{ngram.png}
-  \bicaption{n-gram嵌入处理}{}
+  \caption{n-gram嵌入处理}
   \label{fig:ngram}
 \end{figure}
 
@@ -83,7 +83,7 @@ $$
 \begin{figure}[ht]
   \centering
   \includegraphics[width=1\textwidth]{cross.png}
-  \bicaption{交叉注意力机制}{}
+  \caption{交叉注意力机制}
   \label{fig:cross}
 \end{figure}
 在完成空间对齐后，本工作利用交叉注意力机制实现流级别特征与包级别特征之间的深度交互。如图~\ref{fig:cross}所示，与传统自注意力机制中$Q$、$K$、$V$均来自同一模态的逻辑不同，交叉注意力机制旨在建立不同模态特征间的协同映射关系。在本工作中，我们利用流级特征$f_{align}$进入注意力流生成查询向量 Query，主动检索包级特征$p_{align}$生成的键向量 Key 和值向量 Value。利用较为宏观的数据包长度序列信息去询问相对局部的数据包报文信息。具体公式如下：
@@ -109,7 +109,7 @@ $$
 \begin{figure}[ht]
   \centering
   \includegraphics[width=1\textwidth]{sort.png}
-  \bicaption{分类器结构}{}
+  \caption{分类器结构}
   \label{fig:sort}
 \end{figure}
 
@@ -154,26 +154,27 @@ $$
 本工作在4个公开数据集上对本工作提出的融合特征分类模型进行了评估，通过与1D-CNN模型和DM-HNN模型进行对比，验证了融合特征分类模型在流级别特征提取方面的有效性和鲁棒性。实验结果表明，融合特征分类模型在多个数据集上均取得了优异的性能，显著提升了流级别特征的表达能力。
 
 \subsection{参数设置}
-在网络结构层面，为了平衡特征表达能力与计算开销，特征融合空间的对齐维度 $d_{align}$ 设置为 256，多头注意力机制的头数 $h$ 定为 8。分类器内部通过 5 层残差块进行深层建模，每层隐藏单元的宽度保持在 1024 维，以充分容纳高维流形特征。在优化算法方面，采用 AdamW 优化器，并配置 $10^{-3}$ 的初始学习率，利用 OneCycleLR 策略在 100 个 Epoch 的训练周期内执行动态调整。为抑制过拟合，模型引入了 0.2 的 Dropout 概率以及 $10^{-4}$ 的权重衰减因子。此外，训练过程通过验证集性能进行实时驱动，设置早停忍耐度（Patience）为 10，并配合学习率回溯降温机制，以确保模型在最优参数空间内平稳收敛。
+在网络结构层面，为了平衡特征表达能力与计算开销，特征融合空间的对齐维度 $d_{align}$ 设置为 256，多头注意力机制的头数 $h$ 定为 8。分类器内部通过 5 层残差块进行深层建模，每层隐藏单元的宽度保持在 1024 维，以充分容纳高维流形特征。在优化算法方面，采用 AdamW 优化器，并配置 $10^{-3}$ 的初始学习率，利用 OneCycleLR 策略在 100 个 Epoch 的训练周期内执行动态调整。为抑制过拟合，模型引入了 0.2 的 Dropout 概率以及 $10^{-4}$ 的权重衰减因子。此外，训练过程通过验证集性能进行实时驱动，设置早停阈值为 10，并配合学习率回溯降温机制，以确保模型在最优参数空间内平稳收敛。具体的参数设置如表~\ref{tab:hyperparameters}所示。
+
 \begin{table}[htbp]
 \centering
-\caption{实验超参数配置表}
-\label{tab:hyperparameters}
-\begin{tabular}{@{}llll@{}}
-\toprule
-\textbf{超参数类别} & \textbf{参数名称 (Parameter)} & \textbf{取值 (Value)} & \textbf{功能描述} \\ \midrule
-架构参数 & 隐空间对齐维度 ($d_{align}$) & 256 & 流级与包级特征的对齐空间维度 \\
- & 注意力头数 ($h$) & 8 & 交叉注意力机制的并行空间数量 \\
- & 残差块数量 (Blocks) & 5 & 分类器主干网络的堆叠层数 \\
- & 隐藏层神经元数 & 1024 & 残差块内部全连接层的特征宽度 \\ \cmidrule(r){1-4}
-优化策略 & 初始学习率 (LR) & $1 \times 10^{-3}$ & 模型权重的初始迭代步长 \\
- & 训练周期 (Epochs) & 100 & 最大迭代轮数 \\
- & 批大小 (Batch Size) & 128 & 每次梯度更新所包含的样本量 \\
- & 学习率调度器 & OneCycleLR & 动态学习率调整策略 \\ \cmidrule(r){1-4}
-正则化 & 丢弃率 (Dropout) & 0.2 & 随机神经元失活概率 \\
- & 权重衰减 (Weight Decay) & $1 \times 10^{-4}$ & L2 正则化系数 \\
- & 早停阈值 (Patience) & 10 & 性能连续未提升的停机界限 \\ \bottomrule
+\begin{tabular}{llc}
+\hline
+\textbf{类别} & \textbf{参数名称} & \textbf{配置数值} \\ \midrule
+\multirow{4}{*}{架构参数} & 隐空间对齐维度 ($d_{align}$) & 256 \\
+ & 注意力头数 ($h$) & 8 \\
+ & 残差块数量 (Blocks) & 5 \\
+ & 隐藏层神经元数 & 1024 \\ \hline
+\multirow{4}{*}{优化策略} & 初始学习率 (LR) & $1 \times 10^{-3}$ \\
+ & 训练周期 (Epochs) & 100 \\
+ & 批大小 (Batch Size) & 128 \\
+ & 学习率调度器 & OneCycleLR \\ \hline
+\multirow{3}{*}{正则化} & 丢弃率 (Dropout) & 0.2 \\
+ & 权重衰减 (Weight Decay) & $1 \times 10^{-4}$ \\
+ & 早停阈值 (Patience) & 10 \\\hline
 \end{tabular}
+\caption{模型及训练参数设置}
+\label{tab:hyperparameters}
 \end{table}
 
 \subsection{对比算法}
