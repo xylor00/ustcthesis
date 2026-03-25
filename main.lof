@@ -1,22 +1,24 @@
 \addvspace {10.0pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces 加密协议使用情况}}{1}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces 研究内容结构图}}{6}{figure.caption.13}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces 卷积神经网络结构}}{10}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces 卷积运算过程}}{11}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces 两种池化方式}}{12}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces 常见的激活函数图像}}{13}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces 注意力机制处理过程}}{16}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces 对比学习过程}}{17}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 卷积神经网络结构}}{11}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 卷积运算过程}}{12}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 两种池化方式}}{13}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces 常见的激活函数图像}}{14}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces 注意力机制处理过程}}{17}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces 对比学习过程}}{18}{figure.caption.21}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces BYOL模型框架}}{19}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 数据包序列变化}}{20}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 编码器结构}}{22}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces 数据预处理流程}}{28}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces BYOL模型框架}}{21}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 数据包序列变化}}{22}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 编码器结构}}{24}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 数据预处理流程}}{30}{figure.caption.27}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 两个混淆矩阵}}{34}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces n-gram嵌入处理}}{37}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces 交叉注意力机制}}{39}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 分类器结构}}{40}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 三种模型的混淆矩阵}}{46}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 两个混淆矩阵}}{36}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces n-gram嵌入处理}}{39}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces 交叉注意力机制}}{41}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 分类器结构}}{42}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 三种模型的混淆矩阵}}{48}{figure.caption.37}%
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
