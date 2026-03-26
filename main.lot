@@ -1,16 +1,17 @@
 \addvspace {10.0pt}
 \addvspace {10.0pt}
-\contentsline {table}{\numberline {2.1}{\ignorespaces 常见激活函数的公式}}{14}{table.caption.18}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces 常见损失函数的公式}}{16}{table.caption.19}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces 常见激活函数的公式}}{15}{table.caption.18}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces 常见损失函数的公式}}{17}{table.caption.19}%
 \addvspace {10.0pt}
-\contentsline {table}{\numberline {3.1}{\ignorespaces 实验环境设置}}{28}{table.caption.25}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces 数据集内容}}{29}{table.caption.26}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces 模型及训练参数设置}}{32}{table.caption.28}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces 不同数据集上的对比实验结果}}{34}{table.caption.29}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces 实验环境设置}}{29}{table.caption.25}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces 数据集内容}}{30}{table.caption.26}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces 模型及训练参数设置}}{33}{table.caption.28}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces 不同数据集上的对比实验结果}}{35}{table.caption.29}%
 \addvspace {10.0pt}
-\contentsline {table}{\numberline {4.1}{\ignorespaces IP数据报头结构}}{38}{table.caption.31}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces 模型及训练参数设置}}{45}{table.caption.35}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces 不同数据集上的对比实验结果}}{47}{table.caption.36}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces IP数据报头结构}}{39}{table.caption.31}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces 模型及训练参数设置}}{46}{table.caption.35}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces 不同数据集上的对比实验结果}}{48}{table.caption.36}%
+\addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

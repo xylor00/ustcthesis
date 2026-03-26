@@ -1,6 +1,7 @@
 % !TeX encoding = UTF-8
 % !TeX program = xelatex
 % !TeX spellcheck = en_US
+% !BIB program = bibtex
 
 \documentclass[degree=master, degree-type = academic]{ustcthesis}
 % degree      = doctor | master | bachelor
@@ -13,7 +14,7 @@
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{makecell}
-
+\usepackage{natbib}
 
 \begin{document}
 
@@ -37,12 +38,13 @@
 \include{chapters/conclusion}
 \include{chapters/citations}
 
+\backmatter
 \bibliography{bib/ustc}  % 参考文献使用 BibTeX 编译
 % \printbibliography       % 参考文献使用 BibLaTeX 编译
 
 \appendix
 
-\backmatter
+
 \include{chapters/acknowledgements}
 \include{chapters/achievements}
 
