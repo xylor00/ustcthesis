@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  27 MAR 2026 03:28
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  28 MAR 2026 05:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -996,7 +996,7 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \TeXr@lab=\toks36
 )
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 19.
- (./main.aux (./chapters/innovations.aux) (./chapters/abstract.aux) (./chapters/intro.aux) (./chapters/relevant_theories.aux) (./chapters/flevel_feature.aux) (./chapters/plevel_feature.aux) (./chapters/conclusion.aux) (./chapters/citations.aux) (./chapters/acknowledgements.aux) (./chapters/achievements.aux))
+ (./main.aux (./chapters/innovations.aux) (./chapters/abstract.aux) (./chapters/intro.aux) (./chapters/relevant_theories.aux) (./chapters/flevel_feature.aux) (./chapters/plevel_feature.aux) (./chapters/conclusion.aux) (./chapters/citations.aux) (./chapters/achievements.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -1266,11 +1266,11 @@ File: figures/firefox.png Graphic file (type bmp)
 [3]
 
 [4]
+
+[5]
 File: figures/content.png Graphic file (type bmp)
 <figures/content.png>
 
-
-[5]
 
 [6]
 
@@ -1307,31 +1307,31 @@ File: figures/pooling.png Graphic file (type bmp)
 [13]
 File: figures/activation.png Graphic file (type bmp)
 <figures/activation.png>
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 85.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 81.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 10.97418pt on input line 85.
+(Font)              scaled to size 10.97418pt on input line 81.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 7.68188pt on input line 85.
+(Font)              scaled to size 7.68188pt on input line 81.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 5.48708pt on input line 85.
+(Font)              scaled to size 5.48708pt on input line 81.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 10.97519pt on input line 85.
+(Font)              scaled to size 10.97519pt on input line 81.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.6826pt on input line 85.
+(Font)              scaled to size 7.6826pt on input line 81.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 5.48758pt on input line 85.
+(Font)              scaled to size 5.48758pt on input line 81.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 10.973pt on input line 85.
+(Font)              scaled to size 10.973pt on input line 81.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 7.68106pt on input line 85.
+(Font)              scaled to size 7.68106pt on input line 81.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.4865pt on input line 85.
+(Font)              scaled to size 5.4865pt on input line 81.
 LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 10.44044pt on input line 85.
+(Font)              scaled to size 10.44044pt on input line 81.
 LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 7.30827pt on input line 85.
+(Font)              scaled to size 7.30827pt on input line 81.
 LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 5.22021pt on input line 85.
+(Font)              scaled to size 5.22021pt on input line 81.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1530,38 +1530,28 @@ LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
 ])
 
 [56]
-\openout2 = `chapters/acknowledgements.aux'.
-
- (./chapters/acknowledgements.tex)
-
-[57
-
-
-]
 \openout2 = `chapters/achievements.aux'.
 
  (./chapters/achievements.tex)
 
-[58
+[57
 
 
-
-
-] (./main.aux (./chapters/innovations.aux) (./chapters/abstract.aux) (./chapters/intro.aux) (./chapters/relevant_theories.aux) (./chapters/flevel_feature.aux) (./chapters/plevel_feature.aux) (./chapters/conclusion.aux) (./chapters/citations.aux) (./chapters/acknowledgements.aux) (./chapters/achievements.aux))
+] (./main.aux (./chapters/innovations.aux) (./chapters/abstract.aux) (./chapters/intro.aux) (./chapters/relevant_theories.aux) (./chapters/flevel_feature.aux) (./chapters/plevel_feature.aux) (./chapters/conclusion.aux) (./chapters/citations.aux) (./chapters/achievements.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 28DB3D044AE1F085C7F393D90BBAEBC0;10857.
+(rerunfilecheck)             Checksum: 8B8231AE361F73A6EA09423792C67F0C;10836.
  ) 
 Here is how much of TeX's memory you used:
- 30713 strings out of 475796
- 670030 string characters out of 5774034
- 1155447 words of memory out of 5000000
- 53107 multiletter control sequences out of 15000+600000
+ 30645 strings out of 475796
+ 666232 string characters out of 5774034
+ 1153681 words of memory out of 5000000
+ 53045 multiletter control sequences out of 15000+600000
  566318 words of font info for 179 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 106i,15n,127p,1847b,2823s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 106i,15n,127p,1847b,2853s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (72 pages).
+Output written on main.pdf (71 pages).

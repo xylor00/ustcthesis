@@ -10,7 +10,6 @@ A level-1 auxiliary file: chapters/flevel_feature.aux
 A level-1 auxiliary file: chapters/plevel_feature.aux
 A level-1 auxiliary file: chapters/conclusion.aux
 A level-1 auxiliary file: chapters/citations.aux
-A level-1 auxiliary file: chapters/acknowledgements.aux
 A level-1 auxiliary file: chapters/achievements.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 150 items from 100.
@@ -26,7 +25,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bib/ustc.bib
 You've used 34 entries,
             5383 wiz_defined-function locations,
-            1261 strings with 12448 characters,
+            1260 strings with 12419 characters,
 and the built_in function-call counts, 120119 in all, are:
 = -- 3315
 > -- 12314
