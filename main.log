@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  28 MAR 2026 21:10
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  29 MAR 2026 04:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1392,11 +1392,14 @@ File: figures/encoder.png Graphic file (type bmp)
 [29]
 
 [30]
+
+[31]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: figures/datapreprocessing.png Graphic file (type bmp)
 <figures/datapreprocessing.png>
 
-
-[31]
 
 [32]
 
@@ -1406,9 +1409,11 @@ File: figures/datapreprocessing.png Graphic file (type bmp)
 
 [35]
 
-[36])
+[36]
 
-[37]
+[37])
+
+[38]
 \openout2 = `chapters/plevel_feature.aux'.
 
  (./chapters/plevel_feature.tex
@@ -1417,33 +1422,31 @@ File: figures/confusion.png Graphic file (type bmp)
 <figures/confusion.png>
 
 
-[38
+[39
 
 
 
 
 ]
 
-[39]
+[40]
 File: figures/ngram.png Graphic file (type bmp)
 <figures/ngram.png>
 
 
-[40]
-
 [41]
+
+[42]
 File: figures/cross.png Graphic file (type bmp)
 <figures/cross.png>
 
 
-[42]
-
 [43]
+
+[44]
 File: figures/sort.png Graphic file (type bmp)
 <figures/sort.png>
 
-
-[44]
 
 [45]
 
@@ -1452,29 +1455,29 @@ File: figures/sort.png Graphic file (type bmp)
 [47]
 
 [48]
+
+[49]
 File: figures/confusionB.png Graphic file (type bmp)
 <figures/confusionB.png>
 
 
-[49]
+[50]
 
-[50])
+[51])
 
-[51]
+[52]
 \openout2 = `chapters/conclusion.aux'.
 
  (./chapters/conclusion.tex
 第5章
 
 
-[52
+[53
 
 
 
 
-]
-
-[53])
+])
 
 [54]
 \openout2 = `chapters/citations.aux'.
@@ -1538,15 +1541,15 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8B8231AE361F73A6EA09423792C67F0C;10836.
+(rerunfilecheck)             Checksum: 7F7D46F5DA8059C6675ECE6FCF2A5D39;10764.
  ) 
 Here is how much of TeX's memory you used:
- 30645 strings out of 475796
- 666244 string characters out of 5774034
- 1153681 words of memory out of 5000000
- 53045 multiletter control sequences out of 15000+600000
+ 30603 strings out of 475796
+ 663452 string characters out of 5774034
+ 1153609 words of memory out of 5000000
+ 53003 multiletter control sequences out of 15000+600000
  566318 words of font info for 179 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 106i,15n,127p,1847b,2853s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 106i,15n,127p,1847b,2823s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (72 pages).
