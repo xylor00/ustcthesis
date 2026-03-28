@@ -9,7 +9,6 @@ A level-1 auxiliary file: chapters/relevant_theories.aux
 A level-1 auxiliary file: chapters/flevel_feature.aux
 A level-1 auxiliary file: chapters/plevel_feature.aux
 A level-1 auxiliary file: chapters/conclusion.aux
-A level-1 auxiliary file: chapters/citations.aux
 A level-1 auxiliary file: chapters/achievements.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 150 items from 100.
@@ -23,44 +22,44 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bib/ustc.bib
-You've used 34 entries,
+You've used 72 entries,
             5383 wiz_defined-function locations,
-            1260 strings with 12419 characters,
-and the built_in function-call counts, 120119 in all, are:
-= -- 3315
-> -- 12314
-< -- 16113
-+ -- 5087
-- -- 1214
-* -- 997
-:= -- 17445
-add.period$ -- 110
-call.type$ -- 34
-change.case$ -- 62
-chr.to.int$ -- 4501
-cite$ -- 34
-duplicate$ -- 633
-empty$ -- 1851
-format.name$ -- 557
-if$ -- 31316
+            1456 strings with 23866 characters,
+and the built_in function-call counts, 676636 in all, are:
+= -- 11676
+> -- 81380
+< -- 100532
++ -- 27066
+- -- 5066
+* -- 3608
+:= -- 92882
+add.period$ -- 216
+call.type$ -- 72
+change.case$ -- 186
+chr.to.int$ -- 24907
+cite$ -- 72
+duplicate$ -- 1490
+empty$ -- 4500
+format.name$ -- 2485
+if$ -- 176328
 int.to.chr$ -- 1
-int.to.str$ -- 35
+int.to.str$ -- 73
 missing$ -- 0
-newline$ -- 196
-num.names$ -- 107
-pop$ -- 4973
+newline$ -- 402
+num.names$ -- 216
+pop$ -- 37410
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 115
 quote$ -- 0
-skip$ -- 11515
+skip$ -- 70314
 stack$ -- 0
-substring$ -- 5873
-swap$ -- 34
-text.length$ -- 448
+substring$ -- 30570
+swap$ -- 78
+text.length$ -- 1525
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 331
+type$ -- 792
 warning$ -- 0
-while$ -- 505
+while$ -- 1648
 width$ -- 0
-write$ -- 472
+write$ -- 1025

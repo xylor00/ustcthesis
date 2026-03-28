@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{72}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -11,186 +11,392 @@
   \let\eprint\href
 \fi
 
-\bibitem[Knuth(1986)]{knuth86a}
-Knuth D~E.
-\newblock Computers and typesetting: A\quad the {\TeX}book\allowbreak[M].
-\newblock Reading, MA, USA: Addison-Wesley, 1986.
+\bibitem[Nelms et~al.(2013)Nelms, Perdisci, and Ahamad]{nelms2013execscent}
+Nelms T, Perdisci R, Ahamad M.
+\newblock $\{$ExecScent$\}$: Mining for new $\{$C\&C$\}$ domains in live networks with adaptive control protocol templates\allowbreak[C]//\allowbreak
+22nd USENIX Security Symposium (USENIX Security 13).
+\newblock 2013: 589-604.
 
-\bibitem[Mittelbach et~al.(2004)Mittelbach, Goossens, Braams, and Carlisle]{tlc2}
-Mittelbach F, Goossens M, Braams J, et~al.
-\newblock The {\LaTeX} companion\allowbreak[M].
-\newblock 2nd ed.
-\newblock Reading, MA, USA: Addison-Wesley, 2004.
+\bibitem[Su et~al.(2016)Su, Chen, Han, Xu, and Wang]{su201660gbps}
+Su J, Chen S, Han B, et~al.
+\newblock A 60gbps dpi prototype based on memory-centric fpga\allowbreak[C]//\allowbreak
+Proceedings of the 2016 ACM SIGCOMM Conference.
+\newblock 2016: 627-628.
 
-\bibitem[Knuth(1984)]{knuth84}
-Knuth D~E.
-\newblock Literate programming\allowbreak[J].
-\newblock The Computer Journal, 1984, 27\allowbreak (2): 97-111.
+\bibitem[Melo et~al.(2014)Melo, Lopes, Antonello, Fernandes, and Sadok]{melo2014performance}
+Melo W, Lopes P, Antonello R, et~al.
+\newblock On the performance of dpi signature matching with dynamic priority\allowbreak[C]//\allowbreak
+2014 IEEE Symposium on Computers and Communications (ISCC).
+\newblock IEEE, 2014: 1-6.
 
-\bibitem[Lamport(1994)]{lamport94}
-Lamport L.
-\newblock {\LaTeX}: a document preparation system\allowbreak[M].
-\newblock 2nd ed.
-\newblock Reading, MA, USA: Addison-Wesley, 1994.
+\bibitem[Khalife et~al.(2014)Khalife, Hajjar, and Diaz-Verdejo]{khalife2014multilevel}
+Khalife J, Hajjar A, Diaz-Verdejo J.
+\newblock A multilevel taxonomy and requirements for an optimal traffic-classification model\allowbreak[J].
+\newblock International Journal of Network Management, 2014, 24\allowbreak (2): 101-120.
 
-\bibitem[孙立广(2016)]{sunliguang2016jidi}
-孙立广.
-\newblock 极地科学前沿与热点：顶级期刊论文摘要汇编（1999—2010）\allowbreak[M].
-\newblock 合肥: 中国科学技术大学出版社, 2016: 222.
+\bibitem[Xie et~al.(2020)Xie, Li, Jiang, Dai, Shen, Li, Sinnott, and Xia]{xie2020sam}
+Xie G, Li Q, Jiang Y, et~al.
+\newblock Sam: Self-attention based deep learning method for online traffic classification\allowbreak[C]//\allowbreak
+Proceedings of the Workshop on Network Meets AI \& ML.
+\newblock 2020: 14-20.
 
-\bibitem[李永池(2016)]{liyongchi2016zhangliang}
-李永池.
-\newblock 张量初步和近代连续介质力学概论\allowbreak[M].
-\newblock 2 版.
-\newblock 合肥: 中国科学技术大学出版社, 2016: 61.
+\bibitem[Constantinou et~al.(2006)Constantinou and Mavrommatis]{constantinou2006identifying}
+Constantinou F, Mavrommatis P.
+\newblock Identifying known and unknown peer-to-peer traffic\allowbreak[C]//\allowbreak
+Fifth IEEE International Symposium on Network Computing and Applications (NCA'06).
+\newblock IEEE, 2006: 93-102.
 
-\bibitem[刘景双(2014)]{liujingshuang2014shidi}
-刘景双.
-\newblock 湿地生态系统碳、氮、硫、磷生物地球化学过程\allowbreak[M].
-\newblock 合肥: 中国科学技术大学出版社, 2014.
+\bibitem[Erman et~al.(2007)Erman, Mahanti, Arlitt, and Williamson]{erman2007identifying}
+Erman J, Mahanti A, Arlitt M, et~al.
+\newblock Identifying and discriminating between web and peer-to-peer traffic in the network core\allowbreak[C]//\allowbreak
+Proceedings of the 16th international conference on World Wide Web.
+\newblock 2007: 883-892.
 
-\bibitem[Crawford et~al.(1995)Crawford and Gorman]{crawford1995future}
-Crawford W, Gorman M.
-\newblock Future libraries: Dreams, madness, \& reality\allowbreak[M].
-\newblock Chicago: American Library Association, 1995.
+\bibitem[Khandait et~al.(2020)Khandait, Hubballi, and Mazumdar]{khandait2020efficient}
+Khandait P, Hubballi N, Mazumdar B.
+\newblock Efficient keyword matching for deep packet inspection based network traffic classification\allowbreak[C]//\allowbreak
+2020 International Conference on COMmunication Systems \& NETworkS (COMSNETS).
+\newblock IEEE, 2020: 567-570.
 
-\bibitem[{International Federation of Library Association and Institutions}(1977)]{ifla1977names}
-{International Federation of Library Association and Institutions}.
-\newblock Names of persons: National usage for entry in catalogues\allowbreak[M].
-\newblock 3rd ed.
-\newblock London: IFLA Internation Office for UBC, 1977.
+\bibitem[Dainotti et~al.(2012)Dainotti, Pescape, and Claffy]{dainotti2012issues}
+Dainotti A, Pescape A, Claffy K~C.
+\newblock Issues and future directions in traffic classification\allowbreak[J].
+\newblock IEEE network, 2012, 26\allowbreak (1): 35-40.
 
-\bibitem[程根伟(1999)]{chenggenwei1999hongshui}
-程根伟.
-\newblock 1998年长江洪水的成因与减灾对策\allowbreak[M]//\allowbreak
-许厚泽, 赵其国.
-\newblock 长江流域洪涝灾害与科技对策.
-\newblock 北京: 科学出版社, 1999: 26-32.
+\bibitem[Taylor et~al.(2016)Taylor, Spolaor, Conti, and Martinovic]{taylor2016appscanner}
+Taylor V~F, Spolaor R, Conti M, et~al.
+\newblock Appscanner: Automatic fingerprinting of smartphone apps from encrypted network traffic\allowbreak[C]//\allowbreak
+2016 IEEE European Symposium on Security and Privacy (EuroS\&P).
+\newblock IEEE, 2016: 439-454.
 
-\bibitem[陈晋镳\ 等(1980)陈晋镳, 张惠民, 朱士兴, 赵震, and 王振刚]{chenjinbiao1980jixian}
-陈晋镳, 张惠民, 朱士兴, 等.
-\newblock 蓟县震旦亚界研究\allowbreak[M]//\allowbreak
-中国地质科学院天津地质矿产研究所.
-\newblock 中国震旦亚界.
-\newblock 天津: 天津科学技术出版社, 1980: 56-114.
+\bibitem[Liu et~al.(2018)Liu, Cao, Xiong, Gou, Yiu, and He]{liu2018mampf}
+Liu C, Cao Z, Xiong G, et~al.
+\newblock Mampf: Encrypted traffic classification based on multi-attribute markov probability fingerprints\allowbreak[C]//\allowbreak
+2018 IEEE/ACM 26th International Symposium on Quality of Service (IWQoS).
+\newblock IEEE, 2018: 1-10.
 
-\bibitem[Buseck et~al.(1980)Buseck, Nord, and Veblen]{buseck2018subsolidus}
-Buseck P~R, Nord G~L, Jr., Veblen D~R.
-\newblock Subsolidus phenomena in pyroxenes\allowbreak[M]//\allowbreak
-Prewitt C~T.
-\newblock Pyroxenes.
-\newblock Washington, D.C.: Mineralogical Society of America, 1980: 117-212.
+\bibitem[Van~Ede et~al.(2020)Van~Ede, Bortolameotti, Continella, Ren, Dubois, Lindorfer, Choffnes, Van~Steen, and Peter]{van2020flowprint}
+Van~Ede T, Bortolameotti R, Continella A, et~al.
+\newblock Flowprint: Semi-supervised mobile-app fingerprinting on encrypted network traffic\allowbreak[C]//\allowbreak
+Network and distributed system security symposium (NDSS): Vol.~27.
+\newblock 2020.
 
-\bibitem[Fourney(1971)]{fourney1971advances}
-Fourney M~E.
-\newblock Advances in holographic photoelasticity\allowbreak[C]//\allowbreak
-American Society of Mechanical Engineers．Applied Mechanics Division．Symposium on Applications of Holography in Mechanics, August 23-25,1971,University of Southern California, Los Angeles, California.
-\newblock New York: ASME, 1971: 17-38.
+\bibitem[Taylor et~al.(2017)Taylor, Spolaor, Conti, and Martinovic]{taylor2017robust}
+Taylor V~F, Spolaor R, Conti M, et~al.
+\newblock Robust smartphone app identification via encrypted network traffic analysis\allowbreak[J].
+\newblock IEEE Transactions on Information Forensics and Security, 2017, 13\allowbreak (1): 63-78.
 
-\bibitem[孔庆勇\ 等(2015)孔庆勇, 郭红健, and 孔庆和]{kongqingyong2015keji}
-孔庆勇, 郭红健, 孔庆和.
-\newblock 我国科技期刊的金字塔分层模型及发展路径初探\allowbreak[J].
-\newblock 中国科技期刊研究, 2015, 26\allowbreak (10): 1100-1103.
+\bibitem[Shen et~al.(2020)Shen, Liu, Zhu, Du, and Hu]{shen2020fine}
+Shen M, Liu Y, Zhu L, et~al.
+\newblock Fine-grained webpage fingerprinting using only packet length information of encrypted traffic\allowbreak[J].
+\newblock IEEE Transactions on Information Forensics and Security, 2020, 16: 2046-2059.
 
-\bibitem[杨洪升(2013)]{yanghongsheng2013siku}
-杨洪升.
-\newblock 四库馆私家抄校书考略\allowbreak[J].
-\newblock 文献, 2013\allowbreak (1): 56-75.
+\bibitem[Saber et~al.(2018)Saber, Fergani, and Abbas]{saber2018encrypted}
+Saber A, Fergani B, Abbas M.
+\newblock Encrypted traffic classification: Combining over-and under-sampling through a pca-svm\allowbreak[C]//\allowbreak
+2018 3rd International Conference on pattern analysis and intelligent systems (PAIS).
+\newblock IEEE, 2018: 1-5.
 
-\bibitem[于潇\ 等(2012)于潇, 刘义, 柴跃廷, et~al.]{yuxiao2012hulianwang}
-于潇, 刘义, 柴跃廷, 等.
-\newblock 互联网药品可信交易环境中主体资质审核备案模式\allowbreak[J].
-\newblock 清华大学学报(自然科学版), 2012, 52\allowbreak (11): 1518-1521.
+\bibitem[Anderson et~al.(2018)Anderson, Paul, and McGrew]{anderson2018deciphering}
+Anderson B, Paul S, McGrew D.
+\newblock Deciphering malware’s use of tls (without decryption)\allowbreak[J].
+\newblock Journal of Computer Virology and Hacking Techniques, 2018, 14\allowbreak (3): 195-211.
 
-\bibitem[Des~Marais et~al.(1992)Des~Marais, Strauss, Summons, et~al.]{desmarais1992carbon}
-Des~Marais D~J, Strauss H, Summons R~E, et~al.
-\newblock Carbon isotope evidence for the stepwise oxidation of the proterozoic environment\allowbreak[J].
-\newblock Nature, 1992, 359: 605-609.
+\bibitem[Liu et~al.(2012)Liu, Wang, and Wang]{liu2012semi}
+Liu H, Wang Z, Wang Y.
+\newblock Semi-supervised encrypted traffic classification using composite features set\allowbreak[M].
+\newblock Deakin University, 2012.
 
-\bibitem[HEWITT(1984)]{hewitt1984technical}
-HEWITT J~A.
-\newblock Technical services in 1983\allowbreak[J].
-\newblock Library Resource Services, 1984.
+\bibitem[Zhang et~al.(2014)Zhang, Chen, Xiang, Zhou, and Wu]{zhang2014robust}
+Zhang J, Chen X, Xiang Y, et~al.
+\newblock Robust network traffic classification\allowbreak[J].
+\newblock IEEE/ACM transactions on networking, 2014, 23\allowbreak (4): 1257-1270.
 
-\bibitem[丁文详(2000)]{dingwenxiang2000shuzi}
-丁文详.
-\newblock 数字革命与竞争国际化\allowbreak[N].
-\newblock 中国青年报, 2000-11-20\allowbreak (15).
+\bibitem[Fu et~al.(2016)Fu, Xiong, Lu, Yang, and Chen]{fu2016service}
+Fu Y, Xiong H, Lu X, et~al.
+\newblock Service usage classification with encrypted internet traffic in mobile messaging apps\allowbreak[J].
+\newblock IEEE Transactions on Mobile Computing, 2016, 15\allowbreak (11): 2851-2864.
 
-\bibitem[姜锡洲(1989)]{jiangxizhou1989waifu}
-姜锡洲.
-\newblock 一种温热外敷药制备方案: 88105607.3\allowbreak[P].
-\newblock 1989-07-26.
+\bibitem[Feghhi et~al.(2016)Feghhi and Leith]{feghhi2016web}
+Feghhi S, Leith D~J.
+\newblock A web traffic analysis attack using only timing information\allowbreak[J].
+\newblock IEEE Transactions on Information Forensics and Security, 2016, 11\allowbreak (8): 1747-1759.
 
-\bibitem[万锦坤(1996)]{wanjinkun1996wenzhai}
-万锦坤.
-\newblock 中国大学学报论文文摘（1983--1993）（英文版）\allowbreak[DB/CD].
-\newblock 北京: 中国大百科全书出版社, 1996.
+\bibitem[Panchenko et~al.(2016)Panchenko, Lanze, Pennekamp, Engel, Zinnen, Henze, and Wehrle]{panchenko2016website}
+Panchenko A, Lanze F, Pennekamp J, et~al.
+\newblock Website fingerprinting at internet scale.\allowbreak[C]//\allowbreak
+NDSS: Vol.~1.
+\newblock 2016: 23477.
 
-\bibitem[Mlot(1998)]{christine1998plant}
-Mlot C.
-\newblock Plant physiology: Plant biology in the {Genome Era}\allowbreak[J].
-\newblock Science, 1998, 281: 331-332.
+\bibitem[Wang et~al.(2017)Wang, Zhu, Wang, Zeng, and Yang]{wang2017end}
+Wang W, Zhu M, Wang J, et~al.
+\newblock End-to-end encrypted traffic classification with one-dimensional convolution neural networks\allowbreak[C]//\allowbreak
+2017 IEEE international conference on intelligence and security informatics (ISI).
+\newblock IEEE, 2017: 43-48.
 
-\bibitem[孙玉文(2000)]{sunyuwen2000hanyu}
-孙玉文.
-\newblock 汉语变调构词研究\allowbreak[D].
-\newblock 北京: 北京大学, 2000.
+\bibitem[Shapira et~al.(2021)Shapira and Shavitt]{shapira2021flowpic}
+Shapira T, Shavitt Y.
+\newblock Flowpic: A generic representation for encrypted traffic classification and applications identification\allowbreak[J].
+\newblock IEEE Transactions on Network and Service Management, 2021, 18\allowbreak (2): 1218-1232.
 
-\bibitem[Cairns(1965)]{cairns1965infrared}
-Cairns B~R.
-\newblock Infrared spectroscopic studies of solid oxygen\allowbreak[D].
-\newblock Berkeley: Univ. of California, 1965.
+\bibitem[Liu et~al.(2019)Liu, He, Xiong, Cao, and Li]{liu2019fs}
+Liu C, He L, Xiong G, et~al.
+\newblock Fs-net: A flow sequence network for encrypted traffic classification\allowbreak[C]//\allowbreak
+IEEE INFOCOM 2019-IEEE Conference On Computer Communications.
+\newblock IEEE, 2019: 1171-1179.
 
-\bibitem[中国力学学会(1990)]{lixuexuehui1990lunwenji}
-中国力学学会.
-\newblock 第 3 届全国实验流体力学学术会议论文集\allowbreak[C].
-\newblock 天津, 1990.
+\bibitem[Liu et~al.(2020)Liu, You, Wu, Li, Li, Zhang, and Ge]{liu2020attention}
+Liu X, You J, Wu Y, et~al.
+\newblock Attention-based bidirectional gru networks for efficient https traffic classification\allowbreak[J].
+\newblock Information Sciences, 2020, 541: 297-315.
 
-\bibitem[Rosenthall(1963)]{rosenthall1963mathematical}
-Rosenthall E~M.
-\newblock Proceedings of the {Fifth Canadian Mathematical Congress}, {University of Montreal}, 1961\allowbreak[C].
-\newblock Toronto: University of Toronto Press, 1963.
+\bibitem[Lin et~al.(2022)Lin, Xiong, Gou, Li, Shi, and Yu]{lin2022bert}
+Lin X, Xiong G, Gou G, et~al.
+\newblock Et-bert: A contextualized datagram representation with pre-training transformers for encrypted traffic classification\allowbreak[C]//\allowbreak
+Proceedings of the ACM Web Conference 2022.
+\newblock 2022: 633-642.
 
-\bibitem[Baker et~al.(1995)Baker and Jackson]{baker1995future}
-Baker S~K, Jackson M~E.
-\newblock The future of resource sharing\allowbreak[M].
-\newblock New York: The Haworth Press, 1995.
+\bibitem[Lotfollahi et~al.(2020)Lotfollahi, Jafari~Siavoshani, Shirali Hossein~Zade, and Saberian]{lotfollahi2020deep}
+Lotfollahi M, Jafari~Siavoshani M, Shirali Hossein~Zade R, et~al.
+\newblock Deep packet: A novel approach for encrypted traffic classification using deep learning\allowbreak[J].
+\newblock Soft Computing, 2020, 24\allowbreak (3): 1999-2012.
 
-\bibitem[尼葛洛庞帝(1996)]{nigeluopangdi1996shuzi}
-尼葛洛庞帝.
-\newblock 数字化生存\allowbreak[M].
-\newblock 胡泳, 范海燕, 译.
-\newblock 海口: 海南出版社, 1996.
+\bibitem[Aceto et~al.(2019)Aceto, Ciuonzo, Montieri, and Pescap{\`e}]{aceto2019mimetic}
+Aceto G, Ciuonzo D, Montieri A, et~al.
+\newblock Mimetic: Mobile encrypted traffic classification using multimodal deep learning\allowbreak[J].
+\newblock Computer networks, 2019, 165: 106944.
 
-\bibitem[杨宗英(1996)]{yangzongying1996dianzi}
-杨宗英.
-\newblock 电子图书馆的现实模型\allowbreak[J].
-\newblock 中国图书馆学报, 1996\allowbreak (2): 24-29.
+\bibitem[Wang et~al.(2020)Wang, Chen, and Su]{wang2020app}
+Wang X, Chen S, Su J.
+\newblock App-net: A hybrid neural network for encrypted mobile traffic classification\allowbreak[C]//\allowbreak
+IEEE INFOCOM 2020-IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS).
+\newblock IEEE, 2020: 424-429.
 
-\bibitem[刘斌(2014)]{liubin2014lixue}
-刘斌.
-\newblock 力学\allowbreak[M].
-\newblock 合肥, 2014: 24-29.
+\bibitem[Shen et~al.(2021)Shen, Zhang, Zhu, Xu, and Du]{shen2021accurate}
+Shen M, Zhang J, Zhu L, et~al.
+\newblock Accurate decentralized application identification via encrypted traffic analysis using graph neural networks\allowbreak[J].
+\newblock IEEE Transactions on Information Forensics and Security, 2021, 16: 2367-2380.
 
-\bibitem[刘文富\ 等(2000)刘文富 and 顾丽梅]{ustc-bachelor:01}
-刘文富, 顾丽梅.
-\newblock 网络时代经济发展战略特征\allowbreak[J].
-\newblock 学术研究, 2000, 21\allowbreak (4): 35-40.
+\bibitem[Han et~al.(2024)Han, Xu, Zhang, Yang, Yu, Huang, and Meng]{han2024gnn}
+Han X, Xu G, Zhang M, et~al.
+\newblock De-gnn: Dual embedding with graph neural network for fine-grained encrypted traffic classification\allowbreak[J].
+\newblock Computer Networks, 2024, 245: 110372.
 
-\bibitem[肖渡\ 等(2000)肖渡, 沈群红, 张芸, and 胡汉辉]{ustc-bachelor:02}
-肖渡, 沈群红, 张芸, 等.
-\newblock 知识时代的企业合作经营\allowbreak[M].
-\newblock 北京: 北京大学出版社, 2000: 67-69.
+\bibitem[Yang et~al.(2023)Yang, Yan, Gao, Rui, Lyu, Gao, and Yu]{yang2023network}
+Yang Y, Yan Y, Gao Z, et~al.
+\newblock A network traffic classification method based on dual-mode feature extraction and hybrid neural networks\allowbreak[J].
+\newblock IEEE Transactions on Network and Service Management, 2023, 20\allowbreak (4): 4073-4084.
 
-\bibitem[{The White House}(1993)]{ustc-bachelor:03}
-{The White House}.
-\newblock Technology for economic growth\allowbreak[R].
-\newblock Washington, 1993.
+\bibitem[Wang et~al.(2024)Wang, Yuan, Wang, Gou, Gu, Yu, and Xiong]{wang2024combine}
+Wang X, Yuan Q, Wang Y, et~al.
+\newblock Combine intra-and inter-flow: A multimodal encrypted traffic classification model driven by diverse features\allowbreak[J].
+\newblock Computer Networks, 2024, 245: 110403.
 
-\bibitem[Hutson(1992)]{ustc-bachelor:04}
-Hutson J~M.
-\newblock Vibrational dependence of the anisotropic intermolecular potential of argon-hydrogen chloride\allowbreak[J].
-\newblock J. Phys. Chem., 1992, 96\allowbreak (11): 4237-4247.
+\bibitem[Su et~al.(2021)Su, Wang, Luan, Zhang, Li, Chen, and Cao]{su2021secure}
+Su Z, Wang Y, Luan T~H, et~al.
+\newblock Secure and efficient federated learning for smart grid with edge-cloud collaboration\allowbreak[J].
+\newblock IEEE Transactions on Industrial Informatics, 2021, 18\allowbreak (2): 1333-1344.
+
+\bibitem[Tang et~al.(2019)Tang, Kawamoto, Kato, and Liu]{tang2019future}
+Tang F, Kawamoto Y, Kato N, et~al.
+\newblock Future intelligent and secure vehicular network toward 6g: Machine-learning approaches\allowbreak[J].
+\newblock Proceedings of the IEEE, 2019, 108\allowbreak (2): 292-307.
+
+\bibitem[Hou et~al.(2021)Hou, Wen, Zhang, Wu, Lei, and Zhao]{hou2021incentive}
+Hou W, Wen H, Zhang N, et~al.
+\newblock Incentive-driven task allocation for collaborative edge computing in industrial internet of things\allowbreak[J].
+\newblock IEEE Internet of Things Journal, 2021, 9\allowbreak (1): 706-718.
+
+\bibitem[Zhang et~al.(2020)Zhang, Fang, Wang, Wu, Wu, Kar, and Zhang]{zhang2020physical}
+Zhang N, Fang X, Wang Y, et~al.
+\newblock Physical-layer authentication for internet of things via wfrft-based gaussian tag embedding\allowbreak[J].
+\newblock IEEE Internet of Things Journal, 2020, 7\allowbreak (9): 9001-9010.
+
+\bibitem[Gui et~al.(2020)Gui, Liu, Tang, Kato, and Adachi]{gui20206g}
+Gui G, Liu M, Tang F, et~al.
+\newblock 6g: Opening new horizons for integration of comfort, security, and intelligence\allowbreak[J].
+\newblock IEEE Wireless Communications, 2020, 27\allowbreak (5): 126-132.
+
+\bibitem[Coulter et~al.(2019)Coulter, Han, Pan, Zhang, and Xiang]{coulter2019data}
+Coulter R, Han Q~L, Pan L, et~al.
+\newblock Data-driven cyber security in perspective-intelligent traffic analysis\allowbreak[J].
+\newblock IEEE transactions on cybernetics, 2019, 50\allowbreak (7): 3081-3093.
+
+\bibitem[Zhang et~al.(2022)Zhang, Luo, Li, Chen, and Wu]{zhang2022novel}
+Zhang H, Luo L, Li Y, et~al.
+\newblock A novel framework for malicious encrypted traffic classification at host level and flow level\allowbreak[C]//\allowbreak
+2022 7th IEEE International Conference on Data Science in Cyberspace (DSC).
+\newblock IEEE, 2022: 506-511.
+
+\bibitem[Li et~al.(2009)Li, Canini, Moore, and Bolla]{li2009efficient}
+Li W, Canini M, Moore A~W, et~al.
+\newblock Efficient application identification and the temporal and spatial stability of classification schema\allowbreak[J].
+\newblock Computer Networks, 2009, 53\allowbreak (6): 790-809.
+
+\bibitem[Dreger et~al.(2006)Dreger, Feldmann, Mai, Paxson, and Sommer]{dreger2006dynamic}
+Dreger H, Feldmann A, Mai M, et~al.
+\newblock Dynamic application-layer protocol analysis for network intrusion detection\allowbreak[C]//\allowbreak
+15th USENIX security symposium.
+\newblock USENIX Association, 2006: 257-272.
+
+\bibitem[Sen et~al.(2004)Sen, Spatscheck, and Wang]{sen2004accurate}
+Sen S, Spatscheck O, Wang D.
+\newblock Accurate, scalable in-network identification of p2p traffic using application signatures\allowbreak[C]//\allowbreak
+Proceedings of the 13th international conference on World Wide Web.
+\newblock 2004: 512-521.
+
+\bibitem[衣世东(2018)]{衣世东}
+衣世东.
+\newblock 基于深度学习的图像识别算法研究\allowbreak[J].
+\newblock 网络安全技术与应用, 2018: 39-41.
+
+\bibitem[LeCun et~al.(2015)LeCun, Bengio, and Hinton]{lecun2015deep}
+LeCun Y, Bengio Y, Hinton G.
+\newblock Deep learning\allowbreak[J].
+\newblock nature, 2015, 521\allowbreak (7553): 436-444.
+
+\bibitem[Almeida(2020)]{almeida2020multilayer}
+Almeida L~B.
+\newblock Multilayer perceptrons\allowbreak[M]//\allowbreak
+Handbook of neural computation.
+\newblock CRC Press, 2020: C1-2.
+
+\bibitem[Cong et~al.(2023)Cong and Zhou]{cong2023review}
+Cong S, Zhou Y.
+\newblock A review of convolutional neural network architectures and their optimizations\allowbreak[J].
+\newblock Artificial Intelligence Review, 2023, 56\allowbreak (3): 1905-1969.
+
+\bibitem[Sherstinsky(2020)]{sherstinsky2020fundamentals}
+Sherstinsky A.
+\newblock Fundamentals of recurrent neural network (rnn) and long short-term memory (lstm) network\allowbreak[J].
+\newblock Physica d: Nonlinear phenomena, 2020, 404: 132306.
+
+\bibitem[Goodfellow et~al.(2020)Goodfellow, Pouget-Abadie, Mirza, Xu, Warde-Farley, Ozair, Courville, and Bengio]{goodfellow2020generative}
+Goodfellow I, Pouget-Abadie J, Mirza M, et~al.
+\newblock Generative adversarial networks\allowbreak[J].
+\newblock Communications of the ACM, 2020, 63\allowbreak (11): 139-144.
+
+\bibitem[Lauriola et~al.(2022)Lauriola, Lavelli, and Aiolli]{lauriola2022introduction}
+Lauriola I, Lavelli A, Aiolli F.
+\newblock An introduction to deep learning in natural language processing: Models, techniques, and tools\allowbreak[J].
+\newblock Neurocomputing, 2022, 470: 443-456.
+
+\bibitem[Kheddar et~al.(2024)Kheddar, Hemis, and Himeur]{kheddar2024automatic}
+Kheddar H, Hemis M, Himeur Y.
+\newblock Automatic speech recognition using advanced deep learning approaches: A survey\allowbreak[J].
+\newblock Information fusion, 2024, 109: 102422.
+
+\bibitem[Zamanzadeh~Darban et~al.(2024)Zamanzadeh~Darban, Webb, Pan, Aggarwal, and Salehi]{zamanzadeh2024deep}
+Zamanzadeh~Darban Z, Webb G~I, Pan S, et~al.
+\newblock Deep learning for time series anomaly detection: A survey\allowbreak[J].
+\newblock ACM Computing Surveys, 2024, 57\allowbreak (1): 1-42.
+
+\bibitem[Bachute et~al.(2021)Bachute and Subhedar]{bachute2021autonomous}
+Bachute M~R, Subhedar J~M.
+\newblock Autonomous driving architectures: insights of machine learning and deep learning algorithms\allowbreak[J].
+\newblock Machine Learning with Applications, 2021, 6: 100164.
+
+\bibitem[Zhang et~al.(2024)Zhang, Yang, Chen, Zhang, Leng, and Zhao]{zhang2024deep}
+Zhang S, Yang Y, Chen C, et~al.
+\newblock Deep learning-based multimodal emotion recognition from audio, visual, and text modalities: A systematic review of recent advancements and future prospects\allowbreak[J].
+\newblock Expert Systems with Applications, 2024, 237: 121692.
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{he2016deep}
+He K, Zhang X, Ren S, et~al.
+\newblock Deep residual learning for image recognition\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2016: 770-778.
+
+\bibitem[Bahdanau et~al.(2014)Bahdanau, Cho, and Bengio]{bahdanau2014neural}
+Bahdanau D, Cho K, Bengio Y.
+\newblock Neural machine translation by jointly learning to align and translate\allowbreak[A].
+\newblock 2014.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin]{vaswani2017attention}
+Vaswani A, Shazeer N, Parmar N, et~al.
+\newblock Attention is all you need\allowbreak[J].
+\newblock Advances in neural information processing systems, 2017, 30.
+
+\bibitem[Niu et~al.(2021)Niu, Zhong, and Yu]{niu2021review}
+Niu Z, Zhong G, Yu H.
+\newblock A review on the attention mechanism of deep learning\allowbreak[J].
+\newblock Neurocomputing, 2021, 452: 48-62.
+
+\bibitem[Jaiswal et~al.(2020)Jaiswal, Babu, Zadeh, Banerjee, and Makedon]{jaiswal2020survey}
+Jaiswal A, Babu A~R, Zadeh M~Z, et~al.
+\newblock A survey on contrastive self-supervised learning\allowbreak[J].
+\newblock Technologies, 2020, 9\allowbreak (1): 2.
+
+\bibitem[Liu et~al.(2021)Liu, Zhang, Hou, Mian, Wang, Zhang, and Tang]{liu2021self}
+Liu X, Zhang F, Hou Z, et~al.
+\newblock Self-supervised learning: Generative or contrastive\allowbreak[J].
+\newblock IEEE transactions on knowledge and data engineering, 2021, 35\allowbreak (1): 857-876.
+
+\bibitem[Zhan et~al.(2023)Zhan, Li, Li, Zhang, Li, and Wang]{zhan2023toward}
+Zhan M, Li Y, Li B, et~al.
+\newblock Toward automated field semantics inference for binary protocol reverse engineering\allowbreak[J].
+\newblock IEEE Transactions on Information Forensics and Security, 2023, 19: 764-776.
+
+\bibitem[Yao et~al.(2021)Yao, Yi, Cheng, Yu, Chen, Menon, Hong, Chi, Tjoa, Kang, et~al.]{yao2021self}
+Yao T, Yi X, Cheng D~Z, et~al.
+\newblock Self-supervised learning for large-scale item recommendations\allowbreak[C]//\allowbreak
+Proceedings of the 30th ACM international conference on information \& knowledge management.
+\newblock 2021: 4321-4330.
+
+\bibitem[He et~al.(2020)He, Fan, Wu, Xie, and Girshick]{he2020momentum}
+He K, Fan H, Wu Y, et~al.
+\newblock Momentum contrast for unsupervised visual representation learning\allowbreak[C]//\allowbreak
+Proceedings of the IEEE/CVF conference on computer vision and pattern recognition.
+\newblock 2020: 9729-9738.
+
+\bibitem[Shorten et~al.(2019)Shorten and Khoshgoftaar]{shorten2019survey}
+Shorten C, Khoshgoftaar T~M.
+\newblock A survey on image data augmentation for deep learning\allowbreak[J].
+\newblock Journal of big data, 2019, 6\allowbreak (1): 1-48.
+
+\bibitem[Chen et~al.(2020)Chen, Kornblith, Norouzi, and Hinton]{chen2020simple}
+Chen T, Kornblith S, Norouzi M, et~al.
+\newblock A simple framework for contrastive learning of visual representations\allowbreak[C]//\allowbreak
+International conference on machine learning.
+\newblock PmLR, 2020: 1597-1607.
+
+\bibitem[Grill et~al.(2020)Grill, Strub, Altch{\'e}, Tallec, Richemond, Buchatskaya, Doersch, Avila~Pires, Guo, Gheshlaghi~Azar, et~al.]{grill2020bootstrap}
+Grill J~B, Strub F, Altch{\'e} F, et~al.
+\newblock Bootstrap your own latent-a new approach to self-supervised learning\allowbreak[J].
+\newblock Advances in neural information processing systems, 2020, 33: 21271-21284.
+
+\bibitem[Xie et~al.(2023)Xie, Wang, Cao, Dong, Xu, Sun, Li, Shen, and Zhang]{xie2023rosetta}
+Xie R, Wang Y, Cao J, et~al.
+\newblock Rosetta: Enabling robust tls encrypted traffic classification in diverse network environments with tcp-aware traffic augmentation\allowbreak[C]//\allowbreak
+Proceedings of the ACM turing award celebration conference-China 2023.
+\newblock 2023: 131-132.
+
+\bibitem[Draper-Gil et~al.(2016)Draper-Gil, Lashkari, Mamun, and Ghorbani]{draper2016characterization}
+Draper-Gil G, Lashkari A~H, Mamun M~S~I, et~al.
+\newblock Characterization of encrypted and vpn traffic using time-related\allowbreak[C]//\allowbreak
+Proceedings of the 2nd international conference on information systems security and privacy (ICISSP).
+\newblock 2016: 407-414.
+
+\bibitem[Lashkari et~al.(2017)Lashkari, Gil, Mamun, and Ghorbani]{lashkari2017characterization}
+Lashkari A~H, Gil G~D, Mamun M~S~I, et~al.
+\newblock Characterization of tor traffic using time based features\allowbreak[C]//\allowbreak
+International conference on information systems security and privacy: Vol.~2.
+\newblock SciTePress, 2017: 253-262.
+
+\bibitem[Wang et~al.(2017)Wang, Zhu, Zeng, Ye, and Sheng]{wang2017malware}
+Wang W, Zhu M, Zeng X, et~al.
+\newblock Malware traffic classification using convolutional neural network for representation learning\allowbreak[C]//\allowbreak
+2017 International conference on information networking (ICOIN).
+\newblock IEEE, 2017: 712-717.
+
+\bibitem[Jorgensen et~al.(2023)Jorgensen, Holodnak, Dempsey, de~Souza, Raghunath, Rivet, DeMoes, Alejos, and Wollaber]{jorgensen2023extensible}
+Jorgensen S, Holodnak J, Dempsey J, et~al.
+\newblock Extensible machine learning for encrypted network traffic application labeling via uncertainty quantification\allowbreak[J].
+\newblock IEEE Transactions on Artificial Intelligence, 2023, 5\allowbreak (1): 420-433.
+
+\bibitem[Hu et~al.(2024)Hu, Zeng, Song, Xu, and Zhou]{hu2024online}
+Hu Y, Zeng Z, Song J, et~al.
+\newblock Online network traffic classification based on external attention and convolution by ip packet header\allowbreak[J].
+\newblock Computer Networks, 2024, 252: 110656.
 
 \end{thebibliography}
