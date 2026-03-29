@@ -9,16 +9,16 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces 注意力机制处理过程}}{20}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces 对比学习过程}}{21}{figure.caption.21}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces BYOL模型框架}}{23}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces BYOL模型框架}}{24}{figure.caption.22}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces 数据包序列变化}}{24}{figure.caption.23}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces 编码器结构}}{27}{figure.caption.24}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces 数据预处理流程}}{34}{figure.caption.27}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 两个混淆矩阵}}{39}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces n-gram嵌入处理}}{42}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces 交叉注意力机制}}{44}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 不同长度数据包序列分类结果混淆矩阵}}{39}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 融合特征分类模型架构}}{40}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces n-gram嵌入处理}}{42}{figure.caption.33}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces 分类器结构}}{45}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 三种模型的混淆矩阵}}{51}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 三种模型的混淆矩阵}}{50}{figure.caption.37}%
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

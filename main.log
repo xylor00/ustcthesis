@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  29 MAR 2026 06:17
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.3)  30 MAR 2026 03:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -994,31 +994,71 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen299
 \c@nlinenum=\count377
 \TeXr@lab=\toks36
+) (c:/texlive/2025/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
+ (c:/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks37
+\XKV@tempa@toks=\toks38
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 19.
+\XKV@depth=\count378
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (c:/texlive/2025/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (c:/texlive/2025/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
+ (c:/texlive/2025/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box86
+)
+\tc@llx=\dimen300
+\tc@lly=\dimen301
+\tc@urx=\dimen302
+\tc@ury=\dimen303
+Package trimclip Info: Using driver 'tc-xetex.def'.
+ (c:/texlive/2025/texmf-dist/tex/latex/adjustbox/tc-xetex.def
+File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
+))
+\adjbox@Width=\dimen304
+\adjbox@Height=\dimen305
+\adjbox@Depth=\dimen306
+\adjbox@Totalheight=\dimen307
+\adjbox@pwidth=\dimen308
+\adjbox@pheight=\dimen309
+\adjbox@pdepth=\dimen310
+\adjbox@ptotalheight=\dimen311
+ (c:/texlive/2025/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box87
+\sift@deathcycles=\count379
+\@vwid@loff=\dimen312
+\@vwid@roff=\dimen313
+))
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 21.
  (./main.aux (./chapters/innovations.aux) (./chapters/abstract.aux) (./chapters/intro.aux) (./chapters/relevant_theories.aux) (./chapters/flevel_feature.aux) (./chapters/plevel_feature.aux) (./chapters/conclusion.aux) (./chapters/achievements.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1063,25 +1103,25 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  TU/XITSMath-Regular(1)/m/n --> TU/TimesNewRoman(0)/m/n on input line 19.
+(Font)                  TU/XITSMath-Regular(1)/m/n --> TU/TimesNewRoman(0)/m/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 19.
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 19.
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 19.
+(Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/Arial(0)/b/n on input line 19.
+(Font)                  OT1/cmss/bx/n --> TU/Arial(0)/b/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/m/n on input line 19.
+(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/m/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/b/n on input line 19.
+(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/b/n on input line 21.
 Package bicaption Info: Main language is set to chinese.
  (c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 19.
-Package hyperref Info: Link coloring OFF on input line 19.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 21.
+Package hyperref Info: Link coloring OFF on input line 21.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -1164,25 +1204,25 @@ File: figures/ustc-badge.pdf Graphic file (type pdf)
 
 ]
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 8.97888pt on input line 22.
+(Font)              scaled to size 8.97888pt on input line 24.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
-(Font)              scaled to size 7.1831pt on input line 22.
+(Font)              scaled to size 7.1831pt on input line 24.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 11.97295pt on input line 22.
+(Font)              scaled to size 11.97295pt on input line 24.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 8.9797pt on input line 22.
+(Font)              scaled to size 8.9797pt on input line 24.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.18378pt on input line 22.
+(Font)              scaled to size 7.18378pt on input line 24.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 11.97055pt on input line 22.
+(Font)              scaled to size 11.97055pt on input line 24.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 8.97792pt on input line 22.
+(Font)              scaled to size 8.97792pt on input line 24.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 7.18234pt on input line 22.
+(Font)              scaled to size 7.18234pt on input line 24.
 LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 8.54219pt on input line 22.
+(Font)              scaled to size 8.54219pt on input line 24.
 LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
-(Font)              scaled to size 6.83376pt on input line 22.
+(Font)              scaled to size 6.83376pt on input line 24.
 
 
 [5
@@ -1210,29 +1250,27 @@ LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
 
 ]
 
-[2]
-
-[3
+[2
 
 
 ])
 
-[4] (./main.toc
+[3] (./main.toc
 
-[5
+[4
 
 
 
 
 ]
 
-[6])
+[5])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 
 
-[7] (./main.lof)
+[6] (./main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
@@ -1242,8 +1280,12 @@ LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
 
 
 
-[8
+[7
 
+
+]
+
+[8
 
 ]
 \openout2 = `chapters/intro.aux'.
@@ -1257,7 +1299,6 @@ File: figures/firefox.png Graphic file (type bmp)
 [1
 
 
-
 ]
 
 [2]
@@ -1267,8 +1308,8 @@ File: figures/firefox.png Graphic file (type bmp)
 [4]
 
 [5]
-File: figures/content.png Graphic file (type bmp)
-<figures/content.png>
+File: figures/content.pdf Graphic file (type pdf)
+<use figures/content.pdf>
 
 
 [6]
@@ -1290,25 +1331,23 @@ File: figures/content.png Graphic file (type bmp)
 ]
 
 [10]
-File: figures/cnn.png Graphic file (type bmp)
-<figures/cnn.png>
+File: figures/cnn.pdf Graphic file (type pdf)
+<use figures/cnn.pdf>
 
 
 [11]
-File: figures/2dcnn.png Graphic file (type bmp)
-<figures/2dcnn.png>
+File: figures/2dcnn.pdf Graphic file (type pdf)
+<use figures/2dcnn.pdf>
 
 
 [12]
-File: figures/pooling.png Graphic file (type bmp)
-<figures/pooling.png>
+File: figures/pooling.pdf Graphic file (type pdf)
+<use figures/pooling.pdf>
 
 
 [13]
-
-[14]
-File: figures/activation.png Graphic file (type bmp)
-<figures/activation.png>
+File: figures/activation.pdf Graphic file (type pdf)
+<use figures/activation.pdf>
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 80.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
 (Font)              scaled to size 10.97418pt on input line 80.
@@ -1336,6 +1375,12 @@ LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
 (Font)              scaled to size 5.22021pt on input line 80.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[14]
+
 [15]
 
 [16]
@@ -1343,15 +1388,15 @@ LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
 [17]
 
 [18]
-File: figures/attention.png Graphic file (type bmp)
-<figures/attention.png>
+File: figures/attention.pdf Graphic file (type pdf)
+<use figures/attention.pdf>
 
 
 [19]
 
 [20]
-File: figures/contrastive.png Graphic file (type bmp)
-<figures/contrastive.png>
+File: figures/contrastive.pdf Graphic file (type pdf)
+<use figures/contrastive.pdf>
 
 
 [21])
@@ -1361,8 +1406,8 @@ File: figures/contrastive.png Graphic file (type bmp)
 
  (./chapters/flevel_feature.tex
 第3章
-File: figures/BYOL.png Graphic file (type bmp)
-<figures/BYOL.png>
+File: figures/BYOL.pdf Graphic file (type pdf)
+<use figures/BYOL.pdf>
 
 
 [23
@@ -1371,15 +1416,15 @@ File: figures/BYOL.png Graphic file (type bmp)
 
 
 ]
-File: figures/dataaug.png Graphic file (type bmp)
-<figures/dataaug.png>
+File: figures/dataaug.pdf Graphic file (type pdf)
+<use figures/dataaug.pdf>
 
 
 [24]
 
 [25]
-File: figures/encoder.png Graphic file (type bmp)
-<figures/encoder.png>
+File: figures/encoder.pdf Graphic file (type pdf)
+<use figures/encoder.pdf>
 
 
 [26]
@@ -1396,8 +1441,8 @@ File: figures/encoder.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: figures/datapreprocessing.png Graphic file (type bmp)
-<figures/datapreprocessing.png>
+File: figures/datapreprocessing.pdf Graphic file (type pdf)
+<use figures/datapreprocessing.pdf>
 
 
 [32]
@@ -1417,8 +1462,10 @@ File: figures/datapreprocessing.png Graphic file (type bmp)
 
  (./chapters/plevel_feature.tex
 第4章
-File: figures/confusion.png Graphic file (type bmp)
-<figures/confusion.png>
+File: figures/confusion.pdf Graphic file (type pdf)
+<use figures/confusion.pdf>
+File: figures/fusionnetwork.pdf Graphic file (type pdf)
+<use figures/fusionnetwork.pdf>
 
 
 [39
@@ -1429,22 +1476,19 @@ File: figures/confusion.png Graphic file (type bmp)
 ]
 
 [40]
-File: figures/ngram.png Graphic file (type bmp)
-<figures/ngram.png>
-
 
 [41]
+File: figures/ngram.pdf Graphic file (type pdf)
+<use figures/ngram.pdf>
+
 
 [42]
-File: figures/cross.png Graphic file (type bmp)
-<figures/cross.png>
-
 
 [43]
 
 [44]
-File: figures/sort.png Graphic file (type bmp)
-<figures/sort.png>
+File: figures/sort.pdf Graphic file (type pdf)
+<use figures/sort.pdf>
 
 
 [45]
@@ -1456,29 +1500,27 @@ File: figures/sort.png Graphic file (type bmp)
 [48]
 
 [49]
-File: figures/confusionB.png Graphic file (type bmp)
-<figures/confusionB.png>
+File: figures/confusionB.pdf Graphic file (type pdf)
+<use figures/confusionB.pdf>
 
 
-[50]
+[50])
 
-[51])
-
-[52]
+[51]
 \openout2 = `chapters/conclusion.aux'.
 
  (./chapters/conclusion.tex
 第5章
 
 
-[53
+[52
 
 
 
 
 ])
 
-[54] (./main.bbl
+[53] (./main.bbl
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
 (Font)              scaled to size 10.47536pt on input line 16.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(1)/m/n' will be
@@ -1505,27 +1547,27 @@ LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular(0)/m/n' will be
 (Font)              scaled to size 4.72794pt on input line 16.
 
 
-[55
+[54
 
 
 
 
 ]
 
+[55]
+
 [56]
 
 [57]
 
-[58]
+[58])
 
-[59])
-
-[60]
+[59]
 \openout2 = `chapters/achievements.aux'.
 
  (./chapters/achievements.tex)
 
-[61
+[60
 
 
 ] (./main.aux (./chapters/innovations.aux) (./chapters/abstract.aux) (./chapters/intro.aux) (./chapters/relevant_theories.aux) (./chapters/flevel_feature.aux) (./chapters/plevel_feature.aux) (./chapters/conclusion.aux) (./chapters/achievements.aux))
@@ -1537,12 +1579,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 55B66EF98AADAB00D54B22B900D21371;10077.
  ) 
 Here is how much of TeX's memory you used:
- 30608 strings out of 475796
- 659855 string characters out of 5774034
- 1157844 words of memory out of 5000000
- 53016 multiletter control sequences out of 15000+600000
+ 31673 strings out of 475796
+ 678914 string characters out of 5774034
+ 1175361 words of memory out of 5000000
+ 54050 multiletter control sequences out of 15000+600000
  566310 words of font info for 178 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 106i,15n,127p,1847b,2906s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 106i,15n,127p,1764b,2906s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (75 pages).
+Output written on main.pdf (74 pages).

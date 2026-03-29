@@ -27,7 +27,7 @@ DPI 技术的核心在于构建一个庞大的应用层特征签名数据库，�
 卷积神经网络是深度学习领域中最具代表性且应用最广泛的模型架构之一。其设计灵感源于生物视觉皮层对外界事物的感知机制。相较于传统的全连接神经网络，CNN 凭借其卓越的局部特征捕获能力与层次化表征学习机制，在计算机视觉、自然语言处理以及网络安全流量分析等领域展现出了极强的鲁棒性与泛化性能。CNN 的典型拓扑结构是一个多级联动的非线性映射系统，主要由输入层、卷积层、池化层、全连接层以及输出层协同构成，其标准逻辑架构如图~\ref{fig:cnn} 所示。通过这些异构层级的交替堆叠，网络能够实现从底层几何纹理到高层语义属性的逐层抽象与演进。各组成部分的具体介绍如下：
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{cnn.png}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{cnn.pdf}
   \caption{卷积神经网络结构}
   \label{fig:cnn}
 \end{figure}
@@ -39,7 +39,7 @@ DPI 技术的核心在于构建一个庞大的应用层特征签名数据库，�
 卷积操作的输出受一系列超参数驱动，主要包括输入数据尺寸 $i$ 、卷积核尺寸 $k$、步长 $s$、填充大小 $p$ 以及输出尺寸 $n$。其中，步长 $s$ 决定了特征提取的分辨率精细度；填充 $p$ 则常用于保持特征图的空间维度，防止由于深层堆叠导致的边缘信息坍塌。输出特征图的维度 $n$ 可可通过公式$n = (i - k + 2p)/s + 1$计算。卷积层之所以在处理大规模高维数据时表现优异，主要归功于其核心的参数共享与局部连接两大特性。这两大特性极大地缩减了待训练参数的规模，在维持模型表达能力的同时，显著降低了计算复杂度。不同尺寸的卷积核可提取多尺度的特征，并赋予模型对输入信号在平移、旋转及缩放等变换下的不变性。以二维卷积为例，如图~\ref{fig:2dcnn} 所示，假设输入为 $4 \times 4$ 的数据矩阵，采用 $3 \times 3$ 的卷积核且步长 $s=1$对其进行处理。在运算过程中，卷积核逐像素移动并执行元素级乘加运算，最终将原始冗余信息压缩并映射为一个 $2 \times 2$ 的输出矩阵，实现了特征的初步抽象。
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{2dcnn.png}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{2dcnn.pdf}
   \caption{卷积运算过程}
   \label{fig:2dcnn}
 \end{figure}
@@ -53,7 +53,7 @@ DPI 技术的核心在于构建一个庞大的应用层特征签名数据库，�
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{pooling.png}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{pooling.pdf}
   \caption{两种池化方式}
   \label{fig:pooling}
 \end{figure}
@@ -69,7 +69,7 @@ DPI 技术的核心在于构建一个庞大的应用层特征签名数据库，�
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{activation.png}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{activation.pdf}
   \caption{常见的激活函数图像}
   \label{fig:activation}
 \end{figure}
@@ -152,7 +152,7 @@ ResNet 的提出不仅在理论层面深化了对深层神经网络训练机制�
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{attention.png}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{attention.pdf}
   \caption{注意力机制处理过程}
   \label{fig:attention}
 \end{figure}
@@ -165,7 +165,7 @@ ResNet 的提出不仅在理论层面深化了对深层神经网络训练机制�
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{contrastive.png}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{contrastive.pdf}
   \caption{对比学习过程}
   \label{fig:contrastive}
 \end{figure}

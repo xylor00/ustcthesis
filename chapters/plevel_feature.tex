@@ -6,12 +6,20 @@
 
 图~\ref{fig:confusion}为VNAT数据集中，提取前16个数据包和前100个数据包作为原始流量的分类结果混淆矩阵，可以看出：在仅提取16个数据包长度序列的短序列情况下，VNAT数据集中的C2和file类别存在严重的混淆情况，近$50\%$的C2类别流量被误分类为file类别。而将数据包数量提升至100，提取长序列以后，C2被误分类的情况得到缓解，但却引发了过矫正问题，超过$10\%$的file流量误分类为C2类别。这种分类性能的震荡现象表明，这两种流量在数据包长度序列上的特征表示具有极高的相似度。仅凭流级特征，模型难以精准区分两者在行为模式上的细微差别，从而导致分类边界模糊，陷入分类性能的瓶颈。
 
-针对上述挑战，本章提出了一种双模态特征融合的分类架构。首先，为了弥补流级别特征在微观表现力上的不足，我们引入了基于 n-gram 技术的包级别特征提取方法，旨在从数据包内容中挖掘更具辨别力的模式特征。其次，考虑到流级特征与包级特征在信息贡献度上的差异性，本章进一步设计了一种基于注意力机制的特征融合方案。该方案能够动态地捕捉并加权不同尺度的关键信息，通过流级别与包级别特征的深度互补，构建出一个鲁棒性更强、识别精度更高的加密流量分类模型，旨在从根本上缓解复杂流量类别间的混淆问题。
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{confusion.png}
-  \caption{两个混淆矩阵}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{confusion.pdf}
+  \caption{不同长度数据包序列分类结果混淆矩阵}
   \label{fig:confusion}
+\end{figure}
+
+针对上述挑战，本章提出了一种双模态特征融合的分类架构。首先，为了弥补流级别特征在微观表现力上的不足，我们引入了基于 n-gram 技术的包级别特征提取方法，旨在从数据包内容中挖掘更具辨别力的模式特征。其次，考虑到流级特征与包级特征在信息贡献度上的差异性，本章进一步设计了一种基于注意力机制的特征融合方案。该方案能够动态地捕捉并加权不同尺度的关键信息，通过流级别与包级别特征的深度互补，构建出一个鲁棒性更强、识别精度更高的加密流量分类模型，旨在从根本上缓解复杂流量类别间的混淆问题，模型架构如图~\ref{fig:fusionnetwork}所示。
+
+\begin{figure}[ht]
+  \centering
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{fusionnetwork.pdf}
+  \caption{融合特征分类模型架构}
+  \label{fig:fusionnetwork}
 \end{figure}
 
 \section{系统模型}
@@ -51,7 +59,7 @@ Hu 等人的研究发现，虽然加密协议屏蔽了应用层内容，但网�
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{ngram.png}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{ngram.pdf}
   \caption{n-gram嵌入处理}
   \label{fig:ngram}
 \end{figure}
@@ -84,13 +92,7 @@ $$
 其中，$W_f \in \mathbb{R}^{d_{align} \times d_f}$ 和 $W_p \in \mathbb{R}^{d_{align} \times d_p}$ 为可学习的投影权重矩阵，$b_f$ 与 $b_p$ 为对应的偏置项，$d_{align}$ 表示对齐后的空间维度。
 
 \subsection{交叉注意力流}
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width=1\textwidth]{cross.png}
-  \caption{交叉注意力机制}
-  \label{fig:cross}
-\end{figure}
-在完成空间对齐后，本工作利用交叉注意力机制实现流级别特征与包级别特征之间的深度交互。如图~\ref{fig:cross}所示，与传统自注意力机制中$Q$、$K$、$V$均来自同一模态的逻辑不同，交叉注意力机制旨在建立不同模态特征间的协同映射关系。在本工作中，我们利用流级特征$f_{align}$进入注意力流生成查询向量 Query，主动检索包级特征$p_{align}$生成的键向量 Key 和值向量 Value。利用较为宏观的数据包长度序列信息去询问相对局部的数据包报文信息。具体公式如下：
+在完成空间对齐后，本工作利用交叉注意力机制实现流级别特征与包级别特征之间的深度交互。与传统自注意力机制中$Q$、$K$、$V$均来自同一模态的逻辑不同，交叉注意力机制旨在建立不同模态特征间的协同映射关系。在本工作中，我们利用流级特征$f_{align}$进入注意力流生成查询向量 Query，主动检索包级特征$p_{align}$生成的键向量 Key 和值向量 Value。利用较为宏观的数据包长度序列信息去询问相对局部的数据包报文信息。具体公式如下：
 $$
 Q = f_{align} W^Q + b^Q
 $$
@@ -112,7 +114,7 @@ $$
 经过上一节的交叉注意力模块实现跨维度的特征捕捉与融合后，系统生成的融合特征 $f_{fused}$ 已具备了高度精炼的流量指纹特征。为了将这些抽象的语义特征进一步映射至最终的流量类别空间，本工作设计了一种基于深度残差网络的多层感知机架构作为主分类器。传统的线性堆叠网络在处理高维加密流量指纹时，随着网络深度的增加，容易产生的梯度消失或退化问题，为此，我们引入了跳跃连接机制，允许底层特征流通过恒等映射直接跨越多个非线性层进行传递，使得网络只需学习输入与输出之间的残差映射，而非完整的映射函数，确保了梯度流在深层网络中的高效反向传播。分类器的具体结构如图~\ref{fig:sort}所示。
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{sort.png}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{sort.pdf}
   \caption{分类器结构}
   \label{fig:sort}
 \end{figure}
@@ -232,7 +234,7 @@ $$
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{confusionB.png}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{confusionB.pdf}
   \caption{三种模型的混淆矩阵}
   \label{fig:confusionB}
 \end{figure}

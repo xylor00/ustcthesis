@@ -8,7 +8,7 @@ BYOL 是一种基于自监督学习的图像表示学习方法，在系统模型
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{BYOL.png}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{BYOL.pdf}
   \caption{BYOL模型框架}
   \label{fig:BYOL}
 \end{figure}
@@ -19,7 +19,7 @@ BYOL 是一种基于自监督学习的图像表示学习方法，在系统模型
 在 BYOL 模型及其衍生架构中，数据增强操作是构建自监督学习任务的基石，对于学习高质量的数据表征起着至关重要的作用。其核心逻辑在于通过引入受控的随机扰动，生成同一原始样本在不同视角下的增强变体。模型在训练过程中通过最大化这些变体之间的一致性，被迫从中捕获数据中蕴含的本质不变特征。这种机制使得 BYOL 能够在无需依赖负样本对的情况下，依然实现高效的表征提取，从而为下游的复杂分类任务提供深层的语义支持。因此，设计符合特定需求的增强函数，是提升模型整体性能与泛化边界的关键环节。
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{dataaug.png}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{dataaug.pdf}
   \caption{数据包序列变化}
   \label{fig:dataaug}
 \end{figure}
@@ -53,7 +53,7 @@ $$
 在经过前述增强函数的处理后，模型生成了原始流量数据的两个不同增强变体 $\mathbf{v}$ 和 $\mathbf{v}'$。随后，这两个变体分别被输入在线网络与目标网络中的编码器 $f_\theta$ 和 $f_\xi$ 进行特征提取。在 BYOL 的原始研究框架中，编码器通常以 ResNet 为基础骨干网络，旨在处理具有 $(C, H, W)$ 维度的二维图像数据。然而，网络流量的数据包长度序列本质上属于一维结构化时间序列，传统的二维卷积算子在处理此类数据时会引入不必要的维度冗余与计算开销。鉴于此，本文针对流量序列的时间相关性，设计并实现了一种基于一维卷积神经网络的编码器架构。一维卷积神经网络的卷积核在单个维度上沿时间轴滑动，这与流量序列线性排列的特征高度契合，能够更有效地捕捉局部统计依赖性与时序演变规律。
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{encoder.png}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{encoder.pdf}
   \caption{编码器结构}
   \label{fig:encoder}
 \end{figure}
@@ -189,7 +189,7 @@ $$
 在实验执行过程中，为了确保评价结果的客观性与泛化性，本工作对上述所有原始数据进行了统一的预处理与随机划分：其中 60\% 的数据用于模型参数的迭代训练，20\% 作为验证集用于超参数调优及防止过拟合，剩余 20\% 的数据则作为完全独立的测试集，用于最终衡量模型在未知样本上的分类效能。
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1\textwidth]{datapreprocessing.png}
+  \adjincludegraphics[width=1\textwidth, trim=2 2 2 2, clip]{datapreprocessing.pdf}
   \caption{数据预处理流程}
   \label{fig:datapreprocessing}
 \end{figure}
@@ -256,7 +256,7 @@ $$
 
 %\textbf{（4）其他对比算法：根据实际需要，我们还可以选择其他一些具有代表性的流级别特征分类算法进行对比，以进一步验证本文所提出方法的有效性。（暂未实现）}%
 \subsection{实验结果分析}
-在本节中，我们将对所提出的基于 BYOL 的流级别特征分类模型与上述对比算法在多个数据集上的实验结果进行详细分析。首先，我们将展示各算法在测试集上的准确率、精确率、召回率和 F1 分数等评价指标的具体数值，并通过表格和图形的形式进行比较。四个数据集的实验结果如表~\ref{tab:comparisonA}所示，其中Precision，Recall，F1-Score的值为每一个类别对应值的平均数。
+在本节中，我们将对所提出的基于 BYOL 的流级别特征分类模型与上述对比算法在多个数据集上的实验结果进行详细分析。首先，我们将计算各算法在测试集上的准确率、精确率、召回率和 F1 分数等评价指标的具体数值，并通过表格的形式进行展示。四个数据集的实验结果如表~\ref{tab:comparisonA}所示，其中Precision，Recall，F1-Score的值为每一个类别对应值的平均数。
 
 \begin{table}[htbp]
 \centering
