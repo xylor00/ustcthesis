@@ -9,62 +9,62 @@
 \contentsline {chapter}{\numberline {第2章}相关理论概述}{9}{chapter.2}%
 \contentsline {section}{\numberline {2.1}网络流量分类理论}{9}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}端口检测}{9}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}深度包检测}{9}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}深度包检测}{10}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}传统机器学习方法}{10}{subsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.1.4}基于深度学习的方法}{10}{subsection.2.1.4}%
 \contentsline {section}{\numberline {2.2}深度学习概述}{11}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}卷积神经网络}{11}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}激活函数}{14}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}损失函数}{16}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}残差神经网络}{18}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}注意力机制}{19}{subsection.2.2.5}%
-\contentsline {section}{\numberline {2.3}自监督学习}{20}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}对比学习}{21}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.2.4}残差神经网络}{17}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}注意力机制}{18}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}自监督学习}{19}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}对比学习}{20}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}数据增强}{21}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}本章小结}{22}{section.2.4}%
-\contentsline {chapter}{\numberline {第3章}基于BYOL模型的流级特征分类方法}{24}{chapter.3}%
-\contentsline {section}{\numberline {3.1}系统模型}{24}{section.3.1}%
-\contentsline {section}{\numberline {3.2}增强函数}{25}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}增强函数 I：噪声注入}{26}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}增强函数 2：尺度缩放与随机遮蔽}{26}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}模型架构}{27}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}编码器}{27}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}投影器和预测器}{29}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}损失函数}{30}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}EMA更新机制}{31}{subsection.3.3.4}%
-\contentsline {section}{\numberline {3.4}训练优化}{31}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}学习率调度与 AdamW 优化}{31}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}针对抖动的回溯策略}{32}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}实验设计与结果分析}{32}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}实验环境}{32}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}数据集介绍与预处理}{32}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}评价指标}{34}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}参数设置}{36}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}对比算法}{37}{subsection.3.5.5}%
-\contentsline {subsection}{\numberline {3.5.6}实验结果分析}{37}{subsection.3.5.6}%
-\contentsline {section}{\numberline {3.6}本章小结}{39}{section.3.6}%
-\contentsline {chapter}{\numberline {第4章}基于融合特征的分类方法}{40}{chapter.4}%
-\contentsline {section}{\numberline {4.1}系统模型}{41}{section.4.1}%
-\contentsline {section}{\numberline {4.2}包级别特征提取}{41}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}报文首部截取与预处理}{42}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}N-gram嵌入处理}{42}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}交叉注意力特征融合机制}{44}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}线性投影与空间对齐}{44}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}交叉注意力流}{45}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}深度残差分类器}{46}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}输入层}{46}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}深层残差主干网络}{46}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}输出层逻辑}{47}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}训练优化}{48}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}学习率调度}{48}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}实验设计与结果分析}{48}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}参数设置}{48}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}对比算法}{48}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}实验结果分析}{50}{subsection.4.6.3}%
-\contentsline {section}{\numberline {4.7}本章小结}{52}{section.4.7}%
-\contentsline {chapter}{\numberline {第5章}总结与展望}{53}{chapter.5}%
-\contentsline {section}{\numberline {5.1}本文工作总结}{53}{section.5.1}%
-\contentsline {section}{\numberline {5.2}未来展望}{54}{section.5.2}%
-\contentsline {chapter}{参考文献}{55}{chapter*.38}%
-\contentsline {chapter}{在读期间取得的科研成果}{61}{appendix*.39}%
+\contentsline {section}{\numberline {2.4}本章小结}{21}{section.2.4}%
+\contentsline {chapter}{\numberline {第3章}基于BYOL模型的流级特征分类方法}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}系统模型}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}增强函数}{24}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}增强函数 I：噪声注入}{25}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}增强函数 II：尺度缩放与随机遮蔽}{25}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}模型架构}{26}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}编码器}{26}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}投影器和预测器}{28}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}损失函数}{29}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}EMA更新机制}{30}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}训练优化}{30}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}学习率调度与 AdamW 优化}{30}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}针对抖动的回溯策略}{30}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}实验设计与结果分析}{31}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}实验环境}{31}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}数据集介绍与预处理}{31}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}评价指标}{33}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}参数设置}{34}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}对比算法}{35}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}实验结果分析}{36}{subsection.3.5.6}%
+\contentsline {section}{\numberline {3.6}本章小结}{37}{section.3.6}%
+\contentsline {chapter}{\numberline {第4章}基于融合特征的分类方法}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}系统模型}{40}{section.4.1}%
+\contentsline {section}{\numberline {4.2}包级别特征提取}{40}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}报文首部截取与预处理}{41}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}N-gram嵌入处理}{41}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}交叉注意力特征融合机制}{43}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}线性投影与空间对齐}{43}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}交叉注意力流}{44}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}深度残差分类器}{45}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}输入层}{45}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}深层残差主干网络}{45}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}输出层逻辑}{46}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}训练优化}{47}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}学习率调度}{47}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}实验设计与结果分析}{47}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}参数设置}{47}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}对比算法}{47}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}实验结果分析}{49}{subsection.4.6.3}%
+\contentsline {section}{\numberline {4.7}本章小结}{51}{section.4.7}%
+\contentsline {chapter}{\numberline {第5章}总结与展望}{52}{chapter.5}%
+\contentsline {section}{\numberline {5.1}本文工作总结}{52}{section.5.1}%
+\contentsline {section}{\numberline {5.2}未来展望}{53}{section.5.2}%
+\contentsline {chapter}{参考文献}{54}{chapter*.38}%
+\contentsline {chapter}{在读期间取得的科研成果}{60}{appendix*.39}%
 \contentsfinish 
