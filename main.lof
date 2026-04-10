@@ -13,12 +13,13 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces 数据包序列变化}}{24}{figure.caption.23}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces 编码器结构}}{27}{figure.caption.24}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces 数据预处理流程}}{32}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 数据包序列长度敏感性实验}}{34}{figure.caption.28}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 不同长度数据包序列分类结果混淆矩阵}}{39}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 融合特征分类模型架构}}{40}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces n-gram嵌入处理}}{42}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 分类器结构}}{45}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 三种模型的混淆矩阵}}{50}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 不同长度数据包序列分类结果混淆矩阵}}{40}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 融合特征分类模型架构}}{41}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces n-gram嵌入处理}}{43}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 分类器结构}}{46}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 三种模型的混淆矩阵}}{51}{figure.caption.38}%
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
