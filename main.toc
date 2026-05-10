@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {3.5.4}参数设置}{33}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}对比算法}{34}{subsection.3.5.5}%
 \contentsline {subsection}{\numberline {3.5.6}实验结果分析}{35}{subsection.3.5.6}%
-\contentsline {section}{\numberline {3.6}本章小结}{37}{section.3.6}%
+\contentsline {section}{\numberline {3.6}本章小结}{38}{section.3.6}%
 \contentsline {chapter}{\numberline {第4章}基于融合特征的分类方法}{39}{chapter.4}%
 \contentsline {section}{\numberline {4.1}系统模型}{40}{section.4.1}%
 \contentsline {section}{\numberline {4.2}包级别特征提取}{40}{section.4.2}%
@@ -66,5 +66,6 @@
 \contentsline {section}{\numberline {5.1}本文工作总结}{53}{section.5.1}%
 \contentsline {section}{\numberline {5.2}未来展望}{54}{section.5.2}%
 \contentsline {chapter}{参考文献}{55}{chapter*.40}%
-\contentsline {chapter}{在读期间取得的科研成果}{61}{appendix*.41}%
+\contentsline {chapter}{致谢}{61}{appendix*.41}%
+\contentsline {chapter}{在读期间取得的科研成果}{62}{appendix*.42}%
 \contentsfinish 
