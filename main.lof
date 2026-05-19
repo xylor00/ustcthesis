@@ -3,23 +3,23 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces 研究内容结构图}}{6}{figure.caption.13}%
 \addvspace {10.0pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces 卷积神经网络结构}}{12}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces 卷积运算过程}}{12}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces 两种池化方式}}{13}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 卷积运算过程}}{13}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 两种池化方式}}{14}{figure.caption.16}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces 常见的激活函数图像}}{15}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces 注意力机制处理过程}}{19}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces 对比学习过程}}{20}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces 注意力机制处理过程}}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces 对比学习过程}}{21}{figure.caption.21}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces BYOL模型框架}}{22}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 数据包序列变化}}{23}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 编码器结构}}{26}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces 数据预处理流程}}{31}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces 数据包序列长度敏感性实验}}{33}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces BYOL模型框架}}{23}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 数据包序列变化}}{24}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 编码器结构}}{27}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 数据预处理流程}}{32}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 数据包序列长度敏感性实验}}{34}{figure.caption.28}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 不同长度数据包序列分类结果混淆矩阵}}{39}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 融合特征分类模型架构}}{40}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces n-gram嵌入处理}}{42}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 分类器结构}}{45}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 三种模型的混淆矩阵}}{51}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 不同长度数据包序列分类结果混淆矩阵}}{40}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 融合特征分类模型架构}}{41}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces n-gram嵌入处理}}{43}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 分类器结构}}{46}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 三种模型的混淆矩阵}}{52}{figure.caption.38}%
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
